@@ -1,16 +1,14 @@
 "use client";
-
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [blueBackground, setBlueBackground] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
-
-    // Ajout d'un décalage de 100 pixels avant de masquer la barre
     const scrollThreshold = 200;
 
     if (
@@ -21,6 +19,9 @@ function Header() {
     } else {
       setVisible(true);
     }
+
+    // Check if scroll position is exactly 0 pixels
+    setBlueBackground(currentScrollPos === 0);
 
     setPrevScrollPos(currentScrollPos);
   };
@@ -33,8 +34,8 @@ function Header() {
 
   return (
     <header
-      className={`w-full fixed z-20 bg-white text-black ${
-        visible ? "opacity-100" : "opacity-0"
+      className={`w-full fixed z-20 text-black ${
+        visible ? (blueBackground ? "text-white" : "bg-white") : "opacity-0"
       }`}
     >
       <div className="bg-primary-pink h-3 w-full"></div>
@@ -50,7 +51,7 @@ function Header() {
         </div>
         <div className="flex-center gap-x-20">
           <div>Réserver</div>
-          <div>Visite virutelle</div>
+          <div>Visite virtuelle</div>
           <div>Nous contacter</div>
         </div>
       </div>
