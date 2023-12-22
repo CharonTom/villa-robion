@@ -27,7 +27,7 @@ function BgVideo() {
         <source src="/bgvid.mp4" type="video/mp4" />
       </video>
 
-      <div className="absolute top-[38%] left-[1%] w-[70%]">
+      <div className="absolute top-[40%] left-[1%] w-[70%]">
         <h1 className="text-white leading-tight tracking-tight">
           Séjourner dans une villa au sein du parc régional du Luberon
         </h1>
