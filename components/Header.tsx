@@ -29,18 +29,13 @@ function Header() {
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
-  const headerStyle = {
-    backgroundColor: isTop && isTransparent ? "" : "#ffffff",
-    color: isTop ? "#ffffff" : "#000000",
-  };
+  const headerClasses = `fixed w-full z-20 transition-transform ${
+    isScrolled ? "-translate-y-full" : "translate-y-0"
+  } ${isTop && isTransparent ? "text-white" : "bg-white text-black"}
+  ${isTop ? "" : "border-b border-gray-300"}`;
 
   return (
-    <header
-      style={headerStyle}
-      className={`fixed w-full transition-transform z-20 ${
-        isScrolled ? "-translate-y-full" : "translate-y-0"
-      }`}
-    >
+    <header className={headerClasses}>
       <div className="bg-primary-pink h-2 w-full"></div>
       <div className="mx-14 flex justify-between items-center p-1">
         <div>
