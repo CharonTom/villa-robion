@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
@@ -11,8 +12,9 @@ function Header() {
       const currentScrollPos = window.scrollY;
       const isScrollingDown = currentScrollPos > prevScrollPos;
 
-      // Ajouter la condition pour masquer le header uniquement si Y >= 200
       setIsScrolled(currentScrollPos > 200 && isScrollingDown);
+      setIsTop(currentScrollPos === 0); // Vérifier si la position de défilement est à zéro
+
       setPrevScrollPos(currentScrollPos);
     };
 
@@ -25,9 +27,9 @@ function Header() {
 
   return (
     <header
-      className={`fixed w-full transition-transform bg-white z-20 ${
+      className={`fixed w-full transition-transform z-20 ${
         isScrolled ? "-translate-y-full" : "translate-y-0"
-      }`}
+      } ${isTop ? "text-white" : "bg-white"}`}
     >
       <div className="bg-primary-pink h-2 w-full"></div>
       <div className="mx-14 flex justify-between items-center p-1">
