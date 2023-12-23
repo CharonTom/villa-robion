@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 function Header() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [blueBackground, setBlueBackground] = useState(false);
+  const [transparentBackground, setTransparentBackground] = useState(true);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
@@ -21,7 +21,7 @@ function Header() {
     }
 
     // Check if scroll position is exactly 0 pixels
-    setBlueBackground(currentScrollPos === 0);
+    setTransparentBackground(currentScrollPos === 0);
 
     setPrevScrollPos(currentScrollPos);
   };
@@ -34,18 +34,22 @@ function Header() {
 
   return (
     <header
-      className={`w-full fixed z-20 text-black ${
-        visible ? (blueBackground ? "text-white" : "bg-white") : "opacity-0"
+      className={`w-full fixed z-20 text-black transition-all ${
+        visible
+          ? transparentBackground
+            ? "text-white"
+            : "bg-white"
+          : "opacity-0"
       }`}
     >
-      <div className="bg-primary-pink h-3 w-full"></div>
+      <div className="bg-primary-pink h-2 w-full"></div>
       <div className="mx-14 flex justify-between items-center p-1">
         <div>
           <Image
             src="/img/logo.png"
             alt="logo"
-            width={90}
-            height={90}
+            width={80}
+            height={80}
             className="rounded-full border border-2 border-white"
           />
         </div>
