@@ -68,3 +68,6 @@ h1 {
 .group:hover .anim-icon {
   animation: shake 1s ease-in-out;
 }
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}

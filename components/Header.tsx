@@ -3,43 +3,29 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function Header() {
+  const [isScrolled, setIsScrolled] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
-  const [transparentBackground, setTransparentBackground] = useState(true);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-    const scrollThreshold = 200;
-
-    if (
-      currentScrollPos > prevScrollPos &&
-      currentScrollPos > scrollThreshold
-    ) {
-      setVisible(false);
-    } else {
-      setVisible(true);
-    }
-
-    // Check if scroll position is exactly 0 pixels
-    setTransparentBackground(currentScrollPos === 0);
-
-    setPrevScrollPos(currentScrollPos);
-  };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      const isScrollingDown = currentScrollPos > prevScrollPos;
+
+      setIsScrolled(!isScrollingDown);
+      setPrevScrollPos(currentScrollPos);
+    };
+
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
 
   return (
     <header
-      className={`w-full fixed z-20 text-black transition-all ${
-        visible
-          ? transparentBackground
-            ? "text-white"
-            : "bg-white"
-          : "opacity-0"
+      className={`fixed w-full transition-transform bg-white z-20 ${
+        isScrolled ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="bg-primary-pink h-2 w-full"></div>
