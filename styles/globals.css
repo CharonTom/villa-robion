@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   /* font-family: "DM Sans", sans-serif; */
   font-size: 20px;
@@ -71,4 +75,12 @@ h1 {
 
 .transition-transform {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.scroll-container {
+  max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: scroll-behavior 0.3s ease-in-out; /* Ajustez la durée et la courbe selon vos préférences */
 }

@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 function BgVideo() {
   return (
@@ -36,10 +39,15 @@ function BgVideo() {
         Réserver votre séjour
       </div>
 
-      <div className="cursor-pointer group absolute bottom-3 right-1/2 translate-x-1/2 text-white flex-center flex-col ">
+      <Link
+        smooth={true}
+        to="presentation"
+        duration={500}
+        className="cursor-pointer group absolute bottom-3 right-1/2 translate-x-1/2 text-white flex-center flex-col "
+      >
         <p className="">scroll down</p>
         <FaAnglesDown className="anim-icon" />
-      </div>
+      </Link>
     </div>
   );
 }

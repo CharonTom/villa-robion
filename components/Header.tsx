@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,22 +38,24 @@ function Header() {
   return (
     <header className={headerClasses}>
       <div className="bg-primary-pink h-2 w-full"></div>
-      <div className="mx-14 flex justify-between items-center p-1">
+      <nav className="mx-14 flex justify-between items-center p-1">
         <div>
-          <Image
-            src="/img/logo.png"
-            alt="logo"
-            width={80}
-            height={80}
-            className="rounded-full border border-2 border-white"
-          />
+          <Link href="/">
+            <Image
+              src="/img/logo.png"
+              alt="logo"
+              width={80}
+              height={80}
+              className="rounded-full border border-2 border-white"
+            />
+          </Link>
         </div>
         <div className="flex-center gap-x-20">
-          <div>Réserver</div>
-          <div>Visite virtuelle</div>
-          <div>Nous contacter</div>
+          <button>Réserver</button>
+          <Link href="/visit">Visite virtuelle</Link>
+          <Link href="/contact">Nous contacter</Link>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }

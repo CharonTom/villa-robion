@@ -2,7 +2,7 @@ import React from "react";
 
 function Presentation() {
   return (
-    <div className="py-20">
+    <div className="py-20" id="presentation">
       <p className="container text-[48px]">
         Découvrez l&apos;élégance et le charme de notre maison nichée dans le
         parc régional du Luberon.Cette résidence lumineuse offre une échappée
