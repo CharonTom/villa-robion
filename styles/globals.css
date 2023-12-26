@@ -78,9 +78,8 @@ h1 {
 }
 
 .scroll-container {
-  max-height: 500px; /* Ajustez la hauteur maximale selon vos besoins */
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 10px;
-  transition: scroll-behavior 0.3s ease-in-out; /* Ajustez la durée et la courbe selon vos préférences */
+  position: fixed;
+  will-change: transform;
+  right: 0;
+  left: 0;
 }

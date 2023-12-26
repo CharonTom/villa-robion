@@ -42,11 +42,11 @@ function Header() {
         <div>
           <Link href="/">
             <Image
-              src="/img/logo.png"
+              src="/images/logo.png"
               alt="logo"
               width={80}
               height={80}
-              className="rounded-full border border-2 border-white"
+              className="rounded-full border border-2 border-primary-pink"
             />
           </Link>
         </div>
