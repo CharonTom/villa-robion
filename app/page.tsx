@@ -1,16 +1,21 @@
+"use client";
+
 import BgVideo from "@/components/Bg-video";
 import Presentation from "@/components/Presentation";
-import ScrollContainer from "@/components/Scroll-container";
+import { useEffect } from "react";
 
 export default function Home() {
-  const scrollIntertia = 70;
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll({});
+    })();
+  }, []);
 
   return (
     <main>
-      {/* <ScrollContainer scrollIntertia={scrollIntertia}> */}
       <BgVideo />
       <Presentation />
-      {/* </ScrollContainer> */}
     </main>
   );
 }

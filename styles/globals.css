@@ -8,12 +8,7 @@
   padding: 0;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
-  /* font-family: "DM Sans", sans-serif; */
   font-size: 20px;
   font-weight: 500;
 }
@@ -75,11 +70,4 @@ h1 {
 
 .transition-transform {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-}
-
-.scroll-container {
-  position: fixed;
-  will-change: transform;
-  right: 0;
-  left: 0;
 }
