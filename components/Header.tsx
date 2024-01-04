@@ -10,7 +10,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const { openPanel } = useReservationContext();
+  const { openPanel, isOpen } = useReservationContext();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +35,13 @@ function Header() {
 
   const headerClasses = `fixed w-full z-20 transition-transform ${
     isScrolled ? "-translate-y-full" : "translate-y-0"
-  } ${isTop && isTransparent ? "text-white" : "bg-white text-black"}
+  } ${
+    isTop && isTransparent
+      ? isOpen
+        ? "text-black"
+        : "text-white"
+      : "bg-white text-black"
+  }
   ${isTop ? "" : "border-b border-gray-300"}`;
 
   return (
@@ -59,7 +65,6 @@ function Header() {
           <Link href="/contact">Nous contacter</Link>
         </div>
       </nav>
-      <ReservationPanel />
     </header>
   );
 }
