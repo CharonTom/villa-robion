@@ -23,8 +23,8 @@ export default function RootLayout({
       <body className={dmSans.className}>
         <ReservationProvider>
           <Header />
-          <ReservationPanel />
           {children}
+          <ReservationPanel />
         </ReservationProvider>
       </body>
     </html>

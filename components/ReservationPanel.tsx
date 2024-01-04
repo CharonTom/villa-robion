@@ -8,12 +8,12 @@ const ReservationPanel = () => {
   const { isOpen, closePanel } = useReservationContext();
   return (
     <div
-      className={`fixed top-0 left-0 w-full transition-transform ease-in-out duration-300 transform ${
-        isOpen ? "h-1/2 translate-y-0" : "-translate-y-full"
+      className={`fixed top-0 left-0 w-full transition-transform ease-in-out duration-300 transform bg-white h-1/2  ${
+        isOpen ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       {/* Contenu du volet de navigation */}
-      <div className="bg-white h-[40vh]">
+      <div className="">
         {/* Bouton pour fermer le volet */}
         <button
           onClick={closePanel}

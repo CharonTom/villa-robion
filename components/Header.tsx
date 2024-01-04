@@ -38,8 +38,8 @@ function Header() {
   } ${
     isTop && isTransparent
       ? isOpen
-        ? "text-black"
-        : "text-white"
+        ? "text-black border-b border-gray-300"
+        : "text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
       : "bg-white text-black"
   }
   ${isTop ? "" : "border-b border-gray-300"}`;
@@ -60,7 +60,9 @@ function Header() {
           </Link>
         </div>
         <div className="flex-center gap-x-20">
-          <button onClick={openPanel}>Réserver</button>
+          <p className="cursor-pointer" onClick={openPanel}>
+            Réserver
+          </p>
           <Link href="/visit">Visite virtuelle</Link>
           <Link href="/contact">Nous contacter</Link>
         </div>
