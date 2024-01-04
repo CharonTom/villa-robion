@@ -27,7 +27,7 @@ function Presentation() {
         />
       </div>
       <div className="text-center py-10">
-        <Button text="Découvrer notre maison" />
+        <Button text="Découvrer notre maison" onClick={() => {}} />
       </div>
     </section>
   );

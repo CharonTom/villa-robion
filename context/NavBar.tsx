@@ -2,9 +2,22 @@
 
 import React, { createContext, useContext, useState } from "react";
 
-const ReservationContext = createContext();
+interface ReservationContextType {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  closePanel: () => void;
+  openPanel: () => void;
+}
 
-export const ReservationProvider = ({ children }) => {
+const ReservationContext = createContext<ReservationContextType | undefined>(
+  undefined
+);
+
+export const ReservationProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   console.log(isOpen);
 
@@ -28,4 +41,13 @@ export const ReservationProvider = ({ children }) => {
     </ReservationContext.Provider>
   );
 };
-export const useReservationContext = () => useContext(ReservationContext);
+
+export const useReservationContext = (): ReservationContextType => {
+  const context = useContext(ReservationContext);
+  if (!context) {
+    throw new Error(
+      "useReservationContext must be used within a ReservationProvider"
+    );
+  }
+  return context;
+};
