@@ -3,11 +3,17 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import ReservationPanel from "./ReservationPanel";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openPanel = () => {
+    setIsOpen(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +43,7 @@ function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="bg-primary-pink h-2 w-full"></div>
+      <div className="bg-primary-pink h-2 w-full z-100"></div>
       <nav className="mx-14 flex justify-between items-center p-1">
         <div>
           <Link href="/">
@@ -51,11 +57,15 @@ function Header() {
           </Link>
         </div>
         <div className="flex-center gap-x-20">
-          <button>Réserver</button>
+          <button onClick={openPanel}>Réserver</button>
           <Link href="/visit">Visite virtuelle</Link>
           <Link href="/contact">Nous contacter</Link>
         </div>
       </nav>
+      <ReservationPanel
+        isOpen={isOpen}
+        togglePanel={() => setIsOpen(!isOpen)}
+      />
     </header>
   );
 }

@@ -4,16 +4,20 @@ import Button from "./Button";
 
 function Presentation() {
   return (
-    <div className="container">
-      <div className="py-10 container text-center" id="presentation">
-        <p className="text-[48px]">
-          Découvrez l&apos;élégance et le charme de notre maison nichée dans le
-          parc régional du Luberon. <br />
-          Cette résidence lumineuse offre une échappée paisible où le style
-          contemporain s&apos;harmonise avec le calme provençal.
-        </p>
-      </div>
-      <div style={{ width: "100%", height: "80vh", position: "relative" }}>
+    <section className="">
+      <p
+        className="py-10 container text-center mx-auto text-[48px]"
+        id="presentation"
+      >
+        Découvrez l&apos;élégance et le charme de notre maison nichée dans le
+        parc régional du Luberon. <br />
+        Cette résidence lumineuse offre une échappée paisible où le style
+        contemporain s&apos;harmonise avec le calme provençal.
+      </p>
+      <div
+        style={{ width: "98%", height: "80vh", position: "relative" }}
+        className="mx-auto"
+      >
         <Image
           src="/images/slider1.jpg"
           alt="slider"
@@ -23,9 +27,9 @@ function Presentation() {
         />
       </div>
       <div className="text-center py-10">
-        <Button text={"Découvrer notre maison"} />
+        <Button text="Découvrer notre maison" />
       </div>
-    </div>
+    </section>
   );
 }
 

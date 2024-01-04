@@ -1,7 +1,10 @@
 "use client";
 
-import BgVideo from "@/components/Bg-video";
+import Welcome from "@/components/Welcome";
+import Around from "@/components/Around";
+import Booking from "@/components/Booking";
 import Presentation from "@/components/Presentation";
+
 import { useEffect } from "react";
 
 export default function Home() {
@@ -14,8 +17,10 @@ export default function Home() {
 
   return (
     <main>
-      <BgVideo />
+      <Welcome />
       <Presentation />
+      <Booking />
+      <Around />
     </main>
   );
 }

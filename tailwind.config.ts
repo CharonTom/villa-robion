@@ -8,12 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   dm: ["DM Sans", "sans-serif"],
-      // },
       container: {
         padding: {
-          DEFAULT: "25px",
+          DEFAULT: "15px",
         },
       },
       screens: {
