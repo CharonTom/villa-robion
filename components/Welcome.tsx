@@ -1,8 +1,11 @@
 import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 import { Link } from "react-scroll";
+import { useReservationContext } from "@/context/NavBar";
 
 function Welcome() {
+  const { openPanel } = useReservationContext();
+
   return (
     <section className="h-screen w-full">
       <video
@@ -23,9 +26,12 @@ function Welcome() {
           Séjourner dans une villa au sein du parc régional du Luberon.
         </h1>
       </div>
-      <div className="absolute bottom-10 right-10 text-white text-[36px]">
+      <button
+        onClick={openPanel}
+        className="absolute bottom-10 right-10 text-white text-[36px]"
+      >
         Réserver votre séjour
-      </div>
+      </button>
 
       <Link
         smooth={true}

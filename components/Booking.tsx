@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "./Button";
+import { useReservationContext } from "@/context/NavBar";
 
 function Booking() {
+  const { openPanel } = useReservationContext();
+
   return (
     <section className="container mx-auto">
       <p className="py-10 container text-center mx-auto text-[48px]">
@@ -12,7 +15,7 @@ function Booking() {
 
       <div className="bg-primary-pink rounded-xl h-[70vh] w-full my-10 mx-auto"></div>
       <div className="text-center py-10">
-        <Button text="Faites votre réservation" />
+        <Button onClick={openPanel} text="Faites votre réservation" />
       </div>
     </section>
   );

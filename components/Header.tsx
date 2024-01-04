@@ -4,16 +4,13 @@ import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import ReservationPanel from "./ReservationPanel";
+import { useReservationContext } from "@/context/NavBar";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const openPanel = () => {
-    setIsOpen(true);
-  };
+  const { openPanel } = useReservationContext();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,10 +59,7 @@ function Header() {
           <Link href="/contact">Nous contacter</Link>
         </div>
       </nav>
-      <ReservationPanel
-        isOpen={isOpen}
-        togglePanel={() => setIsOpen(!isOpen)}
-      />
+      <ReservationPanel />
     </header>
   );
 }
