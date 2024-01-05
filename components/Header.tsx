@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import ReservationPanel from "./ReservationPanel";
 import { useReservationContext } from "@/context/NavBar";
 
 function Header() {
@@ -30,19 +29,26 @@ function Header() {
     };
   }, [prevScrollPos]);
 
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  // }, []);
+
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
   const headerClasses = `fixed w-full z-20 transition-transform ${
-    isScrolled ? "-translate-y-full" : "translate-y-0"
+    isOpen
+      ? "translate-y-0"
+      : isScrolled
+      ? "-translate-y-full"
+      : "translate-y-0"
   } ${
     isTop && isTransparent
       ? isOpen
         ? "text-black border-b border-gray-300"
         : "text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
       : "bg-white text-black"
-  }
-  ${isTop ? "" : "border-b border-gray-300"}`;
+  } ${isTop ? "" : "border-b border-gray-300"}`;
 
   return (
     <header className={headerClasses}>
