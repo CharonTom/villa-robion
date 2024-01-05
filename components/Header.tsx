@@ -46,8 +46,8 @@ function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="bg-primary-pink h-2 w-full z-100"></div>
-      <nav className="mx-14 flex justify-between items-center p-1">
+      <div className="bg-primary-pink h-[7px] w-full z-100"></div>
+      <nav className="mx-14 flex justify-between items-center p-1 h-[100px]">
         <div>
           <Link href="/">
             <Image
