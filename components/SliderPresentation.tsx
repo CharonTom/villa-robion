@@ -19,7 +19,7 @@ export default function SliderPresentation() {
       >
         <SwiperSlide>
           <Image
-            src="/images/swp1.jpg"
+            src="/images/slider1.jpg"
             alt="slider"
             fill
             style={{ objectFit: "cover" }}
@@ -28,7 +28,7 @@ export default function SliderPresentation() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/images/swp2.jpg"
+            src="/images/slider2.jpg"
             alt="slider"
             fill
             style={{ objectFit: "cover" }}
@@ -37,7 +37,7 @@ export default function SliderPresentation() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/images/swp3.jpg"
+            src="/images/slider3.jpg"
             alt="slider"
             fill
             style={{ objectFit: "cover" }}
