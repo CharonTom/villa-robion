@@ -34,7 +34,7 @@ const ReservationPanel = () => {
                     alt="airbnb"
                     src="/images/airbnb_image.jpg"
                     fill
-                    objectFit="cover"
+                    style={{ objectFit: "cover" }}
                     className="rounded-xl"
                   />
                 </div>
@@ -46,7 +46,7 @@ const ReservationPanel = () => {
                     alt="airbnb"
                     src="/images/homeExchange_image.jpg"
                     fill
-                    objectFit="cover"
+                    style={{ objectFit: "cover" }}
                     className="rounded-xl"
                   />
                 </div>

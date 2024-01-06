@@ -29,10 +29,6 @@ function Header() {
     };
   }, [prevScrollPos]);
 
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  // }, []);
-
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
@@ -50,9 +46,9 @@ function Header() {
       : "bg-white text-black"
   } ${isTop ? "" : "border-b border-gray-300"}`;
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  // }, []);
 
   return (
     <header className={headerClasses}>
