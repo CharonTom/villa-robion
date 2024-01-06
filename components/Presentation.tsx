@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 function Presentation() {
   return (
@@ -27,7 +28,9 @@ function Presentation() {
         />
       </div>
       <div className="text-center py-10">
-        <Button text="Découvrer notre maison" onClick={() => {}} />
+        <Link href="/visit">
+          <Button text="Découvrer notre maison" onClick={() => {}} />
+        </Link>
       </div>
     </section>
   );

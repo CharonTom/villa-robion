@@ -50,6 +50,10 @@ function Header() {
       : "bg-white text-black"
   } ${isTop ? "" : "border-b border-gray-300"}`;
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <header className={headerClasses}>
       <div className="bg-primary-pink h-[7px] w-full z-100"></div>
