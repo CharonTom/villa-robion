@@ -25,6 +25,15 @@ export default function SliderPresentation() {
             style={{ objectFit: "cover" }}
             className="rounded-xl"
           />
+          <div className="absolute bottom-5 left-5 slide-in-from-bottom">
+            <h2 className="text-[100px]">Le jardin</h2>
+            <p className="">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+              magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias
+              sit nam commodi accusantium laboriosam quis delectus voluptate
+              architecto numquam, iure repudiandae.
+            </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <Image
@@ -34,6 +43,15 @@ export default function SliderPresentation() {
             style={{ objectFit: "cover" }}
             className="rounded-xl"
           />
+          <div className="absolute bottom-5 left-5 slide-in-from-bottom">
+            <h2 className="text-[100px]">Le jardin</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+              magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias
+              sit nam commodi accusantium laboriosam quis delectus voluptate
+              architecto numquam, iure repudiandae.
+            </p>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <Image
@@ -43,6 +61,15 @@ export default function SliderPresentation() {
             style={{ objectFit: "cover" }}
             className="rounded-xl"
           />
+          <div className="absolute bottom-5 left-5">
+            <h2 className="text-[100px]">Le jardin</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure,
+              magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias
+              sit nam commodi accusantium laboriosam quis delectus voluptate
+              architecto numquam, iure repudiandae.
+            </p>
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
