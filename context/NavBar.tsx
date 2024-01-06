@@ -19,7 +19,6 @@ export const ReservationProvider = ({
   children: React.ReactNode;
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
 
   const closePanel = () => {
     setIsOpen(false);

@@ -14,7 +14,7 @@ export default function SliderPresentation() {
         slidesPerView={"auto"}
         navigation
         pagination={{ clickable: true }}
-        // navigation={{ clickable: true }}
+        speed={500}
         modules={[Pagination, Navigation]}
       >
         <SwiperSlide>
