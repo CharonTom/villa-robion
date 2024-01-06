@@ -57,14 +57,10 @@ export default function SliderPresentation() {
               style={{ objectFit: "cover" }}
               className="rounded-xl"
             />
-            <div className="relative h-full text-white px-8 flex flex-col justify-around">
+            <div className="relative h-full text-white px-8 pt-6 flex flex-col justify-start gap-y-20">
               <h2 className="text-[100px]">{slide.title}</h2>
 
-              <div
-                className={`text-container ${
-                  currentSlide === index ? "text-show" : ""
-                }`}
-              >
+              <div className="text-container">
                 <div
                   className={`line-anim mb-8 ${
                     currentSlide === index ? "line-show" : ""
@@ -75,7 +71,7 @@ export default function SliderPresentation() {
                     currentSlide === index ? "show" : ""
                   }`}
                 >
-                  <p className="w-[40%]">{slide.content}</p>
+                  <p className="md:w-[40%]">{slide.content}</p>
                 </div>
               </div>
             </div>
