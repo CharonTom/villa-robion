@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useReservationContext } from "@/context/NavBar";
+import ReservationPanel from "./ReservationPanel";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +33,7 @@ function Header() {
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
-  const headerClasses = `fixed w-full z-20 transition-transform ${
+  const headerClasses = `fixed w-full z-50 transition-transform ${
     isOpen
       ? "translate-y-0"
       : isScrolled
@@ -52,9 +53,9 @@ function Header() {
 
   return (
     <header className={headerClasses}>
-      <div className="bg-primary-pink h-[7px] w-full z-100"></div>
+      <div className="bg-primary-pink h-[7px] w-full"></div>
       <nav className="mx-14 flex justify-between items-center p-1 h-[100px]">
-        <div className="flex-center gap-x-10">
+        <ul className="flex-center gap-x-10">
           <Link href="/">
             <Image
               src="/images/logo.png"
@@ -64,22 +65,27 @@ function Header() {
               className="rounded-full border border-2 border-primary-pink"
             />
           </Link>
-          <p
-            className="cursor-pointer hover:text-primary-pink"
-            onClick={openPanel}
-          >
-            Réserver
-          </p>
-        </div>
-        <div className="flex-center gap-x-10">
-          <Link href="/visit">Visite virtuelle</Link>
-          <Link
-            href="/contact"
-            className="bg-black px-6 py-3 rounded-full text-white"
-          >
-            Nous contacter
-          </Link>
-        </div>
+          <li>
+            <Link href="/">Accueil</Link>
+          </li>
+          <li>
+            <Link href="" onClick={openPanel}>
+              Réserver
+            </Link>
+          </li>
+        </ul>
+        <ul className="flex-center gap-x-10">
+          <li>
+            <Link href="/visit" className="">
+              Visite virtuelle
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="">
+              Nous contacter
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   );

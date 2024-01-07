@@ -13,11 +13,7 @@ function Welcome() {
         autoPlay
         loop
         muted
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
+        className="w-full h-full object-cover brightness-75"
       >
         <source src="/bgvid.mp4" type="video/mp4" />
       </video>

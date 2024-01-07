@@ -61,7 +61,7 @@ export default function SliderPresentation() {
               alt="slider"
               fill
               style={{ objectFit: "cover" }}
-              className="rounded-lg"
+              className="rounded-lg brightness-90"
             />
             <div className="relative h-full text-white px-8 pt-6 flex flex-col justify-start gap-y-20">
               <h2 className="text-[100px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
