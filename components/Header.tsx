@@ -54,7 +54,7 @@ function Header() {
     <header className={headerClasses}>
       <div className="bg-primary-pink h-[7px] w-full z-100"></div>
       <nav className="mx-14 flex justify-between items-center p-1 h-[100px]">
-        <div>
+        <div className="flex-center gap-x-10">
           <Link href="/">
             <Image
               src="/images/logo.png"
@@ -64,13 +64,21 @@ function Header() {
               className="rounded-full border border-2 border-primary-pink"
             />
           </Link>
-        </div>
-        <div className="flex-center gap-x-20">
-          <p className="cursor-pointer" onClick={openPanel}>
+          <p
+            className="cursor-pointer hover:text-primary-pink"
+            onClick={openPanel}
+          >
             Réserver
           </p>
+        </div>
+        <div className="flex-center gap-x-10">
           <Link href="/visit">Visite virtuelle</Link>
-          <Link href="/contact">Nous contacter</Link>
+          <Link
+            href="/contact"
+            className="bg-black px-6 py-3 rounded-full text-white"
+          >
+            Nous contacter
+          </Link>
         </div>
       </nav>
     </header>

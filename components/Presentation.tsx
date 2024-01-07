@@ -7,10 +7,7 @@ import SliderPresentation from "./SliderPresentation";
 function Presentation() {
   return (
     <section className="">
-      <p
-        className="p-10 container text-center mx-auto text-[40px]"
-        id="presentation"
-      >
+      <p className="p-10 container text-[40px] w-[68%]" id="presentation">
         Découvrez l&apos;élégance et le charme de notre maison nichée dans le
         parc régional du Luberon. <br />
         Cette résidence lumineuse offre une échappée paisible où le style

@@ -26,12 +26,21 @@ function Welcome() {
           Séjourner dans une villa au sein du parc régional du Luberon.
         </h1>
       </div>
-      <button
-        onClick={openPanel}
-        className="absolute bottom-10 right-10 text-white text-[36px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]"
-      >
-        Réserver votre séjour
-      </button>
+
+      <div className="absolute bottom-10 right-10">
+        <button
+          onClick={openPanel}
+          className="w-[350px] bg-white rounded-full p-3 book-button learn-more "
+        >
+          <span
+            className="circle bg-primary-pink rounded-full"
+            aria-hidden="true"
+          >
+            <span className="icon arrow"></span>
+          </span>
+          <span className="book-button-text">Réservez votre séjour</span>
+        </button>
+      </div>
 
       <Link
         smooth={true}
