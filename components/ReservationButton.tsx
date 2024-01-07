@@ -1,6 +1,10 @@
 import React from "react";
 
-function ReservationButton({ openPanel }) {
+interface ReservationButtonProps {
+  openPanel: () => void;
+}
+
+function ReservationButton({ openPanel }: ReservationButtonProps) {
   return (
     <button
       onClick={openPanel}

@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { Swiper as SwiperType } from "swiper/react"; // Import Swiper type
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,7 +13,7 @@ import { useState } from "react";
 export default function SliderPresentation() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handleSlideChange = (swiper) => {
+  const handleSlideChange = (swiper: any) => {
     setCurrentSlide(swiper.activeIndex);
   };
 
