@@ -8,7 +8,7 @@ function Presentation() {
   return (
     <section className="">
       <p
-        className="py-10 container text-center mx-auto text-[48px]"
+        className="p-10 container text-center mx-auto text-[40px]"
         id="presentation"
       >
         Découvrez l&apos;élégance et le charme de notre maison nichée dans le
@@ -17,7 +17,7 @@ function Presentation() {
         contemporain s&apos;harmonise avec le calme provençal.
       </p>
       <SliderPresentation />
-      <div className="text-center py-10">
+      <div className="text-center">
         <Link href="/visit">
           <Button text="Découvrer notre maison" onClick={() => {}} />
         </Link>
