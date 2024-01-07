@@ -2,6 +2,7 @@ import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import { useReservationContext } from "@/context/NavBar";
+import ReservationButton from "./ReservationButton";
 
 function Welcome() {
   const { openPanel } = useReservationContext();
@@ -27,19 +28,8 @@ function Welcome() {
         </h1>
       </div>
 
-      <div className="absolute bottom-10 right-10">
-        <button
-          onClick={openPanel}
-          className="w-[350px] bg-white rounded-full p-3 book-button learn-more "
-        >
-          <span
-            className="circle bg-primary-pink rounded-full"
-            aria-hidden="true"
-          >
-            <span className="icon arrow"></span>
-          </span>
-          <span className="book-button-text">Réservez votre séjour</span>
-        </button>
+      <div className="absolute bottom-10 right-20">
+        <ReservationButton openPanel={openPanel} />
       </div>
 
       <Link
