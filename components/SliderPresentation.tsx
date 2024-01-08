@@ -70,7 +70,7 @@ export default function SliderPresentation() {
                 {slide.title}
               </h2>
 
-              <div className="text-container">
+              <div>
                 <div
                   className={`line-anim mb-8 ${
                     currentSlide === index ? "line-show" : ""

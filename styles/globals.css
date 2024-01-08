@@ -13,10 +13,6 @@ body {
   font-weight: 500;
 }
 
-.body-no-scroll {
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
 }
@@ -59,9 +55,9 @@ h1 {
   @apply flex justify-center items-center;
 }
 
-/* .flex-start {
+.flex-start {
   @apply flex justify-start items-start;
-} */
+}
 
 .flex-end {
   @apply flex justify-end items-center;
@@ -71,7 +67,7 @@ h1 {
   @apply flex justify-between items-center;
 }
 
-/* ------------------------------- Animations ---------------- */
+/* ------------------------------- Animations -------------------------------------------- */
 
 @keyframes shake {
   0%,
@@ -96,12 +92,6 @@ h1 {
 
 .transition-transform {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-}
-
-.text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .swiper {
