@@ -11,6 +11,7 @@ import { data_airbnb, data_home } from "@/utils/review-data";
 import { RiStarSFill } from "react-icons/ri";
 import { NavigationOptions } from "swiper/types";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Image from "next/image";
 
 function SliderReview() {
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
@@ -26,19 +27,28 @@ function SliderReview() {
     <>
       {/* Airbnb */}
       <div className="flex h-[300px] m-4 p-4">
-        <div className="text-center md:p-20 flex-center flex-col w-1/4">
-          <div>Excellent</div>
-          <div className="flex mb-2 text-red-400 text-[30px]">
+        <div className="text-center p-10 flex-center flex-col w-1/4">
+          <div className="font-bold">Excellent</div>
+          <div className="flex text-red-400 text-[30px]">
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
           </div>
-          <div>basé sur 12 avis</div>
-          {/* <Image  /> */}
+          <div className="text-sm mt-1">
+            Basée sur <span className="font-bold">12 avis</span>
+          </div>
+          <div className="mt-4">
+            <Image
+              src="/images/airbnb.png"
+              alt="logo"
+              width={150}
+              height={100}
+            />
+          </div>
         </div>
-        <div className="slider-review w-3/4 py-4 px-4 relative ">
+        <div className="slider-review w-3/4 p-4 relative ">
           <Swiper
             grabCursor={true}
             autoplay
@@ -46,8 +56,8 @@ function SliderReview() {
             slidesPerView={"auto"}
             navigation={
               {
-                nextEl: ".swiper-button-nextu",
-                prevEl: ".swiper-button-prevu",
+                nextEl: `.swiper-button-next-airbnb`, // Utilisez une classe spécifique pour le slider Airbnb
+                prevEl: `.swiper-button-prev-airbnb`, // Utilisez une classe spécifique pour le slider Airbnb
                 clickable: true,
               } as NavigationOptions
             }
@@ -67,12 +77,12 @@ function SliderReview() {
             ))}
           </Swiper>
           <FaAngleLeft
-            className={`swiper-button-prevu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
+            className={`swiper-button-prev-airbnb -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
               isPrevDisabled ? "opacity-50 " : ""
             }`}
           />
           <FaAngleRight
-            className={`swiper-button-nextu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
+            className={`swiper-button-next-airbnb -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
               isNextDisabled ? "opacity-50 " : ""
             }`}
           />
@@ -80,17 +90,21 @@ function SliderReview() {
       </div>
       {/* HomeExchange */}
       <div className="flex h-[300px] m-4 p-4">
-        <div className="text-center md:p-20 flex-center flex-col w-1/4">
-          <div>Excellent</div>
-          <div className="flex mb-2 text-orange-500 text-[30px]">
+        <div className="text-center p-10 flex-center flex-col w-1/4">
+          <div className="font-bold">Excellent</div>
+          <div className="flex text-orange-500 text-[30px]">
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
             <RiStarSFill />
           </div>
-          <div>basé sur 8 avis</div>
-          {/* <Image  /> */}
+          <div className="text-sm mt-1">
+            Basée sur <span className="font-bold">8 avis</span>
+          </div>
+          <div className="mt-4">
+            <Image src="/images/home.png" alt="logo" width={150} height={100} />
+          </div>
         </div>
         <div className="slider-review w-3/4 py-4 px-4 relative ">
           <Swiper
@@ -100,8 +114,8 @@ function SliderReview() {
             slidesPerView={"auto"}
             navigation={
               {
-                nextEl: ".swiper-button-nextu",
-                prevEl: ".swiper-button-prevu",
+                nextEl: ".swiper-button-next-home",
+                prevEl: ".swiper-button-home",
                 clickable: true,
               } as NavigationOptions
             }
@@ -121,12 +135,12 @@ function SliderReview() {
             ))}
           </Swiper>
           <FaAngleLeft
-            className={`swiper-button-prevu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
+            className={`swiper-button-prev-home -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
               isPrevDisabled ? "opacity-50 " : ""
             }`}
           />
           <FaAngleRight
-            className={`swiper-button-nextu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
+            className={`swiper-button-next-home -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
               isNextDisabled ? "opacity-50 " : ""
             }`}
           />

@@ -4,7 +4,7 @@ import { RiStarSFill } from "react-icons/ri";
 
 function ReviewCard({ name, text, date, logo, starColor }) {
   return (
-    <div className="w-full h-[300px] bg-gray-200 rounded-lg p-4 relative">
+    <div className="w-full h-[255px] bg-gray-200 rounded-lg p-4 relative">
       <Image
         src={logo}
         alt="logo"
