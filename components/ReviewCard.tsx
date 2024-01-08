@@ -3,7 +3,7 @@ import { RiStarSFill } from "react-icons/ri";
 
 function ReviewCard() {
   return (
-    <div className="w-80 bg-gray-200 rounded-lg p-4 relative">
+    <div className=" bg-gray-200 rounded-lg p-4 relative">
       <div className="bg-red-500 h-2 w-2 absolute top-4 right-4"></div>
       <div className="flex gap-x-4 mb-2">
         <div className="h-14 w-14 rounded-full bg-red-200"></div>

@@ -53,6 +53,7 @@ export default function SliderPresentation() {
         pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
         speed={500}
         modules={[Pagination, Navigation]}
+        className="h-[80vh] w-full"
         onSlideChange={handleSlideChange}
       >
         {slidesData.map((slide, index) => (
