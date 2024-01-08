@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ReviewCard from "./ReviewCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, FreeMode } from "swiper/modules";
@@ -11,6 +13,15 @@ import { NavigationOptions } from "swiper/types";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 function SliderReview() {
+  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
+  const [isNextDisabled, setIsNextDisabled] = useState(false);
+
+  const handleSlideChange = (swiper: any) => {
+    // Mettez à jour l'état des flèches en fonction de la position actuelle du diaporama
+    setIsPrevDisabled(swiper.isBeginning);
+    setIsNextDisabled(swiper.isEnd);
+  };
+
   return (
     <div className="flex h-[300px] m-4 p-4">
       <div className="text-center md:p-20 flex-center flex-col w-1/4">
@@ -27,8 +38,8 @@ function SliderReview() {
       </div>
       <div className="slider-review w-3/4 py-4 px-4 relative ">
         <Swiper
-          // grabCursor={true}
-          // autoplay
+          grabCursor={true}
+          autoplay
           spaceBetween={20}
           slidesPerView={"auto"}
           navigation={
@@ -38,7 +49,8 @@ function SliderReview() {
               clickable: true,
             } as NavigationOptions
           }
-          modules={[Autoplay, Navigation, FreeMode]}
+          modules={[Autoplay, Navigation]}
+          onSlideChange={handleSlideChange}
         >
           <SwiperSlide className="">
             <ReviewCard />
@@ -55,11 +67,17 @@ function SliderReview() {
           <SwiperSlide className="">
             <ReviewCard />
           </SwiperSlide>
-
-          {/* <div className="swiper-button-prevu"></div> */}
         </Swiper>
-        <FaAngleLeft className="swiper-button-prevu -translate-y-1/2 z-20  text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer" />
-        <FaAngleRight className="swiper-button-nextu -translate-y-1/2 z-20  text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer" />
+        <FaAngleLeft
+          className={`swiper-button-prevu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
+            isPrevDisabled ? "opacity-50 " : ""
+          }`}
+        />
+        <FaAngleRight
+          className={`swiper-button-nextu -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
+            isNextDisabled ? "opacity-50 " : ""
+          }`}
+        />
       </div>
     </div>
   );

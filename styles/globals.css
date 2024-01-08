@@ -94,11 +94,6 @@ h1 {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
-.swiper {
-  /* width: 100%; */
-  /* height: 80vh; */
-}
-
 .slider-presentation .swiper-slide:nth-child(n) {
   width: 90%;
 }
@@ -144,20 +139,6 @@ h1 {
 .swiper-custom-pagination {
   text-align: center;
   margin-top: 10px;
-}
-
-.slider-controler {
-  /* position: relative;
-  bottom: -1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-}
-
-.swiper-button-next {
-}
-
-.swiper-button-prev {
 }
 
 /* ---------------------------------------------- BOUTON RESERVER SEJOUR---------------------------- */
