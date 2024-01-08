@@ -45,7 +45,7 @@ export default function SliderPresentation() {
   ];
 
   return (
-    <div className="p-5">
+    <div className="p-5 slider-presentation">
       <Swiper
         spaceBetween={25}
         slidesPerView={"auto"}

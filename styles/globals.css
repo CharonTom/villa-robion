@@ -99,7 +99,7 @@ h1 {
   /* height: 80vh; */
 }
 
-.swiper-slide:nth-child(n) {
+.slider-presentation .swiper-slide:nth-child(n) {
   width: 90%;
 }
 
@@ -112,6 +112,10 @@ h1 {
 }
 .swiper-button-next {
   color: #ffffff !important;
+}
+
+.slider-review .swiper-slide:nth-child(n) {
+  width: 340px;
 }
 
 .slide-in-from-top {
