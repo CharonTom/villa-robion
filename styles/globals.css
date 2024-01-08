@@ -103,14 +103,14 @@ h1 {
   width: 90%;
 }
 
-.swiper-pagination-bullet-active {
+.slider-presentation .swiper-pagination-bullet-active {
   background-color: #ff6795 !important;
 }
 
-.swiper-button-prev {
+.slider-presentation .swiper-button-prev {
   color: #ffffff !important;
 }
-.swiper-button-next {
+.slider-presentation .swiper-button-next {
   color: #ffffff !important;
 }
 
@@ -144,6 +144,20 @@ h1 {
 .swiper-custom-pagination {
   text-align: center;
   margin-top: 10px;
+}
+
+.slider-controler {
+  /* position: relative;
+  bottom: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.swiper-button-next {
+}
+
+.swiper-button-prev {
 }
 
 /* ---------------------------------------------- BOUTON RESERVER SEJOUR---------------------------- */

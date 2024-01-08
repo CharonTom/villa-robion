@@ -27,16 +27,7 @@ function SliderReview() {
       </div>
       <div className="slider-review w-3/4 py-4 px-4 relative ">
         <Swiper
-          modules={[Autoplay, Navigation, FreeMode]}
-          grabCursor={true}
-          // centeredSlides={false}
-          // breakpoints={{
-          //   0: { slidesPerView: 1 },
-          //   720: { slidesPerView: 2 },
-          //   1200: { slidesPerView: 3 },
-          //   // 0: { slidesPerView: 1 },
-          // }}
-          // freeMode={true}
+          // grabCursor={true}
           // autoplay
           spaceBetween={20}
           slidesPerView={"auto"}
@@ -47,12 +38,7 @@ function SliderReview() {
               clickable: true,
             } as NavigationOptions
           }
-          // breakpoints={{
-          //   0: { slidesPerView: 1 },
-          //   768: { slidesPerView: 2 },
-          //   // 1040: { slidesPerView: 3 },
-          //   1400: { slidesPerView: 3 },
-          // }}
+          modules={[Autoplay, Navigation, FreeMode]}
         >
           <SwiperSlide className="">
             <ReviewCard />
@@ -72,8 +58,8 @@ function SliderReview() {
 
           {/* <div className="swiper-button-prevu"></div> */}
         </Swiper>
-        <FaAngleLeft className="-translate-y-1/2 z-20 swiper-button-prevu text-[40px] text-primary-pink absolute top-1/2 -left-5" />
-        <FaAngleRight className="-translate-y-1/2 z-20 swiper-button-prevu text-[40px] text-primary-pink absolute top-[50%] -right-5" />
+        <FaAngleLeft className="swiper-button-prevu -translate-y-1/2 z-20  text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer" />
+        <FaAngleRight className="swiper-button-nextu -translate-y-1/2 z-20  text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer" />
       </div>
     </div>
   );
