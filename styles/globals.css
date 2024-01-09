@@ -96,6 +96,8 @@ h1 {
 
 /* -----------------------------------------sliders--------------------------------- */
 
+/* Slider presentation */
+
 .slider-presentation .swiper-slide:nth-child(n) {
   width: 90%;
 }
@@ -105,10 +107,11 @@ h1 {
 }
 
 .slider-presentation .swiper-button-prev {
-  color: #ffffff !important;
+  display: none;
 }
+
 .slider-presentation .swiper-button-next {
-  color: #ffffff !important;
+  display: none;
 }
 
 .slider-review .swiper-slide:nth-child(n) {
@@ -139,8 +142,7 @@ h1 {
 }
 
 .swiper-custom-pagination {
-  text-align: center;
-  margin-top: 10px;
+  /* text-align: center; */
 }
 
 .slider-region .swiper-slide:nth-child(n) {
