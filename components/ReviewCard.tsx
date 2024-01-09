@@ -3,7 +3,23 @@ import React from "react";
 import { IoIosStar } from "react-icons/io";
 import { RiStarSFill } from "react-icons/ri";
 
-function ReviewCard({ name, text, date, logo, starColor, profil }) {
+interface ReviewCardProps {
+  name: string;
+  text: string;
+  date: string;
+  logo: string;
+  starColor: string;
+  profil: string;
+}
+
+function ReviewCard({
+  name,
+  text,
+  date,
+  logo,
+  starColor,
+  profil,
+}: ReviewCardProps) {
   return (
     <div className="w-full h-[255px] bg-gray-100 rounded-lg p-6 relative">
       <Image
@@ -20,6 +36,7 @@ function ReviewCard({ name, text, date, logo, starColor, profil }) {
             src={profil}
             className="rounded-full bg-red-200"
             fill
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
             style={{ objectFit: "cover" }}
           />
         </div>

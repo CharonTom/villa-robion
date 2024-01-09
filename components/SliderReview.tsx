@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import { data_airbnb, data_home } from "@/utils/review-data";
-import { RiStarSFill } from "react-icons/ri";
 import { NavigationOptions } from "swiper/types";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
 import Image from "next/image";
@@ -40,7 +39,12 @@ function SliderReview() {
             Basée sur <span className="font-bold">12 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
-            <Image src="/images/airbnb.png" alt="logo" fill />
+            <Image
+              src="/images/airbnb.png"
+              alt="logo"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
+            />
           </div>
         </div>
         <div className="slider-review w-3/4 p-4 relative ">
@@ -99,7 +103,12 @@ function SliderReview() {
             Basée sur <span className="font-bold">8 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
-            <Image src="/images/home.png" alt="logo" fill />
+            <Image
+              src="/images/home.png"
+              alt="logo"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
+            />
           </div>
         </div>
         <div className="slider-review w-3/4 py-4 px-4 relative ">

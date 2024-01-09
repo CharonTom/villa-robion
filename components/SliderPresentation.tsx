@@ -62,6 +62,7 @@ export default function SliderPresentation() {
               src={slide.image}
               alt="slider"
               fill
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
               style={{ objectFit: "cover" }}
               className="rounded-lg brightness-90"
             />
