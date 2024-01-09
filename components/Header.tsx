@@ -54,7 +54,7 @@ function Header() {
     <header className={headerClasses}>
       <div className="bg-primary-pink h-[7px] w-full"></div>
       <nav className="mx-14 flex justify-between items-center p-1 h-[100px]">
-        <ul className="flex-center gap-x-10">
+        <ul className="flex-center gap-x-10 ">
           <Link href="/">
             <Image
               src="/images/logo.png"
@@ -64,23 +64,25 @@ function Header() {
               className="rounded-full border border-2 border-primary-pink"
             />
           </Link>
-          <li>
-            <Link href="/">Accueil</Link>
+          <li className="pink-underline">
+            <Link className="target" href="/">
+              Accueil
+            </Link>
           </li>
-          <li>
-            <Link href="" onClick={openPanel}>
+          <li className="pink-underline">
+            <Link href="" onClick={openPanel} className="target">
               Réserver
             </Link>
           </li>
         </ul>
         <ul className="flex-center gap-x-10">
-          <li>
-            <Link href="/visit" className="">
+          <li className="pink-underline">
+            <Link href="/visit" className="target">
               Visite virtuelle
             </Link>
           </li>
-          <li>
-            <Link href="/contact" className="">
+          <li className="pink-underline">
+            <Link href="/contact" className="target">
               Nous contacter
             </Link>
           </li>
