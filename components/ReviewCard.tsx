@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import { IoIosStar } from "react-icons/io";
-import { RiStarSFill } from "react-icons/ri";
 
 interface ReviewCardProps {
   name: string;

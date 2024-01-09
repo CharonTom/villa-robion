@@ -1,8 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import Button from "./Button";
 import Link from "next/link";
-import SliderPresentation from "./SliderPresentation";
+import SliderPresentation from "./sliders/SliderPresentation";
 
 function Presentation() {
   return (

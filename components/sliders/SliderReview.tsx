@@ -1,7 +1,7 @@
 "use client";
 import { IoIosStar } from "react-icons/io";
 import React, { useState } from "react";
-import ReviewCard from "./ReviewCard";
+import ReviewCard from "../ReviewCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, FreeMode } from "swiper/modules";
 import "swiper/css";

@@ -1,11 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import { useReservationContext } from "@/context/NavBar";
-import ReviewCard from "./ReviewCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { RiStarSFill } from "react-icons/ri";
-import SliderReview from "./SliderReview";
+import SliderReview from "./sliders/SliderReview";
 
 function Booking() {
   const { openPanel } = useReservationContext();

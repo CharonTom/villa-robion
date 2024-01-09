@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
 import { useReservationContext } from "@/context/NavBar";
-import ReservationPanel from "./ReservationPanel";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);

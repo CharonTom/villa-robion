@@ -1,6 +1,5 @@
 "use client";
 
-// Importez le composant d'icône que vous utilisez (par exemple, FaTimes pour Font Awesome)
 import { useReservationContext } from "@/context/NavBar";
 import Image from "next/image";
 import Link from "next/link";
