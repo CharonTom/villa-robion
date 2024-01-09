@@ -22,7 +22,7 @@ function Booking() {
       {/* Avis Home Exchange */}
       {/* <SliderReview /> */}
 
-      <div className="text-center py-10">
+      <div className="text-center">
         <Button onClick={openPanel} text="Faites votre réservation" />
       </div>
     </section>

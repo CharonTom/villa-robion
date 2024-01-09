@@ -21,6 +21,8 @@ const config: Config = {
       },
       colors: {
         "primary-pink": "#FF6795",
+        "home-orange": "#EFA301",
+        "airbnb-red": "#FF5A5F",
       },
     },
   },

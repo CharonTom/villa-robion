@@ -1,30 +1,39 @@
 import Image from "next/image";
 import React from "react";
+import { IoIosStar } from "react-icons/io";
 import { RiStarSFill } from "react-icons/ri";
 
-function ReviewCard({ name, text, date, logo, starColor }) {
+function ReviewCard({ name, text, date, logo, starColor, profil }) {
   return (
-    <div className="w-full h-[255px] bg-gray-200 rounded-lg p-4 relative">
+    <div className="w-full h-[255px] bg-gray-100 rounded-lg p-6 relative">
       <Image
         src={logo}
         alt="logo"
-        width={25}
-        height={25}
-        className="absolute top-4 right-4 rounded-lg"
+        width={20}
+        height={20}
+        className="absolute top-6 right-6 rounded-lg"
       />
       <div className="flex gap-x-4 mb-2">
-        <div className="h-14 w-14 rounded-full bg-red-200"></div>
+        <div className="h-12 w-12 relative">
+          <Image
+            alt="profil"
+            src={profil}
+            className="rounded-full bg-red-200"
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        </div>
         <div>
-          <div>{name}</div>
-          <div className="text-sm">{date}</div>
+          <div className="text-base font-bold">{name}</div>
+          <div className="text-xs text-gray-500">{date}</div>
         </div>
       </div>
-      <div className="flex mb-2">
-        <RiStarSFill style={{ color: starColor }} />
-        <RiStarSFill style={{ color: starColor }} />
-        <RiStarSFill style={{ color: starColor }} />
-        <RiStarSFill style={{ color: starColor }} />
-        <RiStarSFill style={{ color: starColor }} />
+      <div className="flex mb-2 text-base">
+        <IoIosStar style={{ color: starColor }} />
+        <IoIosStar style={{ color: starColor }} />
+        <IoIosStar style={{ color: starColor }} />
+        <IoIosStar style={{ color: starColor }} />
+        <IoIosStar style={{ color: starColor }} />
       </div>
       <div className="">
         <p className="text-xs">{text}</p>
