@@ -94,6 +94,8 @@ h1 {
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
+/* -----------------------------------------sliders--------------------------------- */
+
 .slider-presentation .swiper-slide:nth-child(n) {
   width: 90%;
 }
@@ -139,6 +141,10 @@ h1 {
 .swiper-custom-pagination {
   text-align: center;
   margin-top: 10px;
+}
+
+.slider-region .swiper-slide:nth-child(n) {
+  width: 36%;
 }
 
 /* ---------------------------------------------- BOUTON RESERVER SEJOUR---------------------------- */
