@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button";
 import Link from "next/link";
-import SliderPresentation from "./sliders/SliderPresentation";
+import SliderPresentation from "../sliders/SliderPresentation";
 
 function Presentation() {
   return (
-    <section>
+    <section id="presentation">
       <div className="flex-between p-20 container">
         <div className="w-[55%]">
-          <p className="text-[40px]" id="presentation">
+          <p className="text-[40px]">
             Découvrez l&apos;élégance et le charme de notre maison nichée dans
             le parc régional du Luberon.
           </p>
@@ -22,7 +22,7 @@ function Presentation() {
       <SliderPresentation />
       <div className="text-center">
         <Link href="/visit">
-          <Button text="Découvrer notre maison" onClick={() => {}} />
+          <Button text="Découvrez notre maison" onClick={() => {}} />
         </Link>
       </div>
     </section>

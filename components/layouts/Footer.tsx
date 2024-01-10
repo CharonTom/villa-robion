@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="container mx-auto">
+    <footer className="container mx-auto">
       <div className="text-center text-[32px] p-10 w-[80%] mx-auto">
         <p className="py-8">
           Besoin d’informations supplémentaires ? N&apos;hésitez pas à me
@@ -29,7 +29,7 @@ function Footer() {
               <li className="">Accueil</li>
               <li>Réserver</li>
               <li>Visite Virtuelle</li>
-              <li>Nous Contacter</li>
+              <li>Contactez-nous</li>
             </ul>
           </nav>
           <div>
@@ -45,7 +45,7 @@ function Footer() {
       <div className="p-8 text-center text-gray-500">
         © 2023 Site handcrafted by Tom Charon. All rights reserved
       </div>
-    </div>
+    </footer>
   );
 }
 

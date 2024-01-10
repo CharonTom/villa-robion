@@ -83,7 +83,7 @@ function Header() {
           </li>
           <li className="pink-underline">
             <Link href="/contact" className="target">
-              Nous contacter
+              Contactez-nous !
             </Link>
           </li>
         </ul>

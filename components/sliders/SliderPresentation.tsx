@@ -64,6 +64,7 @@ export default function SliderPresentation() {
         onSwiper={setSwiperRef}
         spaceBetween={25}
         slidesPerView={"auto"}
+        grabCursor={true}
         navigation
         pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
         speed={500}

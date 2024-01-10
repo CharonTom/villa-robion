@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { ReservationProvider } from "@/context/NavBar";
 import { DM_Sans } from "next/font/google";
-import Header from "@/components/Header";
-import ReservationPanel from "@/components/ReservationPanel";
-import Footer from "@/components/Footer";
+import Header from "@/components/layouts/Header";
+import ReservationPanel from "@/components/layouts/ReservationPanel";
+import Footer from "@/components/layouts/Footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 

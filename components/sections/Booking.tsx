@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Button";
 import { useReservationContext } from "@/context/NavBar";
-import SliderReview from "./sliders/SliderReview";
+import SliderReview from "../sliders/SliderReview";
 
 function Booking() {
   const { openPanel } = useReservationContext();

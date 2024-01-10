@@ -1,5 +1,5 @@
 import React from "react";
-import SliderRegion from "./sliders/SliderRegion";
+import SliderRegion from "../sliders/SliderRegion";
 
 function Around() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import Map from "./Map";
+import Map from "../Map";
 
 function Localisation() {
   return (
-    <div className="bg-gray-200 p-16">
+    <section className="bg-gray-200 p-16">
       <div className="flex-center">
         <div className="w-1/2">
           <h2 className="text-[50px] mb-8">Localisation</h2>
@@ -20,7 +20,7 @@ function Localisation() {
           <Map />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
