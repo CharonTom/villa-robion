@@ -6,6 +6,7 @@ import Welcome from "@/components/Welcome";
 import Around from "@/components/Around";
 import Booking from "@/components/Booking";
 import Presentation from "@/components/Presentation";
+import Localisation from "@/components/Localisation";
 
 export default function Home() {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function Home() {
       <Presentation />
       <Booking />
       <Around />
+      <Localisation />
     </main>
   );
 }
