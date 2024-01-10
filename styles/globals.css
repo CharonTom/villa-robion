@@ -66,6 +66,9 @@ h1 {
 .flex-between {
   @apply flex justify-between items-center;
 }
+.flex-around {
+  @apply flex justify-around items-center;
+}
 
 /* ------------------------------- Animations -------------------------------------------- */
 

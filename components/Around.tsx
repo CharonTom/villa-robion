@@ -8,7 +8,7 @@ function Around() {
         Ce que vous allez adorer dans la région
       </h2>
       <SliderRegion />
-      <p className="text-center p-10">
+      <p className="text-center p-10 text-[36px]">
         De plus, une piste cyclable se situe à 100 mètre de la maison qui vous
         amène jusqu&apos;à Apt et au delà. Et de l&apos;autre coté jusqu&apos;à
         Cavaillon

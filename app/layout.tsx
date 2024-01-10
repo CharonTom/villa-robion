@@ -4,6 +4,7 @@ import { ReservationProvider } from "@/context/NavBar";
 import { DM_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import ReservationPanel from "@/components/ReservationPanel";
+import Footer from "@/components/Footer";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           {children}
           <ReservationPanel />
+          <Footer />
         </ReservationProvider>
       </body>
     </html>
