@@ -1,7 +1,9 @@
-import Image from "next/image";
 import React from "react";
+import Logo from "../Logo";
+import { useReservationContext } from "@/context/NavBar";
 
 function Footer() {
+  const { openPanel } = useReservationContext();
   return (
     <footer className="">
       <div className="text-center text-[32px] p-10 w-[80%] mx-auto">
@@ -17,18 +19,16 @@ function Footer() {
       {/* Links & Copyrights */}
 
       <div className="flex py-4 ml-32">
-        <div className="flex justify-start items-center gap-x-8">
-          <div className="bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
-            <Image
-              src="/images/logotest2.png"
-              fill
-              objectFit="contain"
-              alt="logo"
-            />
+        <div className="flex-col">
+          <div className="flex justify-start items-start gap-x-8">
+            <div className="bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
+              <Logo />
+            </div>
+            <p className="w-[40%]">
+              Séjourner dans une villa au sein du parc régional du Luberon.
+            </p>
           </div>
-          <p className="w-[40%]">
-            Séjourner dans une villa au sein du parc régional du Luberon.
-          </p>
+          <div className="border-2 border-black"></div>
         </div>
         <div className="flex justify-center p-4 gap-x-16">
           <nav>

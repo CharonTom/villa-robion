@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useReservationContext } from "@/context/NavBar";
+import Logo from "../Logo";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -59,13 +60,7 @@ function Header() {
           className="relative border-2 border-primary-pink rounded-full mr-16"
         >
           <div className="w-20 h-20">
-            <Image
-              src="/images/logotest2.png"
-              alt="logotest2"
-              objectFit="contain"
-              fill
-              className=""
-            />
+            <Logo />
           </div>
         </Link>
 

@@ -19,12 +19,7 @@ function Presentation() {
           </p>
         </div>
         <div className="relative w-[500px] h-[400px] bg-primary-pink rounded-xl">
-          <Image
-            alt="maison"
-            src="/images/logotest2.png"
-            fill
-            objectFit="contain"
-          />
+          <Image alt="maison" src="/images/logo.png" fill objectFit="contain" />
         </div>
       </div>
       <SliderPresentation />
