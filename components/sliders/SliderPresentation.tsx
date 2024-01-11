@@ -81,6 +81,7 @@ export default function SliderPresentation() {
               // sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
               style={{ objectFit: "cover" }}
               className="rounded-lg brightness-90"
+              unoptimized={true}
             />
             <div className="relative h-full text-white px-8 pt-6 flex flex-col justify-start gap-y-20">
               <h2 className="text-[100px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">

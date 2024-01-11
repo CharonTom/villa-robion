@@ -4,10 +4,11 @@ import React from "react";
 function Logo() {
   return (
     <Image
-      src="/images/logo.png"
+      src="/images/logotest.png"
       fill
       style={{ objectFit: "contain" }}
       alt="logo"
+      unoptimized={true}
     />
   );
 }

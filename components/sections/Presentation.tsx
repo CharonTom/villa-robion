@@ -19,7 +19,14 @@ function Presentation() {
           </p>
         </div>
         <div className="relative w-[500px] h-[400px] bg-primary-pink rounded-xl">
-          <Image alt="maison" src="/images/logo.png" fill objectFit="contain" />
+          <Image
+            alt="maison"
+            src="/images/jardin-int.jpg"
+            fill
+            style={{ objectFit: "cover" }}
+            className="rounded-xl p-2"
+            unoptimized={true}
+          />
         </div>
       </div>
       <SliderPresentation />

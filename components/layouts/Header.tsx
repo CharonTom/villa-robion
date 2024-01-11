@@ -57,9 +57,9 @@ function Header() {
       <nav className="flex-between mx-14 h-[100px]">
         <Link
           href="/"
-          className="relative border-2 border-primary-pink rounded-full mr-16"
+          className="border-2 border-primary-pink rounded-full mr-16 overflow-hidden"
         >
-          <div className="w-20 h-20">
+          <div className="relative h-20 w-20">
             <Logo />
           </div>
         </Link>

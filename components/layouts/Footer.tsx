@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex-col">
           <div className="flex justify-start items-center gap-x-6 relative">
             <Link href="/">
-              <div className="bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
+              <div className="overflow-hidden bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
                 <Logo />
               </div>
             </Link>
