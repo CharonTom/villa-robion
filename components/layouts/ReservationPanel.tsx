@@ -25,20 +25,19 @@ const ReservationPanel = () => {
         <div className="p-8">
           <div className="text-[35px] mb-4">Faites votre réservation !</div>
 
-          <div className="h-[250px] gap-x-10 flex overflow-hidden">
-            <div className="w-1/4 h-full py-6">
-              <p className="w-[100%]  text-sm md:text-base lg:text-xl">
+          <div className="flex flex-col lg:flex-row gap-x-10">
+            <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+              <p className="text-base lg:text-xl py-6">
                 Vous avez la possibilité de louer ou bien faire un échange de
                 maison. Réservez dès maintenant pour vivre une expérience
                 authentique et chaleureuse dans notre maison. Bienvenue chez
                 nous!
               </p>
             </div>
-            <div className="flex flex-col w-1/2 h-full">
-              {/* links */}
-              <div className="flex gap-4 h-full">
+            <div className="flex flex-col w-full lg:w-1/2">
+              <div className="flex gap-4">
                 <Link href="https://www.airbnb.fr/" className="w-1/2">
-                  <div className="relative h-[85%]   ">
+                  <div className="relative h-60  ">
                     <Image
                       alt="airbnb"
                       src="/images/airbnb_image.jpg"
@@ -51,7 +50,7 @@ const ReservationPanel = () => {
                   <div className="text-base mt-2">Louer avec Airbnb</div>
                 </Link>
                 <Link href="https://www.homeexchange.fr/" className="w-1/2">
-                  <div className="relative h-[85%] ">
+                  <div className="relative h-60 ">
                     <Image
                       alt="airbnb"
                       src="/images/homeExchange_image.jpg"
@@ -67,10 +66,8 @@ const ReservationPanel = () => {
                 </Link>
               </div>
             </div>
-            {/* text */}
           </div>
         </div>
-        {/* close */}
         <button
           onClick={closePanel}
           className="absolute bottom-4 right-4 text-gray-500 hover:text-gray-700"

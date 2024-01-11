@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../Button";
 import Link from "next/link";
 import SliderPresentation from "../sliders/SliderPresentation";
+import Image from "next/image";
 
 function Presentation() {
   return (
@@ -17,7 +18,14 @@ function Presentation() {
             contemporain s&apos;harmonise avec le calme provençal.
           </p>
         </div>
-        <div className="w-[500px] h-[400px] bg-primary-pink rounded-xl"></div>
+        <div className="relative w-[500px] h-[400px] bg-primary-pink rounded-xl">
+          <Image
+            alt="maison"
+            src="/images/logotest2.png"
+            fill
+            objectFit="contain"
+          />
+        </div>
       </div>
       <SliderPresentation />
       <div className="text-center">
