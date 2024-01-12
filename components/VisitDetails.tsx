@@ -1,6 +1,5 @@
 import React from "react";
 import SliderVisit from "./sliders/SliderVisit";
-import SliderJardin from "./sliders/SliderJardin";
 
 function VisitDetails({ images, text }) {
   return (
