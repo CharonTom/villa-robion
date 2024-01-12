@@ -1,5 +1,5 @@
 import React from "react";
-import SliderRegion from "../sliders/SliderRegion";
+import SliderArea from "../sliders/SliderArea";
 
 function Around() {
   return (
@@ -7,7 +7,7 @@ function Around() {
       <h2 className="text-center text-[40px] p-10">
         Ce que vous allez adorer dans la région
       </h2>
-      <SliderRegion />
+      <SliderArea />
       <p className="text-center p-10 text-[36px]">
         De plus, une piste cyclable se situe à 100 mètre de la maison qui vous
         amène jusqu&apos;à Apt et au delà. Et de l&apos;autre coté jusqu&apos;à

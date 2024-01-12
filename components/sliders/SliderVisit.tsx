@@ -7,7 +7,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 function SliderVisit({ images }: { images: string[] }) {
   return (
     <div>
-      <Swiper className="w-[80%] h-[400px] rounded-xl">
+      <Swiper
+        spaceBetween={15}
+        className="w-[80%] h-[400px] rounded-xl bg-black"
+      >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
             <div className="flex-center h-full w-full">

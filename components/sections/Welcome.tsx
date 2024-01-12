@@ -1,7 +1,7 @@
 import React from "react";
 import { useReservationContext } from "@/context/NavBar";
 import ReservationButton from "../ReservationButton";
-import Scrolldown from "../Scroll-down";
+import ScrollDown from "../ScrollDown";
 
 function Welcome() {
   const { openPanel } = useReservationContext();
@@ -27,7 +27,7 @@ function Welcome() {
         <ReservationButton openPanel={openPanel} />
       </div>
 
-      <Scrolldown />
+      <ScrollDown />
     </section>
   );
 }

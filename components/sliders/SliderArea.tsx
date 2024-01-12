@@ -9,31 +9,31 @@ import "swiper/css/navigation";
 
 const slidesData = [
   {
-    image: "/images/RegionSlider/gordes.jpg",
+    image: "/images/AreaSlider/gordes.jpg",
     title: "Le parc régional du Luberon et ses nombreux villages classés",
     localisation: "Gordes, 14 km",
   },
   {
-    image: "/images/RegionSlider/isle.jpg",
+    image: "/images/AreaSlider/isle.jpg",
     title:
       "Les roues à eau de l'Isle sur Sorgue, son marché, son usine de tapenade...",
     localisation: "L'Isle-sur-la-sorgue, 9 km",
   },
   {
-    image: "/images/RegionSlider/avignon.jpg",
+    image: "/images/AreaSlider/avignon.jpg",
     title: "Le Palais des papes d'Avignon, ses places, ses restaurants...",
     localisation: "Avignon, 29 km",
   },
   {
-    image: "/images/RegionSlider/colorado-provencal.jpg",
+    image: "/images/AreaSlider/colorado-provencal.jpg",
     title: 'Le pays d\'Apt et son "Colorado Provençal"',
     localisation: "Rustrel, 39 km",
   },
 ];
 
-function SliderRegion() {
+function SliderArea() {
   return (
-    <div className="slider-region w-full p-4">
+    <div className="slider-area w-full p-4">
       <Swiper
         autoplay
         spaceBetween={15}
@@ -68,4 +68,4 @@ function SliderRegion() {
   );
 }
 
-export default SliderRegion;
+export default SliderArea;

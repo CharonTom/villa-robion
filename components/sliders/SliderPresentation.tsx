@@ -15,7 +15,7 @@ const slidesData = [
     image: "/images/PresentationSlider/jardin.jpg",
     title: "Le Jardin",
     content:
-      "Profitez du jardin avec pisicine, Table de ping-pong, plancha, paillote exotique",
+      "Bienvenue dans notre jardin, un coin de verdure où se mêlent simplicité et convivialité. Vous y trouverez la pisicne, la table de ping-pong, une plancha, des transats. Une paillote exotique et des salons de jardins et des transats forment des petits recoins propice à la détente.",
   },
   {
     image: "/images/PresentationSlider/chambre.jpg",

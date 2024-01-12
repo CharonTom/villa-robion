@@ -148,7 +148,7 @@ h1 {
   /* text-align: center; */
 }
 
-.slider-region .swiper-slide:nth-child(n) {
+.slider-area .swiper-slide:nth-child(n) {
   width: 36%;
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
-function Scrolldown() {
+function ScrollDown() {
   return (
     <>
       <Link
@@ -20,4 +20,4 @@ function Scrolldown() {
   );
 }
 
-export default Scrolldown;
+export default ScrollDown;
