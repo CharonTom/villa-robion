@@ -1,7 +1,12 @@
 import React from "react";
 import SliderVisit from "./sliders/SliderVisit";
 
-function VisitDetails({ images, text }) {
+interface VisitDetailsProps {
+  images: string[];
+  text: string;
+}
+
+function VisitDetails({ images, text }: VisitDetailsProps) {
   return (
     <>
       <div className="w-1/2">
