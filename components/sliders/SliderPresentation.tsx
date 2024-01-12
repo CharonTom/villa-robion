@@ -7,7 +7,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const slidesData = [
@@ -15,25 +15,25 @@ const slidesData = [
     image: "/images/PresentationSlider/jardin.jpg",
     title: "Le Jardin",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias sit nam commodi accusantium laboriosam quis delectus voluptate architecto numquam, iure repudiandae.",
+      "Profitez du jardin avec pisicine, Table de ping-pong, plancha, paillote exotique",
   },
   {
     image: "/images/PresentationSlider/chambre.jpg",
     title: "Les Chambres",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias sit nam commodi accusantium laboriosam quis delectus voluptate architecto numquam, iure repudiandae.",
+      "Notre maison possède 3 chambres, chacune avec leurs spécificitées",
   },
   {
     image: "/images/PresentationSlider/salon.jpg",
     title: "Les Salons",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias sit nam commodi accusantium laboriosam quis delectus voluptate architecto numquam, iure repudiandae.",
+      "Plusieurs pièces de vie s'offrent à vous : un salon au rez-de-chaussez et un second à l'étage.",
   },
   {
     image: "/images/PresentationSlider/bain.jpg",
     title: "Les salles de bains",
     content:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, magni maiores! Corrupti, eos quibusdam? Laborum pariatur est alias sit nam commodi accusantium laboriosam quis delectus voluptate architecto numquam, iure repudiandae.",
+      "La maison possède 2 salles de bain. une privative accessible depuis la chambre du rez de chaussez, et une seconde à l'étage.",
   },
 ];
 

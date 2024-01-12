@@ -24,7 +24,7 @@ function Presentation() {
             src="/images/jardin-int.jpg"
             fill
             style={{ objectFit: "cover" }}
-            className="rounded-xl p-2"
+            className="rounded-xl p-1"
             unoptimized={true}
           />
         </div>
