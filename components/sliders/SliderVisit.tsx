@@ -1,10 +1,10 @@
-// SliderVisit.jsx
+"use client";
 
 import Image from "next/image";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-function SliderVisit({ images }) {
+function SliderVisit({ images }: { images: string[] }) {
   return (
     <div>
       <Swiper className="w-[80%] h-[400px] rounded-xl">
