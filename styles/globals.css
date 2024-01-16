@@ -207,3 +207,21 @@ h1 {
 .book-button:hover .book-button-text {
   color: white;
 }
+
+.thumbs .swiper-slide {
+  filter: brightness(25%);
+}
+
+.thumbs .swiper-slide-thumb-active {
+  filter: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgb(255, 103, 149, 0.8);
+  right: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  color: #ffffff !important;
+}
