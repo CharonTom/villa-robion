@@ -8,9 +8,9 @@ function VisitVideo() {
           className="h-full w-full rounded-xl"
           src="https://www.youtube.com/embed/xAbgeOZvD1M?si=DYQT1w0wN0je_TYl"
           title="YouTube video player"
-          frameorder="0"
+          // frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </section>

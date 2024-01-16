@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, SwiperClass } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+//import SwiperClass from "swiper/types/swiper-class";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -11,7 +12,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 function SliderVisit({ images }: { images: string[] }) {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass>();
 
   return (
     <div>
