@@ -10,7 +10,7 @@ function Footer() {
   const { openPanel } = useReservationContext();
   return (
     <footer className="">
-      <div className="text-center text-[32px] p-10 w-[80%] mx-auto">
+      <div className="text-center text-[34px] p-10 w-[80%] mx-auto">
         <p className="py-8">
           Besoin d’informations supplémentaires ? N&apos;hésitez pas à me
           contacter si vous avez la moindre question ou demande.
@@ -39,25 +39,48 @@ function Footer() {
           </div>
         </div>
         <div className="flex justify-center p-4 gap-x-20">
-          <nav>
-            <h3 className="mb-2">Liens :</h3>
+          <nav className="links-list">
+            <h3 className="mb-2">Liens</h3>
             <ul className="text-gray-500">
-              <li>Contactez-nous</li>
-              <li>Visite Virtuelle</li>
-              <li>Réserver</li>
-              <li className="">Accueil</li>
+              <Link href="/contact">
+                <li> Contactez-nous</li>
+              </Link>
+              <Link href="/visit">
+                <li>Visite Virtuelle</li>
+              </Link>
+              <li>
+                <button onClick={openPanel}>Réserver</button>
+              </li>
+              <Link href="/">
+                <li>Accueil</li>
+              </Link>
             </ul>
           </nav>
-          <div>
-            <h3 className="mb-2">Contacts :</h3>
-            <div className="text-gray-500">
-              <div>Nathalie Simon : 06.12.1254.54</div>
-              <div>Lionel Charon : 06.12.1254.54</div>
-              <div>adressmai@uiu.com</div>
-              <div>adressmai@dd.com</div>
-              <div>84440 Robion, France</div>
-            </div>
-          </div>
+          <nav className="links-list">
+            <h3 className="mb-2">Contacts</h3>
+            <ul className="text-gray-500">
+              <li>
+                <Link href="tel:+33621042123">
+                  <div>Nathalie Simon : 06.12.54.54</div>
+                </Link>
+              </li>
+              <li>
+                <Link href="tel:+33621042123">
+                  <div>Lionel Charon : 06.12.14.54</div>
+                </Link>
+              </li>
+              <li>
+                <Link href="mailto:charon.s.tom@gmail.com">
+                  <div>adressmai@uiu.com</div>
+                </Link>
+              </li>
+              <li>
+                <Link href="mailto:charon.s.tom@gmail.com">
+                  <div>adressmai@dd.com</div>
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div className="mt-16 p-6 text-center text-gray-500">

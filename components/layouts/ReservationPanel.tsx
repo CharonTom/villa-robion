@@ -36,7 +36,12 @@ const ReservationPanel = () => {
             </div>
             <div className="flex flex-col w-full lg:w-1/2">
               <div className="flex gap-4">
-                <Link href="https://www.airbnb.fr/" className="w-1/2">
+                <Link
+                  href="https://www.airbnb.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2"
+                >
                   <div className="relative h-60 overflow-hidden group">
                     <Image
                       alt="airbnb"
@@ -50,7 +55,12 @@ const ReservationPanel = () => {
                   </div>
                   <div className="text-base mt-2">Louer avec Airbnb</div>
                 </Link>
-                <Link href="https://www.airbnb.fr/" className="w-1/2">
+                <Link
+                  href="https://www.airbnb.fr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-1/2"
+                >
                   <div className="relative h-60 overflow-hidden group">
                     <Image
                       alt="airbnb"

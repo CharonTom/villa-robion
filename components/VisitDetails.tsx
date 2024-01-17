@@ -13,7 +13,7 @@ function VisitDetails({ images, text }: VisitDetailsProps) {
         <SliderVisit images={images} />
       </div>
       <div className="w-1/2">
-        <p className="text-[80%]">{text}</p>
+        <p className="">{text}</p>
       </div>
     </>
   );

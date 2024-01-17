@@ -7,15 +7,11 @@ import Image from "next/image";
 function Presentation() {
   return (
     <section id="presentation">
-      <div className="flex-between p-20 container">
+      <div className="flex-between px-20 mt-10 container">
         <div className="w-[55%]">
-          <p className="text-[40px]">
+          <p className="text-[48px]">
             Découvrez l&apos;élégance et le charme de notre maison nichée dans
             le parc régional du Luberon.
-          </p>
-          <p className="text-[32px]">
-            Cette résidence lumineuse offre une échappée paisible où le style
-            contemporain s&apos;harmonise avec le calme provençal.
           </p>
         </div>
         <div className="relative w-[500px] h-[400px] bg-primary-pink rounded-xl">
@@ -29,6 +25,10 @@ function Presentation() {
           />
         </div>
       </div>
+      <p className="text-[34px] text-center p-10">
+        Cette résidence lumineuse offre une échappée paisible où le style
+        contemporain s&apos;harmonise avec le calme provençal.
+      </p>
       <SliderPresentation />
       <div className="text-center">
         <Link href="/visit">
