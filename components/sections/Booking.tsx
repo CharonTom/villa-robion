@@ -15,10 +15,8 @@ function Booking() {
         maintenant pour vivre une expérience authentique et chaleureuse dans
         notre maison. Bienvenue chez nous !
       </p>
-      {/* Avis Airbnb */}
+
       <SliderReview />
-      {/* Avis Home Exchange */}
-      {/* <SliderReview /> */}
 
       <div className="text-center">
         <Button onClick={openPanel} text="Faites votre réservation" />

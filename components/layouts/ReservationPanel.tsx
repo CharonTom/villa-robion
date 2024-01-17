@@ -36,7 +36,7 @@ const ReservationPanel = () => {
             </div>
             <div className="flex flex-col w-full lg:w-1/2">
               <div className="flex gap-4">
-                <Link
+                <a
                   href="https://www.airbnb.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -54,8 +54,8 @@ const ReservationPanel = () => {
                     <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                   </div>
                   <div className="text-base mt-2">Louer avec Airbnb</div>
-                </Link>
-                <Link
+                </a>
+                <a
                   href="https://www.airbnb.fr/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const ReservationPanel = () => {
                     <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                   </div>
                   <div className="text-base mt-2">Louer avec Airbnb</div>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -55,13 +55,15 @@ function Header() {
     <header className={headerClasses}>
       <div className="bg-primary-pink h-[7px] w-full"></div>
       <nav className="flex-between mx-14 h-[100px]">
-        <Link
-          href="/"
-          className="border-2 border-primary-pink rounded-full mr-16 overflow-hidden"
-        >
-          <div className="relative h-20 w-20">
+        <Link href="/" className="flex-center gap-x-2">
+          <div className="overflow-hidden bg-white h-20 w-20 rounded-full relative border-2 border-primary-pink">
             <Logo />
           </div>
+          <p className="text-base">
+            La maison
+            <br />
+            de Nath & Lio
+          </p>
         </Link>
 
         <ul className="flex-center gap-x-16">

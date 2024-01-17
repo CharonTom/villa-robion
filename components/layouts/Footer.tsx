@@ -22,17 +22,19 @@ function Footer() {
 
       {/* Links & Copyrights */}
 
-      <div className="flex py-4 ml-32">
+      <div className="flex py-4 justify-around">
         <div className="flex-col">
-          <div className="flex justify-start items-center gap-x-6 relative">
-            <Link href="/">
+          <div className="flex justify-start items-center gap-x-4 relative">
+            <Link href="/" className="flex-center gap-x-4">
               <div className="overflow-hidden bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
                 <Logo />
               </div>
+              <p className="text-xl">
+                La maison
+                <br />
+                de Nath & Lio.
+              </p>
             </Link>
-            <p className="w-[40%]">
-              Séjourner dans une villa au sein du parc régional du Luberon.
-            </p>
           </div>
           <div className="absolute mt-10 ml-3">
             <ReservationButton openPanel={openPanel} />
@@ -60,23 +62,23 @@ function Footer() {
             <h3 className="mb-2">Contacts</h3>
             <ul className="text-gray-500">
               <li>
-                <Link href="tel:+33621042123">
-                  <div>Nathalie Simon : 06.12.54.54</div>
-                </Link>
+                <a href="tel:+33621042123">
+                  <div>Lionel : 06.12.14.54</div>
+                </a>
               </li>
               <li>
-                <Link href="tel:+33621042123">
-                  <div>Lionel Charon : 06.12.14.54</div>
-                </Link>
+                <a href="tel:+33621042123">
+                  <div>Nathalie : 06.12.54.54</div>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:charon.s.tom@gmail.com">
+                  <div>nathrobion@gmail.com</div>
+                </a>
               </li>
               <li>
                 <Link href="mailto:charon.s.tom@gmail.com">
-                  <div>adressmai@uiu.com</div>
-                </Link>
-              </li>
-              <li>
-                <Link href="mailto:charon.s.tom@gmail.com">
-                  <div>adressmai@dd.com</div>
+                  <div>lnrobion@gmail.com</div>
                 </Link>
               </li>
             </ul>
@@ -84,7 +86,17 @@ function Footer() {
         </div>
       </div>
       <div className="mt-16 p-6 text-center text-gray-500">
-        © 2023 Site handcrafted by Tom Charon. All rights reserved
+        © 2023 Site fully handcrafted by
+        <a
+          href="https://tom-website-six.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary-pink"
+        >
+          {" "}
+          Tom Charon.
+        </a>{" "}
+        All rights reserved
       </div>
     </footer>
   );

@@ -13,13 +13,20 @@ import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
 import Image from "next/image";
 
 function SliderReview() {
-  const [isPrevDisabled, setIsPrevDisabled] = useState(true);
-  const [isNextDisabled, setIsNextDisabled] = useState(false);
+  const [isPrevDisabledAirbnb, setIsPrevDisabledAirbnb] = useState(true);
+  const [isNextDisabledAirbnb, setIsNextDisabledAirbnb] = useState(false);
 
-  const handleSlideChange = (swiper: any) => {
-    // Mettez à jour l'état des flèches en fonction de la position actuelle du diaporama
-    setIsPrevDisabled(swiper.isBeginning);
-    setIsNextDisabled(swiper.isEnd);
+  const [isPrevDisabledHome, setIsPrevDisabledHome] = useState(true);
+  const [isNextDisabledHome, setIsNextDisabledHome] = useState(false);
+
+  const handleSlideChangeAirbnb = (swiper: any) => {
+    setIsPrevDisabledAirbnb(swiper.isBeginning);
+    setIsNextDisabledAirbnb(swiper.isEnd);
+  };
+
+  const handleSlideChangeHome = (swiper: any) => {
+    setIsPrevDisabledHome(swiper.isBeginning);
+    setIsNextDisabledHome(swiper.isEnd);
   };
 
   return (
@@ -61,7 +68,7 @@ function SliderReview() {
               } as NavigationOptions
             }
             modules={[Autoplay, Navigation]}
-            onSlideChange={handleSlideChange}
+            onSlideChange={handleSlideChangeAirbnb}
           >
             {data_airbnb.map((data, index) => (
               <SwiperSlide key={index}>
@@ -78,12 +85,12 @@ function SliderReview() {
           </Swiper>
           <FaAngleLeft
             className={`swiper-button-prev-airbnb -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
-              isPrevDisabled ? "opacity-50 " : ""
+              isPrevDisabledAirbnb ? "opacity-50 " : ""
             }`}
           />
           <FaAngleRight
             className={`swiper-button-next-airbnb -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
-              isNextDisabled ? "opacity-50 " : ""
+              isNextDisabledAirbnb ? "opacity-50 " : ""
             }`}
           />
         </div>
@@ -120,12 +127,12 @@ function SliderReview() {
             navigation={
               {
                 nextEl: ".swiper-button-next-home",
-                prevEl: ".swiper-button-home",
+                prevEl: ".swiper-button-prev-home",
                 clickable: true,
               } as NavigationOptions
             }
             modules={[Autoplay, Navigation]}
-            onSlideChange={handleSlideChange}
+            onSlideChange={handleSlideChangeHome}
           >
             {data_home.map((data, index) => (
               <SwiperSlide key={index}>
@@ -142,12 +149,12 @@ function SliderReview() {
           </Swiper>
           <FaAngleLeft
             className={`swiper-button-prev-home -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-1/2 -left-5 cursor-pointer ${
-              isPrevDisabled ? "opacity-50 " : ""
+              isPrevDisabledHome ? "opacity-50 " : ""
             }`}
           />
           <FaAngleRight
             className={`swiper-button-next-home -translate-y-1/2 z-20 text-[40px] text-primary-pink absolute top-[50%] -right-5 cursor-pointer ${
-              isNextDisabled ? "opacity-50 " : ""
+              isNextDisabledHome ? "opacity-50 " : ""
             }`}
           />
         </div>
