@@ -37,7 +37,7 @@ const ReservationPanel = () => {
             <div className="flex flex-col w-full lg:w-1/2">
               <div className="flex gap-4">
                 <Link href="https://www.airbnb.fr/" className="w-1/2">
-                  <div className="relative h-60  ">
+                  <div className="relative h-60 overflow-hidden group">
                     <Image
                       alt="airbnb"
                       src="/images/airbnb_image.jpg"
@@ -46,11 +46,12 @@ const ReservationPanel = () => {
                       style={{ objectFit: "cover" }}
                       className="rounded-xl"
                     />
+                    <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                   </div>
                   <div className="text-base mt-2">Louer avec Airbnb</div>
                 </Link>
-                <Link href="https://www.homeexchange.fr/" className="w-1/2">
-                  <div className="relative h-60 ">
+                <Link href="https://www.airbnb.fr/" className="w-1/2">
+                  <div className="relative h-60 overflow-hidden group">
                     <Image
                       alt="airbnb"
                       src="/images/homeExchange_image.jpg"
@@ -59,10 +60,9 @@ const ReservationPanel = () => {
                       style={{ objectFit: "cover" }}
                       className="rounded-xl"
                     />
+                    <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                   </div>
-                  <div className="text-base mt-2">
-                    Echanger avec Home Exchange
-                  </div>
+                  <div className="text-base mt-2">Louer avec Airbnb</div>
                 </Link>
               </div>
             </div>
