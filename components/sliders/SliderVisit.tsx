@@ -28,12 +28,14 @@ function SliderVisit({ images }: { images: string[] }) {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="flex-center h-full w-full">
+            <div className="flex-center h-full w-full relative">
               <Image
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                className="block h-full w-full object-cover"
+                unoptimized
+                priority={true}
+                className="block object-cover"
               />
             </div>
           </SwiperSlide>
@@ -43,7 +45,7 @@ function SliderVisit({ images }: { images: string[] }) {
       {/* Thumbnail */}
       <Swiper
         onSwiper={setThumbsSwiper}
-        loop={true}
+        // loop={true}
         spaceBetween={12}
         slidesPerView={4}
         freeMode={true}
@@ -53,12 +55,14 @@ function SliderVisit({ images }: { images: string[] }) {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="flex-center h-full w-full">
+            <div className="flex-center h-full w-full relative">
               <Image
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                className="block h-full w-full object-cover cursor-pointer"
+                priority={true}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
+                className="block object-cover cursor-pointer"
               />
             </div>
           </SwiperSlide>

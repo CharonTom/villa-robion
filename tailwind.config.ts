@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       container: {
         padding: {
-          DEFAULT: "15px",
+          DEFAULT: "5px",
         },
       },
       screens: {
