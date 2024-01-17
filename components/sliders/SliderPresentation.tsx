@@ -12,25 +12,25 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const slidesData = [
   {
-    image: "/images/PresentationSlider/jardin.jpg",
+    image: "/images/PresentationSlider/jardin.webp",
     title: "Le Jardin",
     content:
       "Bienvenue dans notre jardin, un coin de verdure où se mêlent simplicité et convivialité. Vous y trouverez la pisicne, la table de ping-pong, une plancha, des transats. Une paillote exotique et des salons de jardins et des transats forment des petits recoins propice à la détente.",
   },
   {
-    image: "/images/PresentationSlider/chambre.jpg",
+    image: "/images/PresentationSlider/chambre.webp",
     title: "Les Chambres",
     content:
       "Notre maison possède 3 chambres, chacune avec leurs spécificitées",
   },
   {
-    image: "/images/PresentationSlider/salon.jpg",
+    image: "/images/PresentationSlider/salon.webp",
     title: "Les Salons",
     content:
       "Plusieurs pièces de vie s'offrent à vous : un salon au rez-de-chaussez et un second à l'étage.",
   },
   {
-    image: "/images/PresentationSlider/bain.jpg",
+    image: "/images/PresentationSlider/bain.webp",
     title: "Les salles de bains",
     content:
       "La maison possède 2 salles de bain. une privative accessible depuis la chambre du rez de chaussez, et une seconde à l'étage.",

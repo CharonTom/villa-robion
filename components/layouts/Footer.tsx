@@ -15,10 +15,32 @@ function Footer() {
           Besoin d’informations supplémentaires ? N&apos;hésitez pas à me
           contacter si vous avez la moindre question ou demande.
         </p>
-        <div>adressmai@.com</div>
-        <div>Nathaie Simon : 06.12.1254.54</div>
+        <nav className="links-list w-fit mx-auto">
+          <ul className="text-gray-500">
+            <li>
+              <a href="tel:+33621042123">
+                <div>Lionel : 06.12.14.54</div>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33621042123">
+                <div>Nathalie : 06.12.54.54</div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:charon.s.tom@gmail.com">
+                <div>nathrobion@gmail.com</div>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:charon.s.tom@gmail.com">
+                <div>lnrobion@gmail.com</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div className="my-16 w-full h-[1px] bg-primary-pink"></div>
+      <div className="my-16 w-[90%] mx-auto h-[1px] bg-primary-pink"></div>
 
       {/* Links & Copyrights */}
 
@@ -77,9 +99,9 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <Link href="mailto:charon.s.tom@gmail.com">
+                <a href="mailto:charon.s.tom@gmail.com">
                   <div>lnrobion@gmail.com</div>
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>

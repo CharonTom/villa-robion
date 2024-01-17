@@ -17,7 +17,7 @@ function Presentation() {
         <div className="relative w-[500px] h-[400px] bg-primary-pink rounded-xl">
           <Image
             alt="maison"
-            src="/images/jardin-int.jpg"
+            src="/images/jardin-int.webp"
             fill
             style={{ objectFit: "cover" }}
             className="rounded-xl p-1"

@@ -37,15 +37,15 @@ const ReservationPanel = () => {
             <div className="flex flex-col w-full lg:w-1/2">
               <div className="flex gap-4">
                 <a
-                  href="https://www.airbnb.fr/"
+                  href="https://www.airbnb.fr/rooms/1538049?guests=1&adults=1&viralityEntryPoint=1&s=76&fbclid=IwAR3vwyKI1XeVqDZkD4usFFJLKWq_wYjQTRqyeUQIy1SIO_CoNKgo7dBY7qc&source_impression_id=p3_1705500078_SuDxhqRB7qXYWthm"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2"
+                  className="w-1/2 group"
                 >
-                  <div className="relative h-60 overflow-hidden group">
+                  <div className="relative h-60 overflow-hidden">
                     <Image
                       alt="airbnb"
-                      src="/images/airbnb_image.jpg"
+                      src="/images/airbnb_image.webp"
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
                       style={{ objectFit: "cover" }}
@@ -53,18 +53,20 @@ const ReservationPanel = () => {
                     />
                     <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                   </div>
-                  <div className="text-base mt-2">Louer avec Airbnb</div>
+                  <div className="text-base mt-2 group-hover:text-primary-pink">
+                    Louer avec Airbnb
+                  </div>
                 </a>
                 <a
-                  href="https://www.airbnb.fr/"
+                  href="https://www.homeexchange.fr/homes/view/182314?fbclid=IwAR0VxyxYx-Y4e6P46y0LSuroFONg_-FyY0kkrxhKR9menaFKYnBHVpz4h-E"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2"
+                  className="w-1/2 group"
                 >
-                  <div className="relative h-60 overflow-hidden group">
+                  <div className="relative h-60 overflow-hidden">
                     <Image
                       alt="airbnb"
-                      src="/images/homeExchange_image.jpg"
+                      src="/images/homeExchange_image.webp"
                       fill
                       sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
                       style={{ objectFit: "cover" }}
@@ -72,7 +74,9 @@ const ReservationPanel = () => {
                     />
                     <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                   </div>
-                  <div className="text-base mt-2">Louer avec Airbnb</div>
+                  <div className="text-base mt-2 group-hover:text-primary-pink">
+                    Louer avec Airbnb
+                  </div>
                 </a>
               </div>
             </div>

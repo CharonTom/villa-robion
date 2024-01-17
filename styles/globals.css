@@ -55,6 +55,10 @@ h2 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 34px;
+}
+
 .flex-center {
   @apply flex justify-center items-center;
 }

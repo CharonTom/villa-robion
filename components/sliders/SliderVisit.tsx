@@ -24,7 +24,7 @@ function SliderVisit({ images }: { images: string[] }) {
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="h-[400px] rounded-xl bg-black"
+        className="h-[400px] rounded-xl"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
@@ -58,7 +58,7 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                className="block h-full w-full object-cover"
+                className="block h-full w-full object-cover cursor-pointer"
               />
             </div>
           </SwiperSlide>

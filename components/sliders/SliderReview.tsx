@@ -47,7 +47,7 @@ function SliderReview() {
           </div>
           <div className="mt-3 relative w-32 h-10">
             <Image
-              src="/images/airbnb.png"
+              src="/images/airbnb.webp"
               alt="logo"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
@@ -76,7 +76,7 @@ function SliderReview() {
                   name={data.name}
                   text={data.text}
                   date={data.date}
-                  logo="/images/logoAirbnb.png"
+                  logo="/images/logoAirbnb.webp"
                   starColor="#FF5A5F"
                   profil={data.img}
                 />
@@ -111,7 +111,7 @@ function SliderReview() {
           </div>
           <div className="mt-3 relative w-32 h-10">
             <Image
-              src="/images/home.png"
+              src="/images/home.webp"
               alt="logo"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
@@ -140,7 +140,7 @@ function SliderReview() {
                   name={data.name}
                   text={data.text}
                   date={data.date}
-                  logo="/images/logoHome.png"
+                  logo="/images/logoHome.webp"
                   starColor="#EFA301"
                   profil={data.img}
                 />
