@@ -15,7 +15,7 @@ const slidesData = [
     image: "/images/PresentationSlider/jardin.webp",
     title: "Le Jardin",
     content:
-      "Bienvenue dans notre jardin, un coin de verdure où se mêlent simplicité et convivialité. Vous y trouverez la pisicne, la table de ping-pong, une plancha, des transats. Une paillote exotique et des salons de jardins et des transats forment des petits recoins propice à la détente.",
+      "Notre jardin est remplis de petit recoins propice aux loisirs et à la détente.",
   },
   {
     image: "/images/PresentationSlider/chambre.webp",
@@ -59,17 +59,17 @@ export default function SliderPresentation() {
   }, [swiperRef]);
 
   return (
-    <div className="p-5 slider-presentation">
+    <div className="slider-presentation">
       <Swiper
         onSwiper={setSwiperRef}
-        spaceBetween={25}
+        spaceBetween={15}
         slidesPerView={"auto"}
         grabCursor={true}
         navigation
         pagination={{ clickable: true, el: ".swiper-custom-pagination" }}
         speed={500}
         modules={[Pagination, Navigation]}
-        className="h-[80vh] w-full"
+        className="h-[55vh] md:h-[60vh] lg:h-[75vh] w-full"
         onSlideChange={handleSlideChange}
       >
         {slidesData.map((slide, index) => (
@@ -83,14 +83,14 @@ export default function SliderPresentation() {
               className="rounded-lg brightness-90"
               unoptimized={true}
             />
-            <div className="relative h-full text-white px-8 pt-6 flex flex-col justify-start gap-y-20">
-              <h2 className="text-[100px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+            <div className="relative h-full text-white px-4 pt-6 flex flex-col justify-start gap-y-28">
+              <h2 className="md:text-[68px] lg:text-[88px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
                 {slide.title}
               </h2>
 
               <div>
                 <div
-                  className={`line-anim mb-8 ${
+                  className={`line-anim mb-4 ${
                     currentSlide === index ? "line-show" : ""
                   }`}
                 ></div>
@@ -99,7 +99,7 @@ export default function SliderPresentation() {
                     currentSlide === index ? "show" : ""
                   }`}
                 >
-                  <p className="md:w-[40%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+                  <p className="md:w-[40%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]  font-light">
                     {slide.content}
                   </p>
                 </div>

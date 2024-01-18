@@ -47,13 +47,13 @@ ul {
   height: auto;
 } */
 
-h2 {
+/* h2 {
   font-size: 48px;
-}
+} */
 
-h3 {
+/* h3 {
   font-size: 34px;
-}
+} */
 
 .flex-center {
   @apply flex justify-center items-center;

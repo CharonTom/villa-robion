@@ -9,10 +9,10 @@ import Link from "next/link";
 function Footer() {
   const { openPanel } = useReservationContext();
   return (
-    <footer className="">
-      <div className="text-center text-[34px] p-10 w-[80%] mx-auto">
+    <footer className="p-8">
+      <div className="text-center md:text-[34px] p-4 w-[85%] mx-auto">
         <p className="py-8">
-          Besoin d’informations supplémentaires ? N&apos;hésitez pas à me
+          Besoin d’informations supplémentaires ?<br /> N&apos;hésitez pas à me
           contacter si vous avez la moindre question ou demande.
         </p>
         <nav className="links-list w-fit mx-auto">
@@ -40,15 +40,15 @@ function Footer() {
           </ul>
         </nav>
       </div>
-      <div className="my-16 w-[90%] mx-auto h-[1px] bg-primary-pink"></div>
+      <div className="my-16 w-full h-[1px] bg-primary-pink"></div>
 
       {/* Links & Copyrights */}
 
-      <div className="flex py-4 justify-around">
-        <div className="flex-col">
+      <div className="flex flex-col sm:flex-row py-4 justify-around">
+        <div className="flex flex-col justify-center">
           <div className="flex justify-start items-center gap-x-4 relative">
             <Link href="/" className="flex-center gap-x-4">
-              <div className="overflow-hidden bg-white h-28 w-28 rounded-full relative border-2 border-primary-pink">
+              <div className="overflow-hidden bg-white  h-24 w-24 lg:h-28 lg:w-28 rounded-full relative border-2 border-primary-pink">
                 <Logo />
               </div>
               <p className="text-xl">
@@ -58,13 +58,15 @@ function Footer() {
               </p>
             </Link>
           </div>
-          <div className="absolute mt-10 ml-3">
-            <ReservationButton openPanel={openPanel} />
+          <div className="w-fit">
+            <div className="relative mt-4">
+              <ReservationButton openPanel={openPanel} />
+            </div>
           </div>
         </div>
-        <div className="flex justify-center p-4 gap-x-20">
+        <div className="flex flex-col md:flex-row sm:justify-center p-4 gap-8  md:gap-15 lg:gap-20">
           <nav className="links-list">
-            <h3 className="mb-2">Liens</h3>
+            <h3 className="mb-2 md:text-[34px]">Liens</h3>
             <ul className="text-gray-500">
               <Link href="/contact">
                 <li> Contactez-nous</li>
@@ -81,7 +83,7 @@ function Footer() {
             </ul>
           </nav>
           <nav className="links-list">
-            <h3 className="mb-2">Contacts</h3>
+            <h3 className="mb-2 md:text-[34px]">Contacts</h3>
             <ul className="text-gray-500">
               <li>
                 <a href="tel:+33621042123">
@@ -107,7 +109,7 @@ function Footer() {
           </nav>
         </div>
       </div>
-      <div className="mt-16 p-6 text-center text-gray-500">
+      <div className="mt-4 md:mt-14 p-6 text-center text-gray-500">
         © 2023 Site fully handcrafted by
         <a
           href="https://tom-website-six.vercel.app/"
