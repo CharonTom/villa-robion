@@ -155,6 +155,16 @@ ul {
 .slider-area .swiper-slide:nth-child(n) {
   width: 36%;
 }
+@media only screen and (max-width: 768px) {
+  .slider-area .swiper-slide:nth-child(n) {
+    width: 56%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .slider-area .swiper-slide:nth-child(n) {
+    width: 66%;
+  }
+}
 
 /* ---------------------------------------------- BOUTON RESERVER SEJOUR---------------------------- */
 

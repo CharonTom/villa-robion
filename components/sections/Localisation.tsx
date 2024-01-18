@@ -3,10 +3,12 @@ import Map from "../Map";
 
 function Localisation() {
   return (
-    <section className="p-16">
-      <div className="flex-center">
-        <div className="w-1/2">
-          <h2 className="mb-8">Localisation</h2>
+    <section className="p-4 sm:p-12">
+      <div className="flex flex-col items-center gap-y-10 md:flex-row md:items-center">
+        <div className="w-full md:w-1/2">
+          <h2 className="mb-8 text-[30px] md:text-[34px] lg:text-[48px]">
+            Localisation
+          </h2>
           <p className="w-[80%]">
             Notre maison se situe à <span className="font-bold">Robion</span>,
             un village au pied du Luberon dans le Vaucluse à 30 km
@@ -16,7 +18,7 @@ function Localisation() {
           </p>
         </div>
 
-        <div className="w-1/2 h-[500px] px-8">
+        <div className="w-full md:w-1/2 h-[500px]">
           <Map />
         </div>
       </div>

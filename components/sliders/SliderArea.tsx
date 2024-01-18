@@ -40,7 +40,7 @@ function SliderArea() {
         slidesPerView={"auto"}
         modules={[Pagination, Navigation, Autoplay]}
         grabCursor={true}
-        className="h-[55vh] w-full"
+        className="h-[35vh] md:h-[45vh] lg:h-[55vh] w-full"
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -53,11 +53,11 @@ function SliderArea() {
               className="rounded-lg brightness-90"
               unoptimized={true}
             />
-            <div className="relative h-full text-white px-8 pt-6 flex flex-col justify-start gap-y-20">
-              <h3 className="text-[25px] [teLLxt-shadow:_3px_3px_20px_rgb(0_0_0_/_100%)]">
+            <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-20">
+              <h3 className="lg:text-[25px]  [teLLxt-shadow:_3px_3px_20px_rgb(0_0_0_/_100%)]">
                 {slide.title}
               </h3>
-              <p className="absolute bottom-4 right-4 [text-shadow:_1px_1px_10px_rgb(0_0_0_/_70%)]">
+              <p className="text-sm sm:text-base absolute bottom-4 right-4 [text-shadow:_1px_1px_10px_rgb(0_0_0_/_70%)]">
                 {slide.localisation}
               </p>
             </div>
