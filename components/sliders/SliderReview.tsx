@@ -30,10 +30,10 @@ function SliderReview() {
   };
 
   return (
-    <div className="p-8">
+    <div className="py-8 md:p-8">
       {/* Airbnb */}
-      <div className="flex h-[300px]">
-        <div className="text-center p-10 flex-center flex-col w-1/5">
+      <div className="flex flex-col flex-center gap-8 sm:flex-row">
+        <div className="text-center flex-center flex-col w-full sm:w-1/5">
           <div className="font-bold">Excellent</div>
           <div className="flex text-airbnb-red text-[30px]">
             <IoIosStar />
@@ -42,7 +42,7 @@ function SliderReview() {
             <IoIosStar />
             <IoIosStar />
           </div>
-          <div className="text-sm mt-1">
+          <div className="mt-1">
             Basée sur <span className="font-bold">12 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
@@ -54,8 +54,16 @@ function SliderReview() {
             />
           </div>
         </div>
-        <div className="slider-review w-3/4 p-4 relative ">
+        <div className="slider-review w-3/4 sm:w-[60%] md:w-3/4  sm:p-4 relative">
           <Swiper
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: "auto",
+              },
+            }}
             grabCursor={true}
             autoplay
             spaceBetween={20}
@@ -96,8 +104,8 @@ function SliderReview() {
         </div>
       </div>
       {/* HomeExchange */}
-      <div className="flex h-[300px]">
-        <div className="text-center p-10 flex-center flex-col w-1/5">
+      <div className="flex flex-col flex-center gap-8 sm:flex-row">
+        <div className="text-center flex-center flex-col w-full sm:w-1/5">
           <div className="font-bold">Excellent</div>
           <div className="flex text-home-orange text-[30px]">
             <IoIosStar />
@@ -106,7 +114,7 @@ function SliderReview() {
             <IoIosStar />
             <IoIosStar />
           </div>
-          <div className="text-sm mt-1">
+          <div className="mt-1">
             Basée sur <span className="font-bold">8 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
@@ -118,8 +126,16 @@ function SliderReview() {
             />
           </div>
         </div>
-        <div className="slider-review w-3/4 py-4 px-4 relative ">
+        <div className="slider-review w-3/4 sm:w-[60%] md:w-3/4  sm:p-4 relative">
           <Swiper
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: "auto",
+              },
+            }}
             grabCursor={true}
             autoplay
             spaceBetween={20}

@@ -20,7 +20,7 @@ function ReviewCard({
   profil,
 }: ReviewCardProps) {
   return (
-    <div className="w-full h-[255px] bg-gray-100 rounded-lg p-6 relative">
+    <div className="w-full h-[270px] bg-gray-100 rounded-lg p-6 relative">
       <Image
         src={logo}
         alt="logo"

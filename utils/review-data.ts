@@ -21,7 +21,7 @@ export const data_airbnb = [
   {
     name: "Carla",
     date: "août 2016",
-    text: "Nous avons passé une semaine merveilleuse dans cette belle maison. C'est tout ce dont vous avez besoin, un logement parfait depuis chez vous, et les hôtes ont offert un accueil chaleureux et généreux avec du vin local et une tapenade. La piscine est grande et bien entretenue, le terrain est charmant et l'emplacement exceptionnel. Nous reviendrions certainement ici. Merci beaucoup.",
+    text: "Nous avons passé une semaine merveilleuse dans cette belle maison. C'est tout ce dont vous avez besoin, un logement parfait depuis chez vous, et les hôtes ont offert un accueil chaleureux et généreux avec du vin local et une tapenade. La piscine est grande et bien entretenue, le terrain est charmant et l'emplacement exceptionnel.",
     img: "/images/profil/ca.webp",
   },
 
@@ -49,20 +49,20 @@ export const data_home = [
   {
     name: "Juliana",
     date: "juillet 2023",
-    text: "Super échange avec Nathalie et Lionel. Ce sont des personnes très sympathiques, arrangeantes et dignes de confiance. Nous avons réellement apprécié leur maison avec la piscine et la localisation dans le Luberon. Tout s'est très bien passé et nous les remercions sincèrement de nous avoir permis de faire cet échange. L'échange avec Nathalie et Lionel peut se faire les yeux fermés.",
+    text: "Super échange avec Nathalie et Lionel. Ce sont des personnes très sympathiques, arrangeantes et dignes de confiance. Nous avons réellement apprécié leur maison avec la piscine et la localisation dans le Luberon. Tout s'est très bien passé et nous les remercions sincèrement de nous avoir permis de faire cet échange...",
     img: "/images/profil/ju.webp",
   },
   {
     name: "Monica",
     date: "juin 2023",
-    text: "La journée que chez Nathalie a été vraiment merveilleux. L'endroit est charmant et proche de plusieurs belles villes de Provence. La maison est belle et confortable. Nathalie a toujours répondu rapidement à nos doutes. La grande question était de savoir si on restait chez soi à profiter de la piscine ou si on sortait découvrir la région. Nous recommandons certainement!",
+    text: "L'endroit est charmant et proche de plusieurs belles villes de Provence. La maison est belle et confortable. Nathalie a toujours répondu rapidement à nos doutes. La grande question était de savoir si on restait chez soi à profiter de la piscine ou si on sortait découvrir la région. Nous recommandons certainement!",
     img: "/images/profil/mo.webp",
   },
 
   {
     name: "Luc et Patricia",
     date: "juin 2023",
-    text: "Un échange parfait, une maison zen, un jardin qui invite à la baignade et au farniente. La situation de la maison est parfaite pour découvrir le Luberon. Tout les villages aux alentours sont accessibles en voiture et à vélo. La piste cyclable se trouve à 50 m de la maison. Le contact avec Nathalie et Lionel était facile. Nous avons beaucoup apprécié notre séjour.",
+    text: "Un échange parfait, une maison zen, un jardin qui invite à la baignade et au farniente. La situation de la maison est parfaite pour découvrir le Luberon. Tout les villages aux alentours sont accessibles en voiture et à vélo. La piste cyclable se trouve à 50 m de la maison. Le contact avec Nathalie et Lionel était facile.",
     img: "/images/profil/lu.webp",
   },
 ];

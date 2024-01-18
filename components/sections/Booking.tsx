@@ -10,7 +10,7 @@ function Booking() {
 
   return (
     <section className="mx-auto">
-      <p className="py-10 container text-center mx-auto text-[34px]">
+      <p className="py-10 container text-center mx-auto  text-[24px] md:text-[30px] lg:text-[34px]">
         Notre petit coin de paradis vous attend. Réservez ou échangez dès
         maintenant pour vivre une expérience authentique et chaleureuse dans
         notre maison. Bienvenue chez nous !
