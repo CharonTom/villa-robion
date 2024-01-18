@@ -54,19 +54,19 @@ function Header() {
   return (
     <header className={headerClasses}>
       <div className="bg-primary-pink h-[7px] w-full"></div>
-      <nav className="flex-between mx-14 h-[100px]">
+      <nav className="flex-between mx-4 md:mx-8 lg:mx-14 h-[100px]">
         <Link href="/" className="flex-center gap-x-2">
-          <div className="overflow-hidden bg-white h-20 w-20 rounded-full relative border-2 border-primary-pink">
+          <div className="overflow-hidden relative bg-white h-16 w-16 md:h-20 md:w-20 rounded-full relative border-2 border-primary-pink">
             <Logo />
           </div>
-          <p className="text-base">
+          <p className="text-sm md:text-base">
             La maison
             <br />
             de Nath & Lio
           </p>
         </Link>
 
-        <ul className="flex-center gap-x-16">
+        <ul className="flex-center gap-x-8 lg:gap-x-16 text-sm md:text-base lg:text-xl">
           <li className="pink-underline">
             <Link href="" onClick={openPanel} className="target">
               Réserver

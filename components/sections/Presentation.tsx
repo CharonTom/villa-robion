@@ -7,7 +7,7 @@ import Image from "next/image";
 function Presentation() {
   return (
     <section id="presentation">
-      <div className="flex-between px-20 mt-10 container">
+      <div className="flex-between px-20 mt-10">
         <div className="w-[55%]">
           <p className="text-[48px]">
             Découvrez l&apos;élégance et le charme de notre maison nichée dans

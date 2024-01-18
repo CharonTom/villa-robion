@@ -47,10 +47,6 @@ ul {
   height: auto;
 } */
 
-h1 {
-  font-size: 88px;
-}
-
 h2 {
   font-size: 48px;
 }
@@ -170,6 +166,19 @@ h3 {
   width: 4rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .book-button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+  }
+  .book-button.learn-more .circle .icon.arrow {
+    left: 0.125rem !important;
+  }
+}
+
 .book-button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -215,6 +224,8 @@ h3 {
 .book-button:hover .book-button-text {
   color: white;
 }
+
+/* ----------------------------------------------------------------thumbds--------------------------------------------------------------- */
 
 .thumbs .swiper-slide {
   position: relative;

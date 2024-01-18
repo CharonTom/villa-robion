@@ -18,7 +18,7 @@ function Welcome() {
       </video>
 
       <div className="absolute top-[20%] left-[3%] w-[60%]">
-        <h1 className="text-white leading-tight tracking-tight [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+        <h1 className="text-white leading-tight tracking-tight [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)] lg:text-[88px] md:text-[68px] text-[48px]">
           Séjourner dans une villa au sein du parc régional du Luberon.
         </h1>
       </div>
