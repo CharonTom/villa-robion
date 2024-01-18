@@ -41,17 +41,19 @@ function Galleries() {
 
   return (
     <section>
-      <h2 className="mb-8 mt-5 text-center">Visitez notre maison en détails</h2>
-      <div className="flex-center gap-x-20 p-10">
+      <h2 className="mb-8 mt-5 text-center md:text-4xl">
+        Visitez notre maison en détails
+      </h2>
+      <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 p-2">
         <VisitDetails {...gardenSliderProps} />
       </div>
-      <div className="flex-center flex-row-reverse gap-x-20 p-20">
+      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-10 p-2">
         <VisitDetails {...livingSliderProps} />
       </div>
-      <div className="flex-center gap-x-20 p-20">
+      <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 p-2">
         <VisitDetails {...bedSliderProps} />
       </div>
-      <div className="flex-center flex-row-reverse gap-x-20 p-20">
+      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-10 p-2">
         <VisitDetails {...bathSliderProps} />
       </div>
     </section>

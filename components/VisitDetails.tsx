@@ -10,12 +10,12 @@ interface VisitDetailsProps {
 function VisitDetails({ images, text, title }: VisitDetailsProps) {
   return (
     <>
-      <div className="w-[60%]">
+      <div className="w-full md:w-[50%]">
         <SliderVisit images={images} />
       </div>
 
-      <div className="w-[40%]">
-        <h3 className="mb-8">{title}</h3>
+      <div className="w-full md:w-[40%]">
+        <h3 className="mb-4 text-3xl sm:text-4xl">{title}</h3>
         <p className="">{text}</p>
       </div>
     </>

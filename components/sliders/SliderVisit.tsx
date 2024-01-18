@@ -24,7 +24,7 @@ function SliderVisit({ images }: { images: string[] }) {
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="h-[400px] rounded-xl"
+        className="h-[300px] sm:h-[400px] rounded-xl"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
@@ -51,7 +51,7 @@ function SliderVisit({ images }: { images: string[] }) {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="thumbs mt-3 h-32 rounded-lg"
+        className="thumbs mt-3 h-[65px] sm:h-[100px]  rounded-lg"
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
