@@ -54,7 +54,7 @@ function SliderArea() {
               unoptimized={true}
             />
             <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-20">
-              <h3 className="lg:text-[25px]  [teLLxt-shadow:_3px_3px_20px_rgb(0_0_0_/_100%)]">
+              <h3 className="lg:text-[25px]  [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
                 {slide.title}
               </h3>
               <p className="text-sm sm:text-base absolute bottom-4 right-4 [text-shadow:_1px_1px_10px_rgb(0_0_0_/_70%)]">

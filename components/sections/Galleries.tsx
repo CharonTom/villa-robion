@@ -35,7 +35,7 @@ function Galleries() {
 
   const bathSliderProps = {
     images: ["bath1.webp", "bath2.webp"],
-    title: "Le Salles de bain",
+    title: "Les Salles de bain",
     text: "Il y a deux salles de bains, une accessible depuis la chambre du bas, et la seconde est à l'étage. Il y'a également des toilettes à chaque étages",
   };
 
@@ -44,16 +44,16 @@ function Galleries() {
       <h2 className="mb-8 mt-5 text-center md:text-4xl">
         Visitez notre maison en détails
       </h2>
-      <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 p-2">
+      <div className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6">
         <VisitDetails {...gardenSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-10 p-2">
+      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6">
         <VisitDetails {...livingSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row md:items-center gap-10 p-2">
+      <div className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6">
         <VisitDetails {...bedSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-10 p-2">
+      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6">
         <VisitDetails {...bathSliderProps} />
       </div>
     </section>

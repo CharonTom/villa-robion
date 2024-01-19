@@ -5,11 +5,14 @@ import Logo from "../Logo";
 import { useReservationContext } from "@/context/PanelContext";
 import ReservationButton from "../ReservationButton";
 import Link from "next/link";
+import { useSidebarContext } from "@/context/SidebarContext";
 
 function Footer() {
   const { openPanel } = useReservationContext();
+  const { openSidebar } = useSidebarContext();
+
   return (
-    <footer className="p-8">
+    <footer className="px-8">
       <div className="text-center md:text-[34px] p-4 w-[85%] mx-auto">
         <p className="py-8">
           Besoin d’informations supplémentaires ?<br /> N&apos;hésitez pas à me
@@ -40,7 +43,7 @@ function Footer() {
           </ul>
         </nav>
       </div>
-      <div className="my-16 w-full h-[1px] bg-primary-pink"></div>
+      <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
 
       {/* Links & Copyrights */}
 
@@ -75,7 +78,15 @@ function Footer() {
                 <li>Visite Virtuelle</li>
               </Link>
               <li>
-                <button onClick={openPanel}>Réserver</button>
+                <button className="text-center md:hidden" onClick={openSidebar}>
+                  Réserver
+                </button>
+                <button
+                  className="text-center md:block hidden"
+                  onClick={openPanel}
+                >
+                  Réserver
+                </button>
               </li>
               <Link href="/">
                 <li>Accueil</li>

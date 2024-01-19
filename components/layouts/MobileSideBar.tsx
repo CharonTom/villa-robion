@@ -28,7 +28,11 @@ function MobileSideBar() {
         >
           <div className="bg-primary-pink h-[7px] w-full"></div>
           <div className="flex-between mx-4 h-[100px]">
-            <Link href="/" className="flex-center gap-x-2">
+            <Link
+              href="/"
+              className="flex-center gap-x-2"
+              onClick={closeSidebar}
+            >
               <div className="overflow-hidden relative bg-white h-16 w-16 md:h-20 md:w-20 rounded-full relative border-2 border-primary-pink">
                 <Logo />
               </div>
@@ -42,7 +46,7 @@ function MobileSideBar() {
               <FaTimes size={34} />
             </button>
           </div>
-          <div className="flex-grow flex flex-col justify-between p-8  text-3xl">
+          <div className="flex-grow flex flex-col justify-between p-6  text-3xl">
             <div className="h-full w-full flex flex-col justify-center gap-y-16 mb-8">
               <Link href="/" className="block" onClick={closeSidebar}>
                 Accueil

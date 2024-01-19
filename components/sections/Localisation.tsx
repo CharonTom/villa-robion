@@ -3,7 +3,7 @@ import Map from "../Map";
 
 function Localisation() {
   return (
-    <section className="p-4 sm:p-12">
+    <section className="px-4 sm:p-12">
       <div className="flex flex-col items-center gap-y-10 md:flex-row md:items-center">
         <div className="w-full md:w-1/2">
           <h2 className="mb-8 text-[30px] md:text-[34px] lg:text-[48px]">

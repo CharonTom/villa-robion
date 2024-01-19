@@ -15,8 +15,8 @@ function VisitDetails({ images, text, title }: VisitDetailsProps) {
       </div>
 
       <div className="w-full md:w-[40%]">
-        <h3 className="mb-4 text-3xl sm:text-4xl">{title}</h3>
-        <p className="">{text}</p>
+        <h3 className="my-4 text-3xl sm:text-4xl">{title}</h3>
+        <p className="my-4">{text}</p>
       </div>
     </>
   );

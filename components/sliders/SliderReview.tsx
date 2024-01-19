@@ -30,9 +30,9 @@ function SliderReview() {
   };
 
   return (
-    <div className="py-8 md:p-8">
+    <div className="md:p-8">
       {/* Airbnb */}
-      <div className="flex flex-col flex-center gap-8 sm:flex-row">
+      <div className="flex flex-col flex-center gap-6 sm:flex-row py-4">
         <div className="text-center flex-center flex-col w-full sm:w-1/5">
           <div className="font-bold">Excellent</div>
           <div className="flex text-airbnb-red text-[30px]">
@@ -104,7 +104,7 @@ function SliderReview() {
         </div>
       </div>
       {/* HomeExchange */}
-      <div className="flex flex-col flex-center gap-8 sm:flex-row">
+      <div className="flex flex-col flex-center gap-6 sm:flex-row py-4">
         <div className="text-center flex-center flex-col w-full sm:w-1/5">
           <div className="font-bold">Excellent</div>
           <div className="flex text-home-orange text-[30px]">

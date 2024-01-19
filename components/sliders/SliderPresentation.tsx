@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useCallback, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Link from "next/link";
 
 const slidesData = [
   {
@@ -104,6 +105,9 @@ export default function SliderPresentation() {
                   </p>
                 </div>
               </div>
+              <Link href="/visit">
+                <button>coucou</button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}
