@@ -1,19 +1,18 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useReservationContext } from "@/context/PanelContext";
 import { useSidebarContext } from "@/context/SidebarContext";
 import Logo from "../Logo";
-import { FaTimes } from "react-icons/fa";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const { openPanel, isOpen } = useReservationContext();
-  const { openSidebar, isSideBarOpen } = useSidebarContext();
+  const { openSidebar } = useSidebarContext();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,19 +35,21 @@ function Header() {
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
-  const headerClasses = `fixed w-full z-50 transition-transform ${
+  const headerClasses = `fixed w-full z-50 transition-transform bg-white ${
     isOpen
       ? "translate-y-0"
       : isScrolled
       ? "-translate-y-full"
       : "translate-y-0"
   } ${
-    isTop && isTransparent
+    isTop
       ? isOpen
         ? "text-black border-b border-gray-300"
-        : "text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
-      : "bg-white text-black"
-  } ${isTop ? "" : "border-b border-gray-300"}`;
+        : isTransparent
+        ? "text-white bg-inherit [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
+        : "text-black"
+      : "border-b border-gray-300"
+  }`;
 
   useEffect(() => {
     window.history.scrollRestoration = "manual";
