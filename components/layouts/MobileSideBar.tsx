@@ -42,7 +42,7 @@ function MobileSideBar() {
                 de Nath & Lio
               </p>
             </Link>
-            <button onClick={closeSidebar} className="text-primary-pink">
+            <button onClick={closeSidebar} className="text-primary-pink mr-6">
               <FaTimes size={34} />
             </button>
           </div>

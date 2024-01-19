@@ -50,9 +50,9 @@ function Header() {
       : "bg-white text-black"
   } ${isTop ? "" : "border-b border-gray-300"}`;
 
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  // }, []);
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
 
   return (
     <>
@@ -63,7 +63,7 @@ function Header() {
             <div className="overflow-hidden relative bg-white h-16 w-16 md:h-20 md:w-20 rounded-full relative border-2 border-primary-pink">
               <Logo />
             </div>
-            <p className="text-sm md:text-base">
+            <p className="text-base md:text-lg">
               La maison
               <br />
               de Nath & Lio
@@ -72,11 +72,11 @@ function Header() {
 
           {/* for desktop */}
           <div className="hidden md:block">
-            <ul className="flex-center gap-x-8 lg:gap-x-16 text-base lg:text-xl">
+            <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl">
               <li className="pink-underline">
-                <Link href="" onClick={openPanel} className="target">
+                <div onClick={openPanel} className="target cursor-pointer">
                   Réserver
-                </Link>
+                </div>
               </li>
               <li className="pink-underline">
                 <Link href="/visit" className="target">
@@ -92,7 +92,7 @@ function Header() {
           </div>
           {/* for mobile */}
           <div className="md:hidden">
-            <ul className="flex-center gap-x-8 lg:gap-x-16">
+            <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl mr-4">
               <li className="pink-underline">
                 <Link href="" onClick={openSidebar}>
                   Menu
