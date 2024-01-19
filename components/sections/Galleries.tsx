@@ -46,25 +46,25 @@ function Galleries() {
       </h2>
       <div
         id="garden"
-        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6 md:my-16"
       >
         <VisitDetails {...gardenSliderProps} />
       </div>
       <div
         id="living"
-        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6"
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6 md:my-16 "
       >
         <VisitDetails {...livingSliderProps} />
       </div>
       <div
         id="bed"
-        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6 md:my-16"
       >
         <VisitDetails {...bedSliderProps} />
       </div>
       <div
         id="bath"
-        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6"
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6 md:my-16"
       >
         <VisitDetails {...bathSliderProps} />
       </div>
