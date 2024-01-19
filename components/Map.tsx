@@ -13,7 +13,7 @@ function Map() {
         referrerPolicy="no-referrer-when-downgrade"
         className="rounded-xl"
       ></iframe>
-      <div className="text-center text-base p-2 text-gray-800 flex-center gap-2">
+      <div className="text-center text-base mt-4 text-gray-800 flex-center gap-2">
         <FaLocationDot />
         <div>84440, Robion</div>
       </div>

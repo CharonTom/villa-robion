@@ -11,8 +11,8 @@ function Booking() {
   const { openSidebar } = useSidebarContext();
 
   return (
-    <section className="mx-auto">
-      <p className="p-4 sm:p-10 text-center sm:text-[24px] md:text-[30px] lg:text-[34px]">
+    <section className="mx-auto p-4">
+      <p className="text-center sm:text-xl md:text-2xl md:w-[75%] mx-auto lg:text-3xl">
         Notre petit coin de paradis vous attend. Réservez ou échangez dès
         maintenant pour vivre une expérience authentique et chaleureuse dans
         notre maison. Bienvenue chez nous !
@@ -23,7 +23,7 @@ function Booking() {
       <div className="text-center md:block hidden">
         <Button onClick={openPanel} text="Faites votre réservation" />
       </div>
-      <div className="text-center md:hidden">
+      <div className="text-center text-sm md:hidden">
         <Button onClick={openSidebar} text="Faites votre réservation" />
       </div>
     </section>

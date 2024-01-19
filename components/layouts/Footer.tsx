@@ -70,7 +70,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row sm:justify-center p-4 gap-8  md:gap-15 lg:gap-20">
           <nav className="links-list">
             <h3 className="mb-2 md:text-[34px]">Liens</h3>
-            <ul className="text-gray-500">
+            <ul className="text-gray-500 ">
               <Link href="/contact">
                 <li> Contactez-nous</li>
               </Link>

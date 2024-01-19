@@ -40,31 +40,31 @@ function Galleries() {
   };
 
   return (
-    <section>
-      <h2 className="mb-8 mt-5 text-center md:text-4xl">
+    <section className="p-4">
+      <h2 className="mb-8 mt-5 text-center text-3xl md:text-4xl lg:text-5xl">
         Visitez notre maison en détails
       </h2>
       <div
         id="garden"
-        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6 md:my-16"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 md:p-6 mb-6 md:my-16"
       >
         <VisitDetails {...gardenSliderProps} />
       </div>
       <div
         id="living"
-        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6 md:my-16 "
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 md:p-6 mb-6 md:my-16"
       >
         <VisitDetails {...livingSliderProps} />
       </div>
       <div
         id="bed"
-        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6 md:my-16"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 mb-6 md:my-16 md:p-6"
       >
         <VisitDetails {...bedSliderProps} />
       </div>
       <div
         id="bath"
-        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6 md:my-16"
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 mb-6 md:my-16 md:p-6"
       >
         <VisitDetails {...bathSliderProps} />
       </div>

@@ -33,7 +33,7 @@ const slidesData = [
 
 function SliderArea() {
   return (
-    <div className="slider-area w-full p-4">
+    <div className="slider-area w-full">
       <Swiper
         autoplay
         spaceBetween={15}

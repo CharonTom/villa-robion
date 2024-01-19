@@ -30,7 +30,7 @@ function SliderReview() {
   };
 
   return (
-    <div className="md:p-8">
+    <div>
       {/* Airbnb */}
       <div className="flex flex-col flex-center gap-6 sm:flex-row py-4">
         <div className="text-center flex-center flex-col w-full sm:w-1/5">
