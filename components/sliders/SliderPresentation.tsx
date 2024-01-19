@@ -10,27 +10,32 @@ import "swiper/css/pagination";
 import { useCallback, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Link from "next/link";
+import Button from "../Button";
 
 const slidesData = [
   {
+    id: "garden",
     image: "/images/PresentationSlider/jardin.webp",
     title: "Le Jardin",
     content:
       "Notre jardin est remplis de petit recoins propice aux loisirs et à la détente.",
   },
   {
+    id: "bed",
     image: "/images/PresentationSlider/chambre.webp",
     title: "Les Chambres",
     content:
       "Notre maison possède 3 chambres, chacune avec leurs spécificitées",
   },
   {
+    id: "living",
     image: "/images/PresentationSlider/salon.webp",
     title: "Les Salons",
     content:
       "Plusieurs pièces de vie s'offrent à vous : un salon au rez-de-chaussez et un second à l'étage.",
   },
   {
+    id: "bath",
     image: "/images/PresentationSlider/bain.webp",
     title: "Les salles de bains",
     content:
@@ -105,8 +110,13 @@ export default function SliderPresentation() {
                   </p>
                 </div>
               </div>
-              <Link href="/visit">
-                <button>coucou</button>
+              <Link
+                href={`/visit#${slide.id}`}
+                className="absolute bottom-4 left-4"
+              >
+                <button className="p-2 bg-primary-pink rounded-lg text-white text-sm hover:bg-pink-500 transition">
+                  Voir plus !
+                </button>
               </Link>
             </div>
           </SwiperSlide>

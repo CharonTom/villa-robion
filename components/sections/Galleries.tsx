@@ -44,16 +44,28 @@ function Galleries() {
       <h2 className="mb-8 mt-5 text-center md:text-4xl">
         Visitez notre maison en détails
       </h2>
-      <div className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6">
+      <div
+        id="garden"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6"
+      >
         <VisitDetails {...gardenSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6">
+      <div
+        id="living"
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6"
+      >
         <VisitDetails {...livingSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6">
+      <div
+        id="bed"
+        className="flex flex-col-reverse md:flex-row md:items-center gap-x-10 p-2 mb-6"
+      >
         <VisitDetails {...bedSliderProps} />
       </div>
-      <div className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6">
+      <div
+        id="bath"
+        className="flex flex-col-reverse md:flex-row-reverse md:items-center gap-x-10 p-2 mb-6"
+      >
         <VisitDetails {...bathSliderProps} />
       </div>
     </section>

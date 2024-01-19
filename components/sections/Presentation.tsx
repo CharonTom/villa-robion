@@ -30,11 +30,6 @@ function Presentation() {
         contemporain s&apos;harmonise avec le calme provençal.
       </p>
       <SliderPresentation />
-      <div className="text-center mt-8">
-        <Link href="/visit">
-          <Button text="Découvrez notre maison" onClick={() => {}} />
-        </Link>
-      </div>
     </section>
   );
 }
