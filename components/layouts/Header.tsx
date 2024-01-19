@@ -35,7 +35,7 @@ function Header() {
   // Déterminez si le Header doit être transparent en fonction de la route actuelle
   const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
 
-  const headerClasses = `fixed w-full z-50 transition-transform bg-white ${
+  const headerClasses = `fixed w-full z-50 transition-transform ${
     isOpen
       ? "translate-y-0"
       : isScrolled
@@ -44,11 +44,11 @@ function Header() {
   } ${
     isTop
       ? isOpen
-        ? "text-black border-b border-gray-300"
+        ? "bg-white text-black border-b border-gray-300"
         : isTransparent
-        ? "text-white bg-inherit [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
-        : "text-black"
-      : "border-b border-gray-300"
+        ? "bg-transparent text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
+        : "bg-transparent text-black"
+      : "bg-white text-black border-b border-gray-300"
   }`;
 
   useEffect(() => {
