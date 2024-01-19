@@ -67,7 +67,7 @@ function MobileSideBar() {
               </div>
               <div className="flex-center gap-x-8">
                 <a
-                  href="https://www.airbnb.com"
+                  href="https://www.airbnb.fr/rooms/1538049?guests=1&adults=1&viralityEntryPoint=1&s=76&fbclid=IwAR3vwyKI1XeVqDZkD4usFFJLKWq_wYjQTRqyeUQIy1SIO_CoNKgo7dBY7qc&source_impression_id=p3_1705500078_SuDxhqRB7qXYWthm"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h-16 relative w-[40%]"
@@ -80,7 +80,7 @@ function MobileSideBar() {
                   />
                 </a>
                 <a
-                  href="https://www.homeexchange.com"
+                  href="https://www.homeexchange.fr/homes/view/182314?fbclid=IwAR0VxyxYx-Y4e6P46y0LSuroFONg_-FyY0kkrxhKR9menaFKYnBHVpz4h-E"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h-16 relative w-[40%]"
