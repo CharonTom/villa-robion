@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { ReservationProvider } from "@/context/NavBar";
+import { ReservationProvider } from "@/context/PanelContext";
 import { DM_Sans } from "next/font/google";
 import Header from "@/components/layouts/Header";
 import ReservationPanel from "@/components/layouts/ReservationPanel";
 import Footer from "@/components/layouts/Footer";
+import MobileSideBar from "@/components/layouts/MobileSideBar";
+import SidebarProvider from "@/context/SidebarContext";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -23,10 +25,13 @@ export default function RootLayout({
     <html lang="fr">
       <body className={dmSans.className}>
         <ReservationProvider>
-          <Header />
-          {children}
-          <ReservationPanel />
-          <Footer />
+          <SidebarProvider>
+            <Header />
+            {children}
+            <ReservationPanel />
+            <MobileSideBar />
+            <Footer />
+          </SidebarProvider>
         </ReservationProvider>
       </body>
     </html>

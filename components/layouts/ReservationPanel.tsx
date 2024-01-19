@@ -1,6 +1,6 @@
 "use client";
 
-import { useReservationContext } from "@/context/NavBar";
+import { useReservationContext } from "@/context/PanelContext";
 import Image from "next/image";
 import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
@@ -13,7 +13,7 @@ const ReservationPanel = () => {
       {/* Superposition sombre */}
       {isOpen && (
         <div
-          className="fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"
+          className="hidden md:block fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"
           onClick={closePanel}
         />
       )}
@@ -26,12 +26,14 @@ const ReservationPanel = () => {
           }`}
         >
           <div className="p-8">
-            <div className="text-[35px] mb-4">Faites votre réservation !</div>
+            <div className="text-[34px] mb-2 lg:mb-4">
+              Faites votre réservation !
+            </div>
 
-            <div className="flex flex-col lg:flex-row gap-x-10">
+            <div className="flex flex-col lg:flex-row lg:items-center gap-x-10">
               <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
-                <p className="text-base lg:text-xl py-6">
-                  Vous avez la possibilité de louer ou bien faire un échange de
+                <p className="text-base lg:text-xl px-2">
+                  Vous avez la possibilité de louer ou faire un échange de
                   maison. Réservez dès maintenant pour vivre une expérience
                   authentique et chaleureuse dans notre maison. Bienvenue chez
                   nous!
@@ -87,41 +89,13 @@ const ReservationPanel = () => {
           </div>
           <button
             onClick={closePanel}
-            className="absolute bottom-4 right-4 text-gray-500 hover:text-gray-700"
+            className="absolute bottom-4 right-4 text-primary-pink"
           >
             <FaTimes size={24} />
           </button>
         </div>
       </div>
       {/* Mobile version */}
-      <div className="md:hidden">
-        <div
-          className={`fixed top-0 left-0 w-full pt-[105px] transition-transform ease-in-out duration-300 transform bg-white overflow-hidden z-40 ${
-            isOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
-        >
-          <div className="p-8">
-            <div className="text-[35px] mb-4">Faites votre réservation !</div>
-
-            <li className="pink-underline">
-              <Link href="/visit" className="target">
-                Visite virtuelle
-              </Link>
-            </li>
-            <li className="pink-underline">
-              <Link href="/contact" className="target">
-                Contactez-nous !
-              </Link>
-            </li>
-          </div>
-          <button
-            onClick={closePanel}
-            className="absolute bottom-4 right-4 text-gray-500 hover:text-gray-700"
-          >
-            <FaTimes size={24} />
-          </button>
-        </div>
-      </div>
     </>
   );
 };

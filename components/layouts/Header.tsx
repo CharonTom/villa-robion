@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useReservationContext } from "@/context/NavBar";
+import { useReservationContext } from "@/context/PanelContext";
+import { useSidebarContext } from "@/context/SidebarContext";
 import Logo from "../Logo";
 import { FaTimes } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ function Header() {
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const { openPanel, isOpen } = useReservationContext();
-  const [navBar, setNavBar] = useState(false);
+  const { openSidebar, isSideBarOpen } = useSidebarContext();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -93,7 +94,7 @@ function Header() {
           <div className="md:hidden">
             <ul className="flex-center gap-x-8 lg:gap-x-16">
               <li className="pink-underline">
-                <Link href="" onClick={openPanel}>
+                <Link href="" onClick={openSidebar}>
                   Menu
                 </Link>
               </li>

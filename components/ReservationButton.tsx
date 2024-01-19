@@ -8,7 +8,7 @@ function ReservationButton({ openPanel }: ReservationButtonProps) {
   return (
     <button
       onClick={openPanel}
-      className="w-[230px] lg:w-[350px] bg-white rounded-full p-2 lg:p-3 book-button learn-more "
+      className="md:block hidden w-[230px] lg:w-[350px] bg-white rounded-full p-2 lg:p-3 book-button learn-more "
     >
       <span className="circle bg-primary-pink rounded-full" aria-hidden="true">
         <span className="icon arrow"></span>

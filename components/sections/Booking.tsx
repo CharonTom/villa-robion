@@ -2,7 +2,7 @@
 
 import React from "react";
 import Button from "../Button";
-import { useReservationContext } from "@/context/NavBar";
+import { useReservationContext } from "@/context/PanelContext";
 import SliderReview from "../sliders/SliderReview";
 
 function Booking() {

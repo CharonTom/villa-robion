@@ -2,7 +2,7 @@
 
 import React from "react";
 import Logo from "../Logo";
-import { useReservationContext } from "@/context/NavBar";
+import { useReservationContext } from "@/context/PanelContext";
 import ReservationButton from "../ReservationButton";
 import Link from "next/link";
 
