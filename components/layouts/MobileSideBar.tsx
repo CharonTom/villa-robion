@@ -20,27 +20,34 @@ function MobileSideBar() {
 
       <div className="md:hidden">
         <div
-          className={`fixed top-0 left-0 w-full pt-[105px] transition-transform ease-in-out duration-300 transform bg-white overflow-hidden z-40 ${
-            isSideBarOpen ? "translate-y-0" : "-translate-y-full"
+          className={`fixed top-0 right-0 w-[80%] h-full z-50 transition-transform ease-in-out duration-300 transform bg-white overflow-hidden ${
+            isSideBarOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="p-8">
-            <div className="text-[35px] mb-4">Faites votre réservation !</div>
-
-            <li className="pink-underline">
-              <Link href="/visit" className="target">
-                Visite virtuelle
-              </Link>
-            </li>
-            <li className="pink-underline">
-              <Link href="/contact" className="target">
-                Contactez-nous !
-              </Link>
-            </li>
+          <div className="p-10 space-y-20 h-full w-full flex flex-col text-3xl">
+            <Link href="/" className="block">
+              Accueil
+            </Link>
+            <Link href="/visit" className="block">
+              Visite virtuelle
+            </Link>
+            <Link href="/contact" className="block">
+              Contacts
+            </Link>
+            <div>
+              <div>
+                <div className="mb-4">Réservez</div>
+                <div className="flex justify-around">
+                  <div className="text-sm">Airbnb</div>
+                  <div className="text-sm">Home Exchange</div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <button
             onClick={closeSidebar}
-            className="absolute bottom-4 right-4 text-primary-pink"
+            className="absolute top-4 right-4 text-primary-pink"
           >
             <FaTimes size={24} />
           </button>
