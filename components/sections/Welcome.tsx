@@ -9,6 +9,7 @@ function Welcome() {
   return (
     <section className="h-screen w-full">
       <video
+        preload="meta"
         muted
         autoPlay
         loop
