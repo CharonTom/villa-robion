@@ -13,6 +13,7 @@ function Welcome() {
         muted
         autoPlay
         loop
+        playsInline
         className="w-full h-full object-cover brightness-75"
       >
         <source src="/bgvid.mp4" type="video/mp4" />
