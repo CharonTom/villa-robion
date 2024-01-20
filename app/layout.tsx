@@ -7,6 +7,7 @@ import ReservationPanel from "@/components/layouts/ReservationPanel";
 import Footer from "@/components/layouts/Footer";
 import MobileSideBar from "@/components/layouts/MobileSideBar";
 import SidebarProvider from "@/context/SidebarContext";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -26,11 +27,13 @@ export default function RootLayout({
       <body className={dmSans.className}>
         <ReservationProvider>
           <SidebarProvider>
-            <Header />
-            {children}
-            <ReservationPanel />
-            <MobileSideBar />
-            <Footer />
+            <SmoothScroll>
+              <Header />
+              {children}
+              <ReservationPanel />
+              <MobileSideBar />
+              <Footer />
+            </SmoothScroll>
           </SidebarProvider>
         </ReservationProvider>
       </body>

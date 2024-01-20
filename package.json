@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "locomotive-scroll": "^5.0.0-beta.11",
+    "@studio-freight/react-lenis": "^0.0.43",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
