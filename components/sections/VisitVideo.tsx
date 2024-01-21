@@ -2,7 +2,7 @@ import React from "react";
 
 function VisitVideo() {
   return (
-    <section className="p-2 md:p-8">
+    <section className="p-2 md:p-32">
       <div className="aspect-video p-[2px] bg-primary-pink rounded-xl">
         <iframe
           className="w-full h-full rounded-xl"
