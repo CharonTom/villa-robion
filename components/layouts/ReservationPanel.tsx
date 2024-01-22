@@ -80,7 +80,7 @@ const ReservationPanel = () => {
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                     </div>
                     <div className="text-base mt-2 group-hover:text-primary-pink">
-                      Louer avec Airbnb
+                      Echanger avec Home Exchange
                     </div>
                   </a>
                 </div>

@@ -18,28 +18,27 @@ const slidesData = [
     image: "/images/PresentationSlider/jardin.webp",
     title: "Le Jardin",
     content:
-      "Notre jardin est remplis de petit recoins propice aux loisirs et à la détente.",
+      "Notre jardin est rempli de petits recoins propices aux loisirs et à la détente.",
   },
   {
     id: "bed",
     image: "/images/PresentationSlider/chambre.webp",
     title: "Les Chambres",
-    content:
-      "Notre maison possède 3 chambres, chacune avec leurs spécificitées",
+    content: "Notre maison possède 3 chambres, chacune avec leurs spécificités",
   },
   {
     id: "living",
     image: "/images/PresentationSlider/salon.webp",
     title: "Les Salons",
     content:
-      "Plusieurs pièces de vie s'offrent à vous : un salon au rez-de-chaussez et un second à l'étage.",
+      "Plusieurs pièces de vie s'offrent à vous, un salon au rez-de-chaussée et un second à l'étage.",
   },
   {
     id: "bath",
     image: "/images/PresentationSlider/bain.webp",
     title: "Les salles de bains",
     content:
-      "La maison possède 2 salles de bain. une privative accessible depuis la chambre du rez de chaussez, et une seconde à l'étage.",
+      "La maison possède 2 salles de bain, une privative accessible depuis la chambre du rez-de-chaussée et une seconde à l'étage.",
   },
 ];
 

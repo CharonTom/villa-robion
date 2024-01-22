@@ -11,10 +11,9 @@ function Localisation() {
           </h2>
           <p className="w-[80%] text-xl md:text-2xl">
             Notre maison se situe à <span className="font-bold">Robion</span>,
-            un village au pied du Luberon dans le Vaucluse à 30 km
-            d&apos;Avignon. Une piste cyclable à 100 mètres de la maison vous
-            amène jusqu&apos;à Apt et au-delà. Et de l&apos;autre côté
-            jusqu&apos;à Cavaillon.
+            un village au pied du Luberon dans le Vaucluse.
+            L&apos;Isle-sur-la-Sorgue et Cavaillon se situent à moins de 10 km.
+            Avignon est à 30 km et Marseille à 1 heure de voiture.
           </p>
         </div>
 

@@ -67,12 +67,12 @@ function Footer() {
             <ul className="text-gray-500">
               <li>
                 <a href="tel:+33621042123">
-                  <div>Lionel : 06.12.14.54</div>
+                  <div>Lionel : 06.10.36.13.38</div>
                 </a>
               </li>
               <li>
                 <a href="tel:+33621042123">
-                  <div>Nathalie : 06.12.54.54</div>
+                  <div>Nathalie : 06.12.23.31.71</div>
                 </a>
               </li>
               <li>
@@ -90,7 +90,7 @@ function Footer() {
         </div>
       </div>
       <div className="mt-4 md:mt-14 p-6 text-center text-gray-500">
-        © 2023 Site fully handcrafted by
+        © 2024 Site fully handcrafted by
         <a
           href="https://tom-website-six.vercel.app/"
           target="_blank"

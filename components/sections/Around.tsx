@@ -9,9 +9,9 @@ function Around() {
       </h2>
       <SliderArea />
       <p className="text-left mt-6 sm:p-10 text-xl sm:text-2xl md:text-3xl md:w-[60%] ">
-        De plus, une piste cyclable se situe à 100 mètre de la maison qui vous
-        amène jusqu&apos;à Apt et au delà. Et de l&apos;autre coté jusqu&apos;à
-        Cavaillon
+        La Véloroute, voie verte du Calavon se situe à 100 mètres de la maison.
+        C&apos;est 45 km de piste cyclable qui vous amèneront de Cavaillon
+        jusqu&apos;à Apt et au-delà.
       </p>
     </section>
   );

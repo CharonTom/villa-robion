@@ -16,7 +16,7 @@ const slidesData = [
   {
     image: "/images/AreaSlider/isle.webp",
     title:
-      "Les roues à eau de l'Isle sur Sorgue, son marché, son usine de tapenade...",
+      "Les roues à eau de l'Isle sur Sorgue, son marché, sa frabrique de tapenade...",
     localisation: "L'Isle-sur-la-sorgue, 9 km",
   },
   {
