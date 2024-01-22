@@ -11,7 +11,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const { openPanel, isOpen } = useReservationContext();
+  const { openPanel, isOpen, closePanel } = useReservationContext();
   const { openSidebar } = useSidebarContext();
 
   useEffect(() => {
@@ -60,7 +60,7 @@ function Header() {
       <header className={headerClasses}>
         <div className="bg-primary-pink h-[7px] w-full"></div>
         <nav className="flex-between mx-4 md:mx-8 lg:mx-14 h-[100px]">
-          <Link href="/" className="flex-center gap-x-2">
+          <Link href="/" className="flex-center gap-x-2" onClick={closePanel}>
             <div className="overflow-hidden relative bg-white h-16 w-16 md:h-20 md:w-20 rounded-full relative border-2 border-primary-pink">
               <Logo />
             </div>
@@ -80,17 +80,18 @@ function Header() {
                 </div>
               </li>
               <li className="pink-underline">
-                <Link href="/visit" className="target">
+                <Link href="/visit" className="target" onClick={closePanel}>
                   Visite virtuelle
                 </Link>
               </li>
               <li className="pink-underline">
-                <Link href="/contact" className="target">
+                <Link href="/contact" className="target" onClick={closePanel}>
                   Contactez-nous !
                 </Link>
               </li>
             </ul>
           </div>
+
           {/* for mobile */}
           <div className="md:hidden">
             <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl mr-4">
