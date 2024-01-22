@@ -114,8 +114,8 @@ export default function SliderPresentation() {
                 href={`/visit#${slide.id}`}
                 className="absolute bottom-4 left-4"
               >
-                <button className="p-2 bg-primary-pink rounded-lg text-white text-sm hover:bg-pink-500 transition">
-                  Voir plus !
+                <button className="p-2 bg-primary-pink rounded-full text-sm hover:bg-pink-500 transition font-semibold">
+                  Voir plus
                 </button>
               </Link>
             </div>

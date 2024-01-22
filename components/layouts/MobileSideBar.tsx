@@ -42,12 +42,15 @@ function MobileSideBar() {
                 de Nath & Lio
               </p>
             </Link>
-            <button onClick={closeSidebar} className="text-primary-pink mr-6">
-              <FaTimes size={34} />
+            <button
+              onClick={closeSidebar}
+              className="bg-primary-pink p-4 rounded-full text-white mr-4"
+            >
+              <FaTimes size={12} />
             </button>
           </div>
           <div className="flex-grow flex flex-col justify-between p-6  text-3xl">
-            <div className="h-full w-full flex flex-col justify-center gap-y-16 mb-8">
+            <div className="h-full w-full flex flex-col justify-center gap-y-8 mb-8 text-center">
               <Link href="/" className="block" onClick={closeSidebar}>
                 Accueil
               </Link>

@@ -13,39 +13,8 @@ function Footer() {
 
   return (
     <footer className="px-8">
-      <div className="text-center md:text-[34px] p-4 w-[85%] mx-auto">
-        <p className="py-8">
-          Besoin d’informations supplémentaires ?<br /> N&apos;hésitez pas à me
-          contacter si vous avez la moindre question ou demande.
-        </p>
-        <nav className="links-list w-fit mx-auto">
-          <ul className="text-gray-500">
-            <li>
-              <a href="tel:+33621042123">
-                <div>Lionel : 06.12.14.54</div>
-              </a>
-            </li>
-            <li>
-              <a href="tel:+33621042123">
-                <div>Nathalie : 06.12.54.54</div>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:charon.s.tom@gmail.com">
-                <div>nathrobion@gmail.com</div>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:charon.s.tom@gmail.com">
-                <div>lnrobion@gmail.com</div>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
-
       {/* Links & Copyrights */}
+      <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
 
       <div className="flex flex-col sm:flex-row py-4 justify-around">
         <div className="flex flex-col justify-center">

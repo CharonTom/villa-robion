@@ -25,7 +25,7 @@ const ReservationPanel = () => {
             isOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
-          <div className="p-8">
+          <div className="p-8 relative">
             <div className="text-[34px] mb-2 lg:mb-4">
               Faites votre réservation !
             </div>
@@ -86,13 +86,13 @@ const ReservationPanel = () => {
                 </div>
               </div>
             </div>
+            <button
+              onClick={closePanel}
+              className="absolute bottom-3 right-6 bg-primary-pink p-3 rounded-full text-white"
+            >
+              <FaTimes size={12} />
+            </button>
           </div>
-          <button
-            onClick={closePanel}
-            className="absolute bottom-4 right-4 text-primary-pink"
-          >
-            <FaTimes size={24} />
-          </button>
         </div>
       </div>
       {/* Mobile version */}
