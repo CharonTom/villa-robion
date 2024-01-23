@@ -7,6 +7,7 @@ function Logo() {
       src="/images/logo.webp"
       fill
       alt="logo"
+      sizes="auto"
       className="object-contain"
       loading="eager"
     />

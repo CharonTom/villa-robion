@@ -53,6 +53,7 @@ export default function SliderPresentation() {
               src={slide.image}
               alt="slider"
               fill
+              sizes="auto"
               className="rounded-lg brightness-90 object-cover"
               loading="eager"
             />
