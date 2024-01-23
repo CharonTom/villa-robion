@@ -30,7 +30,12 @@ function Galleries() {
   };
 
   const kitchenSliderProps = {
-    images: ["kitchen1.webp", "kitchen2.webp", "kitchen3.webp"],
+    images: [
+      "kitchen1.webp",
+      "kitchen2.webp",
+      "kitchen3.webp",
+      "kitchen4.webp",
+    ],
     title: "La cuisine et les coins repas",
     text: "Dans la cuisine, vous trouverez tout l’équipement et les ustensiles nécessaire : four, micro-onde, plaque induction, lave-vaisselle, cafetière expresso, bouilloire électrique. Dans le cellier attenant se trouve le lave-linge, sèche-linge ainsi qu’un deuxième réfrigérateur avec un grand congélateur. Vous pouvez prendre vos repas à l’intérieur devant la baie vitrée qui donne sur la piscine et la paillote. Ou bien mangez à l’extérieur à l’abri de la terrasse et profiter de la plancha.",
   };
@@ -43,7 +48,7 @@ function Galleries() {
 
   const bathSliderProps = {
     images: ["bath1.webp", "bath2.webp"],
-    title: "Les Salles de bain",
+    title: "Les salles de bain",
     text: "Au rez-de-chaussée se trouve la salle d'eau avec une douche accessible depuis la chambre parentale. A l'étage, la salle de bain contient une baignoire. Il y a aussi deux WC indépendants à chaque étage",
   };
 

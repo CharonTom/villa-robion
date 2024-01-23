@@ -10,21 +10,21 @@ import "swiper/css/pagination";
 import { useCallback, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Link from "next/link";
-import Button from "../Button";
 
 const slidesData = [
   {
     id: "garden",
     image: "/images/PresentationSlider/jardin.webp",
-    title: "Le Jardin",
+    title: "Le jardin et la piscine",
     content:
       "Notre jardin est rempli de petits recoins propices aux loisirs et à la détente.",
   },
   {
-    id: "bed",
-    image: "/images/PresentationSlider/chambre.webp",
-    title: "Les Chambres",
-    content: "Notre maison possède 3 chambres, chacune avec leurs spécificités",
+    id: "kitchen",
+    image: "/images/VisitSlider/kitchen1.webp",
+    title: "Cuisine et coins repas",
+    content:
+      "Une cuisine labo bien équipée. Deux coins repas, l’un dans le séjour et l’autre à l’ombre de la terrasse.",
   },
   {
     id: "living",
@@ -34,9 +34,16 @@ const slidesData = [
       "Plusieurs pièces de vie s'offrent à vous, un salon au rez-de-chaussée et un second à l'étage.",
   },
   {
+    id: "bed",
+    image: "/images/PresentationSlider/chambre.webp",
+    title: "Les Chambres",
+    content: "Notre maison possède 3 chambres, chacune avec leurs spécificités",
+  },
+
+  {
     id: "bath",
     image: "/images/PresentationSlider/bain.webp",
-    title: "Les salles de bains",
+    title: "Les salles d'eau",
     content:
       "La maison possède 2 salles de bain, une privative accessible depuis la chambre du rez-de-chaussée et une seconde à l'étage.",
   },
@@ -88,8 +95,8 @@ export default function SliderPresentation() {
               className="rounded-lg brightness-90"
               unoptimized={true}
             />
-            <div className="relative h-full text-white px-4 pt-6 flex flex-col justify-start gap-y-28">
-              <h2 className="md:text-[68px] lg:text-[88px] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+            <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-16">
+              <h2 className="sm:text-4xl md:text-6xl lg:text-7xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
                 {slide.title}
               </h2>
 
@@ -104,7 +111,7 @@ export default function SliderPresentation() {
                     currentSlide === index ? "show" : ""
                   }`}
                 >
-                  <p className="md:w-[40%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]  font-light">
+                  <p className="md:w-[45%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]  font-light">
                     {slide.content}
                   </p>
                 </div>
