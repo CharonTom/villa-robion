@@ -36,7 +36,7 @@ const slidesData = [
   {
     id: "bed",
     image: "/images/PresentationSlider/chambre.webp",
-    title: "Les Chambres",
+    title: "Les chambres",
     content: "Notre maison possède 3 chambres, chacune avec leurs spécificités",
   },
 
