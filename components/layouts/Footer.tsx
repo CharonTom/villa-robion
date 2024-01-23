@@ -40,24 +40,27 @@ function Footer() {
           <nav className="links-list">
             <h3 className="mb-2 md:text-[34px]">Liens</h3>
             <ul className="text-gray-500 ">
-              <Link href="/contact">
+              <Link href="/contact" className="p-1 block">
                 <li> Contactez-nous</li>
               </Link>
-              <Link href="/visit">
+              <Link href="/visit" className="p-1 block">
                 <li>Visite Virtuelle</li>
               </Link>
               <li>
-                <button className="text-center md:hidden" onClick={openSidebar}>
+                <button
+                  className="text-center md:hidden p-1"
+                  onClick={openSidebar}
+                >
                   Réserver
                 </button>
                 <button
-                  className="text-center md:block hidden"
+                  className="text-center md:block hidden p-1"
                   onClick={openPanel}
                 >
                   Réserver
                 </button>
               </li>
-              <Link href="/">
+              <Link href="/" className="p-1 block">
                 <li>Accueil</li>
               </Link>
             </ul>
@@ -66,22 +69,22 @@ function Footer() {
             <h3 className="mb-2 md:text-[34px]">Contacts</h3>
             <ul className="text-gray-500">
               <li>
-                <a href="tel:+33621042123">
+                <a href="tel:+33621042123" className="p-1 block">
                   <div>Lionel : 06.10.36.13.38</div>
                 </a>
               </li>
               <li>
-                <a href="tel:+33621042123">
+                <a href="tel:+33621042123" className="p-1 block">
                   <div>Nathalie : 06.12.23.31.71</div>
                 </a>
               </li>
               <li>
-                <a href="mailto:charon.s.tom@gmail.com">
+                <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
                   <div>nathrobion@gmail.com</div>
                 </a>
               </li>
               <li>
-                <a href="mailto:charon.s.tom@gmail.com">
+                <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
                   <div>lnrobion@gmail.com</div>
                 </a>
               </li>
