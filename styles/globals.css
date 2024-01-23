@@ -25,6 +25,12 @@ ul {
   list-style: none;
 }
 
+.links-list ul li:hover {
+  color: #ff6795;
+}
+
+/*-------------------------------------- underline effect on hover -------------------------*/
+
 .pink-underline .target {
   position: relative;
 }
@@ -46,18 +52,7 @@ ul {
   transform: translateX(100%);
 }
 
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
-/* h2 {
-  font-size: 48px;
-} */
-
-/* h3 {
-  font-size: 34px;
-} */
+/*------------------ Flex shortcuts ---------------------*/
 
 .flex-center {
   @apply flex justify-center items-center;
@@ -78,7 +73,7 @@ ul {
   @apply flex justify-around items-center;
 }
 
-/* ------------------------------- Animations -------------------------------------------- */
+/* ------------------------------- Scroll Down Animation -------------------------------------------- */
 
 @keyframes shake {
   0%,
@@ -107,7 +102,7 @@ ul {
 
 /* -----------------------------------------sliders--------------------------------- */
 
-/* Slider presentation */
+/* Presentation Slider */
 
 .slider-presentation .swiper-slide:nth-child(n) {
   width: 90%;
@@ -123,10 +118,6 @@ ul {
 
 .slider-presentation .swiper-button-next {
   display: none;
-}
-
-.slider-review .swiper-slide:nth-child(n) {
-  width: 340px;
 }
 
 .slide-in-from-top {
@@ -152,9 +143,12 @@ ul {
   width: 100%;
 }
 
-.swiper-custom-pagination {
-  /* text-align: center; */
+/* Review Slider */
+
+.slider-review .swiper-slide:nth-child(n) {
+  width: 340px;
 }
+/* Area slider */
 
 .slider-area .swiper-slide:nth-child(n) {
   width: 36%;
@@ -170,7 +164,31 @@ ul {
   }
 }
 
-/* ---------------------------------------------- BOUTON RESERVER SEJOUR---------------------------- */
+/* Gallerie slider */
+
+.thumbs .swiper-slide {
+  position: relative;
+}
+
+.thumbs .swiper-slide-thumb-active::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 103, 149, 0.6);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgb(255, 103, 149, 0.8);
+  right: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  color: #ffffff !important;
+}
+
+/* --------------------------------- Booking button ----------------------------------- */
 
 .book-button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
@@ -239,33 +257,7 @@ ul {
   color: white;
 }
 
-/* ----------------------------------------------------------------thumbds--------------------------------------------------------------- */
-
-.thumbs .swiper-slide {
-  position: relative;
-}
-
-.thumbs .swiper-slide-thumb-active::before {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 103, 149, 0.6);
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  background-color: white;
-  background-color: rgb(255, 103, 149, 0.8);
-  right: 10px;
-  padding: 30px;
-  border-radius: 10px;
-  color: #ffffff !important;
-}
-
-.links-list ul li:hover {
-  color: #ff6795;
-}
+/* ---------------------------Recommended CSS for React Lenis Lib------------------------------ */
 
 html.lenis {
   height: auto;
