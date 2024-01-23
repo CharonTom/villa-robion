@@ -35,7 +35,6 @@ function ReviewCard({
             src={profil}
             className="rounded-full bg-red-200"
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
             style={{ objectFit: "cover" }}
           />
         </div>

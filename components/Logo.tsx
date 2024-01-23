@@ -6,9 +6,9 @@ function Logo() {
     <Image
       src="/images/logo.webp"
       fill
-      style={{ objectFit: "contain" }}
       alt="logo"
-      unoptimized={true}
+      className="object-contain"
+      loading="eager"
     />
   );
 }

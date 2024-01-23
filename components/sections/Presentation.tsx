@@ -16,8 +16,9 @@ function Presentation() {
           <Image
             alt="maison"
             src="/images/dronepic.webp"
-            fill
+            fill={true}
             className="rounded-xl p-[2px] object-cover"
+            loading="eager"
           />
         </div>
       </div>

@@ -33,8 +33,6 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                unoptimized
-                priority={true}
                 className="block object-cover"
               />
             </div>
@@ -60,8 +58,6 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                priority={true}
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
                 className="block object-cover cursor-pointer"
               />
             </div>
