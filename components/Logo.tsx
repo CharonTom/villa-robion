@@ -4,7 +4,7 @@ import React from "react";
 function Logo() {
   return (
     <Image
-      src="/images/logotest.png"
+      src="/images/logo.webp"
       fill
       style={{ objectFit: "contain" }}
       alt="logo"
