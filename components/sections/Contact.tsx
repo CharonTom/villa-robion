@@ -3,6 +3,9 @@ import React from "react";
 function Contact() {
   return (
     <section className="text-xl sm: text-2xl md:text-3xl lg:text-4xl p-4">
+      <h1 className="md:p-2 my-16 text-4xl md:text-5xl lg:text-6xl">
+        Contactez-nous.
+      </h1>
       <p className="py-12 text-center md:w-[60%] mx-auto">
         Besoin d’informations supplémentaires ?
         <br />

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { presentationSliderData } from "@/utils/presentation-data";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import { useCallback, useState } from "react";
@@ -10,44 +11,6 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-const slidesData = [
-  {
-    id: "garden",
-    image: "/images/PresentationSlider/jardin.webp",
-    title: "Le jardin et la piscine",
-    content:
-      "Notre jardin est rempli de petits recoins propices aux loisirs et à la détente.",
-  },
-  {
-    id: "kitchen",
-    image: "/images/VisitSlider/kitchen1.webp",
-    title: "Cuisine et coins repas",
-    content:
-      "Une cuisine labo bien équipée. Deux coins repas, l’un dans le séjour et l’autre à l’ombre de la terrasse.",
-  },
-  {
-    id: "living",
-    image: "/images/PresentationSlider/salon.webp",
-    title: "Les Salons",
-    content:
-      "Plusieurs pièces de vie s'offrent à vous, un salon au rez-de-chaussée et un second à l'étage.",
-  },
-  {
-    id: "bed",
-    image: "/images/PresentationSlider/chambre.webp",
-    title: "Les chambres",
-    content: "Notre maison possède 3 chambres, chacune avec leurs spécificités",
-  },
-
-  {
-    id: "bath",
-    image: "/images/PresentationSlider/bain.webp",
-    title: "Les salles d'eau",
-    content:
-      "La maison possède 2 salles de bain, une privative accessible depuis la chambre du rez-de-chaussée et une seconde à l'étage.",
-  },
-];
 
 export default function SliderPresentation() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -84,7 +47,7 @@ export default function SliderPresentation() {
         className="h-[55vh] md:h-[60vh] lg:h-[75vh] w-full"
         onSlideChange={handleSlideChange}
       >
-        {slidesData.map((slide, index) => (
+        {presentationSliderData.map((slide, index) => (
           <SwiperSlide key={index}>
             <Image
               src={slide.image}
@@ -94,7 +57,7 @@ export default function SliderPresentation() {
               unoptimized={true}
             />
             <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-16">
-              <h2 className="sm:text-4xl md:text-6xl lg:text-7xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
                 {slide.title}
               </h2>
 
@@ -109,7 +72,7 @@ export default function SliderPresentation() {
                     currentSlide === index ? "show" : ""
                   }`}
                 >
-                  <p className="md:w-[45%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]  font-light">
+                  <p className="md:w-[45%] [text-shadow:_3px_3px_3px_rgb(0_0_0_/_100%)]">
                     {slide.content}
                   </p>
                 </div>

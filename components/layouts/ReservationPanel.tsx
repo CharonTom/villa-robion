@@ -2,7 +2,6 @@
 
 import { useReservationContext } from "@/context/PanelContext";
 import Image from "next/image";
-import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
 
 const ReservationPanel = () => {
