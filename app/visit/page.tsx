@@ -1,4 +1,3 @@
-import React from "react";
 import Galleries from "@/components/sections/Galleries";
 import Booking from "@/components/sections/Booking";
 import VisitVideo from "@/components/sections/VisitVideo";

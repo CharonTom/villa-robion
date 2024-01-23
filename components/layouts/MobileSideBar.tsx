@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
-import { FaTimes } from "react-icons/fa";
-import { useSidebarContext } from "@/context/SidebarContext";
 import Image from "next/image";
 import Logo from "../Logo";
+
+import { FaTimes } from "react-icons/fa";
+import { useSidebarContext } from "@/context/SidebarContext";
 
 function MobileSideBar() {
   const { isSideBarOpen, closeSidebar } = useSidebarContext();
@@ -13,6 +13,7 @@ function MobileSideBar() {
   return (
     <div>
       {/* Superposition sombre */}
+
       {isSideBarOpen && (
         <div
           className="md:hidden fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"

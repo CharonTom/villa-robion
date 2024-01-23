@@ -3,8 +3,8 @@
 import React, { createContext, useContext, useState } from "react";
 
 interface ReservationContextType {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isPanelOpen: boolean;
+  setIsPanelOpen: React.Dispatch<React.SetStateAction<boolean>>;
   closePanel: () => void;
   openPanel: () => void;
 }
@@ -18,20 +18,20 @@ export const ReservationProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
 
   const closePanel = () => {
-    setIsOpen(false);
+    setIsPanelOpen(false);
   };
   const openPanel = () => {
-    setIsOpen(true);
+    setIsPanelOpen(true);
   };
 
   return (
     <ReservationContext.Provider
       value={{
-        isOpen,
-        setIsOpen,
+        isPanelOpen,
+        setIsPanelOpen,
         closePanel,
         openPanel,
       }}

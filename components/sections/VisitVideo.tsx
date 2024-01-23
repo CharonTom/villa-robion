@@ -1,5 +1,3 @@
-import React from "react";
-
 function VisitVideo() {
   return (
     <section className="p-2 md:p-32">

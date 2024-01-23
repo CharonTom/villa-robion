@@ -1,15 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
+import { useCallback, useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useCallback, useState } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import Link from "next/link";
 
 const slidesData = [
   {
@@ -90,9 +90,7 @@ export default function SliderPresentation() {
               src={slide.image}
               alt="slider"
               fill
-              // sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 30vw"
-              style={{ objectFit: "cover" }}
-              className="rounded-lg brightness-90"
+              className="rounded-lg brightness-90 object-cover"
               unoptimized={true}
             />
             <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-16">

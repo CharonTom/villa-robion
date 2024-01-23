@@ -1,17 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useReservationContext } from "@/context/PanelContext";
-import { useSidebarContext } from "@/context/SidebarContext";
+
 import Logo from "../Logo";
 
+import React, { useEffect, useState } from "react";
+import { useReservationContext } from "@/context/PanelContext";
+import { useSidebarContext } from "@/context/SidebarContext";
+
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isTop, setIsTop] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const { openPanel, isOpen, closePanel } = useReservationContext();
+
+  const { openPanel, isPanelOpen, closePanel } = useReservationContext();
   const { openSidebar } = useSidebarContext();
 
   useEffect(() => {
@@ -32,18 +35,18 @@ function Header() {
     };
   }, [prevScrollPos]);
 
-  // Déterminez si le Header doit être transparent en fonction de la route actuelle
-  const isTransparent = usePathname() === "/"; // Ajoutez d'autres routes si nécessaire
+  // Le Header doit être transparent en fonction de la route.
+  const isTransparent = usePathname() === "/";
 
   const headerClasses = `fixed w-full z-50 transition-transform ${
-    isOpen
+    isPanelOpen
       ? "translate-y-0"
       : isScrolled
       ? "-translate-y-full"
       : "translate-y-0"
   } ${
     isTop
-      ? isOpen
+      ? isPanelOpen
         ? "bg-white text-black border-b border-gray-300"
         : isTransparent
         ? "bg-transparent text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
@@ -72,6 +75,7 @@ function Header() {
           </Link>
 
           {/* for desktop */}
+
           <div className="hidden md:block">
             <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl">
               <li className="pink-underline">
@@ -93,6 +97,7 @@ function Header() {
           </div>
 
           {/* for mobile */}
+
           <div className="md:hidden">
             <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl mr-4">
               <li className="pink-underline">

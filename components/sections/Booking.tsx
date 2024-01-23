@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
-import Button from "../Button";
 import { useReservationContext } from "@/context/PanelContext";
 import { useSidebarContext } from "@/context/SidebarContext";
+
+import Button from "../Button";
 import SliderReview from "../sliders/SliderReview";
 
 function Booking() {

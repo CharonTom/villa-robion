@@ -1,7 +1,9 @@
-import React from "react";
-import { useReservationContext } from "@/context/PanelContext";
+"use client";
+
 import ReservationButton from "../ReservationButton";
 import ScrollDown from "../ScrollDown";
+
+import { useReservationContext } from "@/context/PanelContext";
 
 function Welcome() {
   const { openPanel } = useReservationContext();

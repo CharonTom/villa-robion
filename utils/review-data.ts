@@ -32,6 +32,7 @@ export const data_airbnb = [
     img: "/images/profil/ra.webp",
   },
 ];
+
 export const data_home = [
   {
     name: "Laura",

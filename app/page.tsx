@@ -1,7 +1,3 @@
-"use client";
-
-import { useEffect } from "react";
-
 import Welcome from "@/components/sections/Welcome";
 import Around from "@/components/sections/Around";
 import Booking from "@/components/sections/Booking";

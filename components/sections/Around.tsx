@@ -1,4 +1,3 @@
-import React from "react";
 import SliderArea from "../sliders/SliderArea";
 
 function Around() {

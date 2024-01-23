@@ -1,16 +1,20 @@
 "use client";
-import { IoIosStar } from "react-icons/io";
+
 import React, { useState } from "react";
 import ReviewCard from "../ReviewCard";
+
+import { IoIosStar } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, FreeMode } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/autoplay";
 import { data_airbnb, data_home } from "@/utils/review-data";
 import { NavigationOptions } from "swiper/types";
 import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
+
 import Image from "next/image";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 function SliderReview() {
   const [isPrevDisabledAirbnb, setIsPrevDisabledAirbnb] = useState(true);
@@ -70,8 +74,8 @@ function SliderReview() {
             slidesPerView={"auto"}
             navigation={
               {
-                nextEl: `.swiper-button-next-airbnb`, // Utilisez une classe spécifique pour le slider Airbnb
-                prevEl: `.swiper-button-prev-airbnb`, // Utilisez une classe spécifique pour le slider Airbnb
+                nextEl: `.swiper-button-next-airbnb`,
+                prevEl: `.swiper-button-prev-airbnb`,
                 clickable: true,
               } as NavigationOptions
             }

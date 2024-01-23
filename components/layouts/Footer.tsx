@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
-import Logo from "../Logo";
-import { useReservationContext } from "@/context/PanelContext";
-import ReservationButton from "../ReservationButton";
 import Link from "next/link";
+
+import Logo from "../Logo";
+import ReservationButton from "../ReservationButton";
+
+import { useReservationContext } from "@/context/PanelContext";
 import { useSidebarContext } from "@/context/SidebarContext";
 
 function Footer() {
@@ -13,7 +14,6 @@ function Footer() {
 
   return (
     <footer className="px-8">
-      {/* Links & Copyrights */}
       <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
 
       <div className="flex flex-col sm:flex-row py-4 justify-around">

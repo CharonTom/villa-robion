@@ -6,23 +6,23 @@ import Link from "next/link";
 import { FaTimes } from "react-icons/fa";
 
 const ReservationPanel = () => {
-  const { isOpen, closePanel } = useReservationContext();
+  const { isPanelOpen, closePanel } = useReservationContext();
 
   return (
     <>
       {/* Superposition sombre */}
-      {isOpen && (
+
+      {isPanelOpen && (
         <div
           className="hidden md:block fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"
           onClick={closePanel}
         />
       )}
 
-      {/* Desktop version */}
       <div className="hidden md:block">
         <div
           className={`fixed top-0 left-0 w-full pt-[105px] transition-transform ease-in-out duration-300 transform bg-white overflow-hidden z-40 ${
-            isOpen ? "translate-y-0" : "-translate-y-full"
+            isPanelOpen ? "translate-y-0" : "-translate-y-full"
           }`}
         >
           <div className="p-8 relative">
@@ -95,7 +95,6 @@ const ReservationPanel = () => {
           </div>
         </div>
       </div>
-      {/* Mobile version */}
     </>
   );
 };
