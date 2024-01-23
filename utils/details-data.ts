@@ -41,7 +41,7 @@ export const galleryData = [
     id: "bed",
     images: ["bed1.webp", "bed2.webp", "bed3.webp", "bed4.webp"],
     title: "Les chambres",
-    text: "La suite parentale du rez-de-chaussée, avec son accès direct à la piscine, possède une salle d'eau privative avec douche. A l'étage, se trouve deux autres chambres : l'une possède une terrasse de 25m² qui surplombe le jardin, l'autre contient une mezzanine et peut donc accueillir quatre personnes.",
+    text: "La suite parentale du rez-de-chaussée, avec son accès direct à la piscine, possède une salle d'eau privative avec douche. A l'étage, se trouve deux autres chambres : l'une possède une terrasse de 25m² qui surplombe le jardin, l'autre contient une mezzanine et peut donc accueillir quatre personnes. Les couchages se répartissent ainsi : 3 lits double en 140 et un lit double en 160 (dans la chambre avec mezzanine)",
   },
   {
     id: "bath",

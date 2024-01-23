@@ -90,7 +90,11 @@ export default function SliderPresentation() {
         ))}
       </Swiper>
       <div className="flex-center mx-8 mt-4 w-fit">
-        <button onClick={handlePrevious} disabled={isPrevDisabled}>
+        <button
+          onClick={handlePrevious}
+          disabled={isPrevDisabled}
+          aria-label="previous picture"
+        >
           <FaAngleLeft
             className={`text-primary-pink text-[40px] ${
               isPrevDisabled ? "opacity-50" : ""
@@ -98,7 +102,11 @@ export default function SliderPresentation() {
           />
         </button>
         <div className="swiper-custom-pagination" />
-        <button onClick={handleNext} disabled={isNextDisabled}>
+        <button
+          onClick={handleNext}
+          disabled={isNextDisabled}
+          aria-label="next picture"
+        >
           <FaAngleRight
             className={`text-primary-pink text-[40px] ${
               isNextDisabled ? "opacity-50" : ""

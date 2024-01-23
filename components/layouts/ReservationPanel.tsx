@@ -88,6 +88,7 @@ const ReservationPanel = () => {
             <button
               onClick={closePanel}
               className="absolute bottom-3 right-6 bg-primary-pink p-3 rounded-full text-white"
+              aria-label="close panel"
             >
               <FaTimes size={12} />
             </button>

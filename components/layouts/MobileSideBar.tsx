@@ -46,6 +46,7 @@ function MobileSideBar() {
             <button
               onClick={closeSidebar}
               className="bg-primary-pink p-4 rounded-full text-white mr-4"
+              aria-label="close sidebar"
             >
               <FaTimes size={12} />
             </button>
