@@ -35,8 +35,11 @@ function Header() {
     };
   }, [prevScrollPos]);
 
+  const currentPathname = usePathname();
+
   // Le Header doit être transparent en fonction de la route.
-  const isTransparent = usePathname() === "/";
+  const isTransparent =
+    currentPathname === "/" || currentPathname === "/contact";
 
   const headerClasses = `fixed w-full z-50 transition-transform ${
     isPanelOpen

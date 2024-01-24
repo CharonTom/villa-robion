@@ -5,10 +5,10 @@ import ReviewCard from "../ReviewCard";
 
 import { IoIosStar } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, FreeMode } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import { data_airbnb, data_home } from "@/utils/review-data";
 import { NavigationOptions } from "swiper/types";
-import { FaAngleLeft, FaAngleRight, FaStar } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import Image from "next/image";
 

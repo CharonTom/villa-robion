@@ -13,7 +13,7 @@ function Footer() {
   const { openSidebar } = useSidebarContext();
 
   return (
-    <footer className="px-8">
+    <footer className="px-4 md:px-8">
       <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
 
       <div className="flex flex-col sm:flex-row py-4 justify-around">
