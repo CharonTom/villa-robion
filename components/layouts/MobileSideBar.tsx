@@ -10,11 +10,13 @@ import { useSidebarContext } from "@/context/SidebarContext";
 
 function MobileSideBar() {
   const { isSideBarOpen, closeSidebar } = useSidebarContext();
+  const animationKey = isSideBarOpen ? "open" : "closed";
 
   return (
     <div>
       <div className="md:hidden">
         <motion.div
+          key={animationKey}
           className={`fixed top-0 right-0 w-full h-full z-50 bg-white overflow-hidden flex flex-col`}
           animate={{ opacity: isSideBarOpen ? 1 : 0 }}
           initial={{ opacity: 0 }}
@@ -50,52 +52,89 @@ function MobileSideBar() {
           <div className="flex-grow flex flex-col justify-between p-6  text-3xl">
             <div className="h-full w-full flex flex-col justify-center gap-y-8 mb-8 text-center">
               <Link href="/" className="block" onClick={closeSidebar}>
-                Accueil
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  Accueil
+                </motion.div>
               </Link>
               <Link href="/visit" className="block" onClick={closeSidebar}>
-                Visite virtuelle
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  Visite virtuelle
+                </motion.div>
               </Link>
               <Link href="/contact" className="block" onClick={closeSidebar}>
-                Contacts
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.5 }}
+                >
+                  Contacts
+                </motion.div>
               </Link>
             </div>
 
             <div className="my-4">
-              <div className="my-6 w-full mx-auto h-[1px] bg-primary-pink"></div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.7 }}
+              >
+                <div className="my-6 w-full mx-auto h-[1px] bg-primary-pink"></div>
+              </motion.div>
 
-              <div className="text-2xl mb-8 text-center">
-                Réservez votre logement avec
-              </div>
-              <div className="flex-center gap-x-8">
-                <a
-                  href="https://www.airbnb.fr/rooms/1538049?guests=1&adults=1&viralityEntryPoint=1&s=76&fbclid=IwAR3vwyKI1XeVqDZkD4usFFJLKWq_wYjQTRqyeUQIy1SIO_CoNKgo7dBY7qc&source_impression_id=p3_1705500078_SuDxhqRB7qXYWthm"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 relative w-[40%]"
-                >
-                  <Image
-                    alt="airbnb"
-                    src="/images/airbnb.webp"
-                    fill
-                    className="block object-contain"
-                    sizes="auto"
-                  />
-                </a>
-                <a
-                  href="https://www.homeexchange.fr/homes/view/182314?fbclid=IwAR0VxyxYx-Y4e6P46y0LSuroFONg_-FyY0kkrxhKR9menaFKYnBHVpz4h-E"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 relative w-[40%]"
-                >
-                  <Image
-                    alt="homeexchange"
-                    src="/images/home.webp"
-                    fill
-                    sizes="auto"
-                    className="block object-contain"
-                  />
-                </a>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.8 }}
+              >
+                <div className="text-2xl mb-8 text-center">
+                  Réservez votre logement avec
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9 }}
+              >
+                <div className="flex-center gap-x-8">
+                  <a
+                    href="https://www.airbnb.fr/rooms/1538049?guests=1&adults=1&viralityEntryPoint=1&s=76&fbclid=IwAR3vwyKI1XeVqDZkD4usFFJLKWq_wYjQTRqyeUQIy1SIO_CoNKgo7dBY7qc&source_impression_id=p3_1705500078_SuDxhqRB7qXYWthm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 relative w-[40%]"
+                  >
+                    <Image
+                      alt="airbnb"
+                      src="/images/airbnb.webp"
+                      fill
+                      className="block object-contain"
+                      sizes="auto"
+                    />
+                  </a>
+                  <a
+                    href="https://www.homeexchange.fr/homes/view/182314?fbclid=IwAR0VxyxYx-Y4e6P46y0LSuroFONg_-FyY0kkrxhKR9menaFKYnBHVpz4h-E"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 relative w-[40%]"
+                  >
+                    <Image
+                      alt="homeexchange"
+                      src="/images/home.webp"
+                      fill
+                      sizes="auto"
+                      className="block object-contain"
+                    />
+                  </a>
+                </div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
