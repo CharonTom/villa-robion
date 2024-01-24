@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../Logo";
+import { motion } from "framer-motion";
 
 import { FaTimes } from "react-icons/fa";
 import { useSidebarContext } from "@/context/SidebarContext";
@@ -12,20 +13,15 @@ function MobileSideBar() {
 
   return (
     <div>
-      {/* Superposition sombre */}
-
-      {isSideBarOpen && (
-        <div
-          className="md:hidden fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"
-          onClick={closeSidebar}
-        />
-      )}
-
       <div className="md:hidden">
-        <div
-          className={`fixed top-0 right-0 w-full h-full z-50 transition-transform ease-in-out duration-300 bg-white transform overflow-hidden ${
-            isSideBarOpen ? "translate-x-0" : "translate-x-full"
-          } flex flex-col`}
+        <motion.div
+          className={`fixed top-0 right-0 w-full h-full z-50 bg-white overflow-hidden flex flex-col`}
+          animate={{ opacity: isSideBarOpen ? 1 : 0 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.2, ease: "easeInOut" }}
+          style={{
+            pointerEvents: isSideBarOpen ? "auto" : "none",
+          }}
         >
           <div className="bg-primary-pink h-[7px] w-full"></div>
           <div className="flex-between mx-4 h-[100px]">
@@ -102,7 +98,7 @@ function MobileSideBar() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

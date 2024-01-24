@@ -8,6 +8,7 @@ import MobileSideBar from "@/components/layouts/MobileSideBar";
 import SidebarProvider from "@/context/SidebarContext";
 import SmoothScroll from "@/components/SmoothScroll";
 import "@/styles/globals.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
