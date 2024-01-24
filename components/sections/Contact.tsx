@@ -22,7 +22,7 @@ function Contact() {
       </div>
       {/* text */}
 
-      <div className="p-4 py-8 md:py-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+      <div className="p-4 py-6 md:py-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
         <p className="text-center mb-6 md:mb-12">
           Besoin d’informations supplémentaires ?
         </p>
@@ -35,32 +35,32 @@ function Contact() {
 
       {/* links */}
 
-      <nav className="links-list w-fit mx-auto block">
-        <ul className="text-gray-500 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl block">
+      <nav className="links-list w-full">
+        <ul className="text-gray-500 text-xl w-fit text-center mx-auto sm:text-2xl md:text-3xl lg:text-4xl">
           <li>
             <a href="tel:+33621042123">
-              <div>
+              <span>
                 Lionel :{" "}
                 <span className="text-primary-pink">06.10.36.13.38</span>
-              </div>
+              </span>
             </a>
           </li>
           <li>
             <a href="tel:+33621042123">
-              <div>
+              <span>
                 Nathalie :{" "}
                 <span className="text-primary-pink">06.12.23.31.71</span>
-              </div>
+              </span>
             </a>
           </li>
           <li>
             <a href="mailto:charon.s.tom@gmail.com">
-              <div>nathrobion@gmail.com</div>
+              <span>nathrobion@gmail.com</span>
             </a>
           </li>
           <li>
             <a href="mailto:charon.s.tom@gmail.com">
-              <div>lnrobion@gmail.com</div>
+              <span>lnrobion@gmail.com</span>
             </a>
           </li>
         </ul>

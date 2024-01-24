@@ -64,10 +64,10 @@ function MobileSideBar() {
               </Link>
             </div>
 
-            <div>
-              <div className="my-3 w-full mx-auto h-[1px] bg-primary-pink"></div>
+            <div className="my-4">
+              <div className="my-6 w-full mx-auto h-[1px] bg-primary-pink"></div>
 
-              <div className="text-xl mb-8 text-center">
+              <div className="text-2xl mb-8 text-center">
                 Réservez votre logement avec
               </div>
               <div className="flex-center gap-x-8">

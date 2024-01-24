@@ -39,14 +39,19 @@ function Footer() {
         <div className="flex flex-col md:flex-row sm:justify-center p-4 gap-8  md:gap-15 lg:gap-20">
           <nav className="links-list">
             <h3 className="mb-2 md:text-[34px]">Liens</h3>
-            <ul className="text-gray-500 ">
-              <Link href="/contact" className="p-1 block">
-                <li> Contactez-nous</li>
-              </Link>
-              <Link href="/visit" className="p-1 block">
-                <li>Visite Virtuelle</li>
-              </Link>
-              <li>
+            <ul className="text-gray-500">
+              <li className="w-fit">
+                <Link href="/contact" className="p-1 block">
+                  Contactez-nous
+                </Link>
+              </li>
+
+              <li className="w-fit">
+                <Link href="/visit" className="p-1 block">
+                  Visite virtuelle
+                </Link>
+              </li>
+              <li className="w-fit">
                 <button
                   className="text-center md:hidden p-1"
                   onClick={openSidebar}
@@ -60,30 +65,32 @@ function Footer() {
                   Réserver
                 </button>
               </li>
-              <Link href="/" className="p-1 block">
-                <li>Accueil</li>
-              </Link>
+              <li className="w-fit">
+                <Link href="/" className="p-1 block">
+                  Accueil
+                </Link>
+              </li>
             </ul>
           </nav>
           <nav className="links-list">
             <h3 className="mb-2 md:text-[34px]">Contacts</h3>
             <ul className="text-gray-500">
-              <li>
+              <li className="w-fit">
                 <a href="tel:+33621042123" className="p-1 block">
                   <div>Lionel : 06.10.36.13.38</div>
                 </a>
               </li>
-              <li>
+              <li className="w-fit">
                 <a href="tel:+33621042123" className="p-1 block">
                   <div>Nathalie : 06.12.23.31.71</div>
                 </a>
               </li>
-              <li>
+              <li className="w-fit">
                 <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
                   <div>nathrobion@gmail.com</div>
                 </a>
               </li>
-              <li>
+              <li className="w-fit">
                 <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
                   <div>lnrobion@gmail.com</div>
                 </a>
