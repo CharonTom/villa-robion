@@ -16,7 +16,7 @@ function Contact() {
           loading="eager"
           sizes="auto"
         />
-        <h1 className="absolute text-white bottom-[8%] left-[2%] text-4xl md:text-5xl lg:text-6xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
+        <h1 className="absolute text-white bottom-[10%] md:bottom-[5%] left-[2%] text-4xl md:text-5xl lg:text-6xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
           Contactez-nous.
         </h1>
       </div>
