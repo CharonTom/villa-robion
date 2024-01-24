@@ -38,7 +38,7 @@ function Contact() {
       <nav className="links-list w-full">
         <ul className="text-gray-500 text-xl w-fit text-center mx-auto sm:text-2xl md:text-3xl lg:text-4xl">
           <li>
-            <a href="tel:+33621042123">
+            <a href="tel:+33621042123" className="p-1 block">
               <span>
                 Lionel :{" "}
                 <span className="text-primary-pink">06.10.36.13.38</span>
@@ -46,7 +46,7 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a href="tel:+33621042123">
+            <a href="tel:+33621042123" className="p-1 block">
               <span>
                 Nathalie :{" "}
                 <span className="text-primary-pink">06.12.23.31.71</span>
@@ -54,12 +54,12 @@ function Contact() {
             </a>
           </li>
           <li>
-            <a href="mailto:charon.s.tom@gmail.com">
+            <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
               <span>nathrobion@gmail.com</span>
             </a>
           </li>
           <li>
-            <a href="mailto:charon.s.tom@gmail.com">
+            <a href="mailto:charon.s.tom@gmail.com" className="p-1 block">
               <span>lnrobion@gmail.com</span>
             </a>
           </li>
