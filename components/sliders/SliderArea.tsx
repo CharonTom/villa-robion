@@ -16,6 +16,7 @@ function SliderArea() {
       <Swiper
         autoplay
         spaceBetween={15}
+        loop
         slidesPerView={"auto"}
         modules={[Pagination, Navigation, Autoplay]}
         grabCursor={true}

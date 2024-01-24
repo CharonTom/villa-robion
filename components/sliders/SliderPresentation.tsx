@@ -5,7 +5,7 @@ import Link from "next/link";
 import { presentationSliderData } from "@/utils/presentation-data";
 import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 import "swiper/css";
@@ -16,6 +16,7 @@ export default function SliderPresentation() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPrevDisabled, setIsPrevDisabled] = useState(true);
   const [isNextDisabled, setIsNextDisabled] = useState(false);
+  const [swiperRef, setSwiperRef] = useState<SwiperClass>();
 
   const handleSlideChange = (swiper: any) => {
     setCurrentSlide(swiper.activeIndex);
@@ -23,15 +24,13 @@ export default function SliderPresentation() {
     setIsNextDisabled(swiper.isEnd);
   };
 
-  const [swiperRef, setSwiperRef] = useState<SwiperClass>();
-
-  const handlePrevious = useCallback(() => {
+  const handlePrevious = () => {
     swiperRef?.slidePrev();
-  }, [swiperRef]);
+  };
 
-  const handleNext = useCallback(() => {
+  const handleNext = () => {
     swiperRef?.slideNext();
-  }, [swiperRef]);
+  };
 
   return (
     <div className="slider-presentation">
