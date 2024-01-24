@@ -32,10 +32,10 @@ function MobileSideBar() {
               className="flex-center gap-x-2"
               onClick={closeSidebar}
             >
-              <div className="overflow-hidden relative bg-white h-16 w-16 md:h-20 md:w-20 rounded-full relative border-2 border-primary-pink">
+              <div className="overflow-hidden relative bg-white h-16 w-16 rounded-full relative border-2 border-primary-pink">
                 <Logo />
               </div>
-              <p className="text-sm md:text-base">
+              <p className="text-base">
                 La maison
                 <br />
                 de Nath & Lio
@@ -49,7 +49,7 @@ function MobileSideBar() {
               <FaTimes size={12} />
             </button>
           </div>
-          <div className="flex-grow flex flex-col justify-between p-6  text-3xl">
+          <div className="flex-grow flex flex-col justify-between py-6 px-3  text-3xl">
             <div className="h-full w-full flex flex-col justify-center gap-y-8 mb-8 text-center">
               <Link href="/" className="block" onClick={closeSidebar}>
                 <motion.div
@@ -94,8 +94,8 @@ function MobileSideBar() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
               >
-                <div className="text-2xl mb-8 text-center">
-                  Réservez votre logement avec
+                <div className="text-2xl mb-8 text-center font-semibold">
+                  Réservez votre logement
                 </div>
               </motion.div>
 
