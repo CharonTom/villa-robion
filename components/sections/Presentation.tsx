@@ -18,7 +18,6 @@ function Presentation() {
             src="/images/dronepic.webp"
             fill
             className="rounded-xl p-[2px] object-cover"
-            loading="eager"
             sizes="auto"
           />
         </div>

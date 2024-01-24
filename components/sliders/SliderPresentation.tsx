@@ -55,7 +55,6 @@ export default function SliderPresentation() {
               fill
               sizes="auto"
               className="rounded-lg brightness-90 object-cover"
-              loading="eager"
             />
             <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-16">
               <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl [text-shadow:_3px_3px_3px_rgb(0_0_0_/_70%)]">
