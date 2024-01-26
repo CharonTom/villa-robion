@@ -55,7 +55,7 @@ function MobileSideBar() {
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
                 >
                   Accueil
                 </motion.div>
@@ -64,7 +64,7 @@ function MobileSideBar() {
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.4 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
                 >
                   Visite virtuelle
                 </motion.div>
@@ -73,7 +73,7 @@ function MobileSideBar() {
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.5 }}
+                  transition={{ delay: 0.5, duration: 0.5 }}
                 >
                   Contacts
                 </motion.div>
