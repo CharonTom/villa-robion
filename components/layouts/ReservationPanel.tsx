@@ -12,9 +12,9 @@ const ReservationPanel = () => {
       {/* Superposition sombre */}
 
       <div
-        className={`hidden md:block transition-all ${
+        className={`hidden md:block transition-opacity duration-500 ${
           isPanelOpen
-            ? "opacity-50 fixed top-0 left-0 w-full h-full bg-black z-40"
+            ? "opacity-60 fixed top-0 left-0 w-full h-full bg-black z-40"
             : "opacity-0"
         }`}
         onClick={closePanel}
