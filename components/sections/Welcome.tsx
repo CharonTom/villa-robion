@@ -9,7 +9,7 @@ function Welcome() {
   const { openPanel } = useReservationContext();
 
   return (
-    <section className="h-screen w-full">
+    <section className="h-dvh md:h-screen w-full">
       <video
         preload="meta"
         muted
