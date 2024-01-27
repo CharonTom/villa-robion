@@ -41,7 +41,7 @@ function Header() {
   const isTransparent =
     currentPathname === "/" || currentPathname === "/contact";
 
-  const headerClasses = `fixed w-full z-50 transition-transform ${
+  const headerClasses = `fixed w-full z-50 transition-header ${
     isPanelOpen
       ? "translate-y-0"
       : isScrolled
@@ -52,7 +52,7 @@ function Header() {
       ? isPanelOpen
         ? "bg-white text-black border-b border-gray-300"
         : isTransparent
-        ? "bg-transparent text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_70%)]"
+        ? "bg-transparent text-white [text-shadow:_1px_1px_1px_rgb(0_0_0_/_50%)]"
         : "bg-transparent text-black"
       : "bg-white text-black border-b border-gray-300"
   }`;

@@ -278,3 +278,8 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+.transition-header {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease,
+    border-bottom-color 0.3s ease;
+}

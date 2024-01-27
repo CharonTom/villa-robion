@@ -11,20 +11,22 @@ const ReservationPanel = () => {
     <>
       {/* Superposition sombre */}
 
-      {isPanelOpen && (
-        <div
-          className="hidden md:block fixed top-0 left-0 w-full h-full bg-black opacity-30 z-40"
-          onClick={closePanel}
-        />
-      )}
+      <div
+        className={`hidden md:block transition-all ${
+          isPanelOpen
+            ? "opacity-50 fixed top-0 left-0 w-full h-full bg-black z-40"
+            : "opacity-0"
+        }`}
+        onClick={closePanel}
+      />
 
       <div className="hidden md:block">
         <div
-          className={`fixed top-0 left-0 w-full pt-[105px] transition-transform ease-in-out duration-300 transform bg-white overflow-hidden z-40 ${
-            isPanelOpen ? "translate-y-0" : "-translate-y-full"
+          className={`fixed top-0 left-0 w-full bg-white overflow-hidden z-40 transition-max-height ease-in-out duration-500 ${
+            isPanelOpen ? "max-h-screen" : "max-h-0 hidden md:block"
           }`}
         >
-          <div className="p-8 relative">
+          <div className="p-8 mt-[105px] relative">
             <div className="text-[34px] mb-2 lg:mb-4">
               Faites votre réservation !
             </div>

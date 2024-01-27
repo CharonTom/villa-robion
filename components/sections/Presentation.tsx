@@ -6,7 +6,7 @@ function Presentation() {
   return (
     <section id="presentation" className="p-4 md:p-8 lg:p-8">
       <div className="flex flex-col items-center md:flex-row gap-4 sm:gap-8 md:gap-12">
-        <div className="my-8 w-full md:w-3/5">
+        <div className="mb-8 w-full md:w-3/5">
           <p className="text-3xl md:text-4xl lg:text-5xl md:p-8 ">
             Découvrez l&apos;élégance et le charme de notre maison nichée au
             coeur de la Provence.

@@ -42,9 +42,9 @@ export const data_home = [
   },
 
   {
-    name: "Sylvain",
-    date: "octobre 2023",
-    text: "Juste au top !!! merci pour ce très bel échange",
+    name: "Michel/ Martine",
+    date: "avril 2023",
+    text: "Nous avons passé une excellente semaine en Provence dans la jolie maison de Nathalie et Lionel que nous avons eu la chance de rencontrer et qui nous avaient préparé un très bon déjeuner pendant lequel nous avons bavardé comme de vieux amis. Merci à eux deux .Nous les attendons à Paris quand ils en ont envie.",
     img: "/images/profil/sy.webp",
   },
   {

@@ -12,7 +12,7 @@ function Contact() {
           alt="maison"
           src="/images/contact.webp"
           fill
-          className="object-cover"
+          className="object-cover brightness-75"
           loading="eager"
           sizes="auto"
         />
