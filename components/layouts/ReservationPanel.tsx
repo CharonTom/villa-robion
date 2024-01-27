@@ -10,19 +10,14 @@ const ReservationPanel = () => {
   return (
     <>
       {/* Superposition sombre */}
-
       <div
-        className={`hidden md:block transition-opacity duration-500 ${
-          isPanelOpen
-            ? "opacity-60 fixed top-0 left-0 w-full h-full bg-black z-40"
-            : "opacity-0"
-        }`}
+        className={`hidden md:block overlay ${isPanelOpen && "open"}`}
         onClick={closePanel}
-      />
+      ></div>
 
       <div className="hidden md:block">
         <div
-          className={`fixed top-0 left-0 w-full bg-white overflow-hidden z-40 transition-max-height ease-in-out duration-500 ${
+          className={`bg-pink-200 fixed top-0 left-0 w-full bg-white overflow-hidden z-40 transition-max-height ease-in-out duration-500 ${
             isPanelOpen ? "max-h-screen" : "max-h-0 hidden md:block"
           }`}
         >
