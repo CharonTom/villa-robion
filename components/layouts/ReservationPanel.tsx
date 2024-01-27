@@ -10,10 +10,10 @@ const ReservationPanel = () => {
   return (
     <>
       {/* Superposition sombre */}
-      <div
+      {/* <div
         className={`hidden md:block overlay ${isPanelOpen && "open"}`}
         onClick={closePanel}
-      ></div>
+      ></div> */}
 
       <div className="hidden md:block">
         <div
