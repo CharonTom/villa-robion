@@ -9,7 +9,7 @@ function Welcome() {
   const { openPanel } = useReservationContext();
 
   return (
-    <section className="h-screen w-full">
+    <section className="h-svh md:h-screen w-full relative">
       <video
         preload="auto"
         muted
@@ -31,7 +31,9 @@ function Welcome() {
         <ReservationButton openPanel={openPanel} />
       </div>
 
-      <ScrollDown />
+      <div className="group absolute bottom-3 right-1/2 translate-x-1/2 text-white py-3">
+        <ScrollDown />
+      </div>
     </section>
   );
 }
