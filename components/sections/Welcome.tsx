@@ -9,10 +9,6 @@ import { useReservationContext } from "@/context/PanelContext";
 function Welcome() {
   const { openPanel } = useReservationContext();
 
-  useEffect(() => {
-    window.location.reload();
-  }, []);
-
   return (
     <section className="h-screen w-full">
       <video
