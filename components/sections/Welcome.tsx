@@ -29,8 +29,6 @@ function Welcome() {
       <div className="absolute bottom-10 right-0 mx-4 md:mx-8 lg:mx-14">
         <ReservationButton openPanel={openPanel} />
       </div>
-
-      <ScrollDown />
     </section>
   );
 }
