@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import ReservationButton from "../ReservationButton";
 import ScrollDown from "../ScrollDown";
 
@@ -8,26 +7,10 @@ import { useReservationContext } from "@/context/PanelContext";
 
 function Welcome() {
   const { openPanel } = useReservationContext();
-  const [videoKey, setVideoKey] = useState(0);
-  useEffect(() => {
-    // Fonction pour forcer le rechargement de la vidéo
-    const forceReload = () => {
-      setVideoKey((prevKey) => prevKey + 1);
-    };
-
-    // Appeler la fonction lorsqu'il est nécessaire de forcer le rechargement
-    forceReload();
-
-    // Nettoyer la fonction après le montage du composant
-    return () => {
-      // Ajoutez d'autres nettoyages si nécessaire
-    };
-  }, []);
 
   return (
     <section className="h-screen w-full">
       <video
-        key={videoKey}
         muted
         autoPlay
         loop
