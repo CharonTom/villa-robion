@@ -116,7 +116,7 @@ function MobileSideBar() {
                       src="/images/airbnb.webp"
                       fill
                       className="block object-contain"
-                      sizes="auto"
+                      // sizes="auto"
                     />
                   </a>
                   <a
@@ -129,7 +129,7 @@ function MobileSideBar() {
                       alt="homeexchange"
                       src="/images/home.webp"
                       fill
-                      sizes="auto"
+                      // sizes="auto"
                       className="block object-contain"
                     />
                   </a>
