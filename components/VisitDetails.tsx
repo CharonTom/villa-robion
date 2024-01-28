@@ -23,9 +23,9 @@ function VisitDetails({ images, text, title, index }: VisitDetailsProps) {
         </div>
 
         <div className="w-full md:w-[40%]">
-          <h3 className="hidden md:block my-4 md:text-4xl lg:text-5xl">
+          <h2 className="hidden md:block my-4 md:text-4xl lg:text-5xl">
             {title}
-          </h3>
+          </h2>
           <p className="my-4">{text}</p>
         </div>
       </div>

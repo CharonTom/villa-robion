@@ -23,9 +23,9 @@ function Contact() {
       {/* text */}
 
       <div className="p-4 py-6 md:py-20 text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-        <p className="text-center mb-6 md:mb-12">
+        <h2 className="text-center mb-6 md:mb-12">
           Besoin d’informations supplémentaires ?
-        </p>
+        </h2>
         <p className="text-center md:w-[80%] mx-auto">
           N&apos;hésitez pas à nous contacter si vous avez la moindre question
           ou demande.
