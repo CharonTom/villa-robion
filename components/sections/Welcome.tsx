@@ -14,10 +14,9 @@ function Welcome() {
         muted
         autoPlay
         loop
-        playsInline
         className="w-full h-full object-cover brightness-75"
       >
-        <source src="/bgvideo.mp4" type="video/mp4" />
+        <source src="/bg-video-test.mp4" type="video/mp4" />
       </video>
 
       <div className="mx-4 md:mx-8 lg:mx-14 absolute top-[16%] md:top-1/2 md:-translate-y-1/2 w-[75%] md:w-[65%]">
