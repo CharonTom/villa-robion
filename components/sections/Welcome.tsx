@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import ReservationButton from "../ReservationButton";
 import ScrollDown from "../ScrollDown";
 
@@ -7,6 +8,10 @@ import { useReservationContext } from "@/context/PanelContext";
 
 function Welcome() {
   const { openPanel } = useReservationContext();
+
+  useEffect(() => {
+    window.location.reload();
+  }, []);
 
   return (
     <section className="h-screen w-full">
