@@ -11,6 +11,7 @@ function Welcome() {
   return (
     <section className="h-screen w-full">
       <video
+        preload="meta"
         muted
         autoPlay
         loop
@@ -29,6 +30,8 @@ function Welcome() {
       <div className="absolute bottom-10 right-0 mx-4 md:mx-8 lg:mx-14">
         <ReservationButton openPanel={openPanel} />
       </div>
+
+      <ScrollDown />
     </section>
   );
 }

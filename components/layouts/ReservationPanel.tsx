@@ -9,7 +9,7 @@ const ReservationPanel = () => {
 
   return (
     <>
-      {/* Superposition sombre
+      {/* Superposition sombre */}
       <div
         className={`hidden md:block overlay ${isPanelOpen && "open"}`}
         onClick={closePanel}
@@ -91,7 +91,7 @@ const ReservationPanel = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
