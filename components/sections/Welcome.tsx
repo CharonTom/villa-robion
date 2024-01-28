@@ -11,6 +11,7 @@ function Welcome() {
   return (
     <section className="h-screen w-full">
       <video
+        key={new Date().getTime()}
         preload="meta"
         muted
         autoPlay
