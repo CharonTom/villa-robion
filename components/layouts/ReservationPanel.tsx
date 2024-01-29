@@ -83,7 +83,6 @@ const ReservationPanel = () => {
                         src="/images/airbnb_image.webp"
                         fill
                         className="rounded-xl object-cover"
-                        sizes="(min-width: 1040px) calc(25vw - 24px), calc(50vw - 40px)"
                       />
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                     </div>
