@@ -3,13 +3,7 @@ import React from "react";
 
 function Logo() {
   return (
-    <Image
-      src="/images/logo.webp"
-      fill
-      alt="logo"
-      className="object-contain"
-      loading="eager"
-    />
+    <Image src="/images/logo.webp" fill alt="logo" className="object-contain" />
   );
 }
 
