@@ -18,6 +18,7 @@ function Presentation() {
             src="/images/dronepic.webp"
             fill
             className="rounded-xl p-[2px] object-cover"
+            sizes="(min-width: 1540px) 496px, (min-width: 780px) calc(19.05vw + 206px), (min-width: 640px) 496px, calc(100vw - 36px)"
           />
         </div>
       </div>

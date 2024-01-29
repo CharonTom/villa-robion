@@ -52,6 +52,7 @@ export default function SliderPresentation() {
               src={slide.image}
               alt="slider"
               fill
+              sizes="calc(88.89vw - 25px)"
               className="rounded-lg brightness-90 object-cover"
             />
             <div className="relative h-full text-white p-4 flex flex-col justify-start gap-y-16">
