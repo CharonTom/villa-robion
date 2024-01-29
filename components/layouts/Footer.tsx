@@ -56,13 +56,13 @@ function Footer() {
                   className="text-center md:hidden p-1"
                   onClick={openSidebar}
                 >
-                  Réserver
+                  Réservez
                 </button>
                 <button
                   className="text-center md:block hidden p-1"
                   onClick={openPanel}
                 >
-                  Réserver
+                  Réservez
                 </button>
               </li>
               <li className="w-fit">

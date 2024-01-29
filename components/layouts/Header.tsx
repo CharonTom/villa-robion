@@ -83,7 +83,7 @@ function Header() {
             <ul className="flex-center gap-x-8 lg:gap-x-16 text-lg lg:text-xl">
               <li className="pink-underline">
                 <div onClick={openPanel} className="target cursor-pointer">
-                  Réserver
+                  Réservez
                 </div>
               </li>
               <li className="pink-underline">

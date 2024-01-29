@@ -1,11 +1,14 @@
 "use client";
 
 import { useReservationContext } from "@/context/PanelContext";
-import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { useState } from "react";
 
 const ReservationPanel = () => {
   const { isPanelOpen, closePanel } = useReservationContext();
+  const animationKey = isPanelOpen ? "open" : "closed";
 
   return (
     <>
@@ -16,8 +19,8 @@ const ReservationPanel = () => {
       ></div>
 
       <div className="hidden md:block">
-        <div
-          className={`bg-pink-200 fixed top-0 left-0 w-full bg-white overflow-hidden z-40 transition-max-height ease-in-out duration-500 ${
+        <motion.div
+          className={`fixed top-0 left-0 w-full bg-white overflow-hidden z-40 transition-max-height ease-in-out duration-500 ${
             isPanelOpen ? "max-h-screen" : "max-h-0 hidden md:block"
           }`}
         >
@@ -37,7 +40,10 @@ const ReservationPanel = () => {
               </div>
               <div className="flex flex-col w-full lg:w-1/2">
                 <div className="flex gap-4">
-                  <a
+                  <motion.a
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.3 }}
                     href="https://www.airbnb.fr/rooms/1538049?guests=1&adults=1&viralityEntryPoint=1&s=76&fbclid=IwAR3vwyKI1XeVqDZkD4usFFJLKWq_wYjQTRqyeUQIy1SIO_CoNKgo7dBY7qc&source_impression_id=p3_1705500078_SuDxhqRB7qXYWthm"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -57,8 +63,11 @@ const ReservationPanel = () => {
                     <div className="text-base mt-2 group-hover:text-primary-pink">
                       Louer avec Airbnb
                     </div>
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
+                    initial={{ opacity: 0, y: 60 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.3 }}
                     href="https://www.homeexchange.fr/homes/view/182314?fbclid=IwAR0VxyxYx-Y4e6P46y0LSuroFONg_-FyY0kkrxhKR9menaFKYnBHVpz4h-E"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -78,7 +87,7 @@ const ReservationPanel = () => {
                     <div className="text-base mt-2 group-hover:text-primary-pink">
                       Echanger avec Home Exchange
                     </div>
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
@@ -90,7 +99,7 @@ const ReservationPanel = () => {
               <FaTimes size={12} />
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
