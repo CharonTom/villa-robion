@@ -7,10 +7,20 @@ import { motion } from "framer-motion";
 
 import { FaTimes } from "react-icons/fa";
 import { useSidebarContext } from "@/context/SidebarContext";
+import { useMediaQuery } from "react-responsive";
+import { useEffect } from "react";
 
 function MobileSideBar() {
-  const { isSideBarOpen, closeSidebar } = useSidebarContext();
+  const { isSideBarOpen, closeSidebar, setIsSideBarOpen } = useSidebarContext();
   const animationKey = isSideBarOpen ? "open" : "closed";
+
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+
+  useEffect(() => {
+    if (isDesktop) {
+      setIsSideBarOpen(false);
+    }
+  }, [isDesktop, setIsSideBarOpen]);
 
   return (
     <div>

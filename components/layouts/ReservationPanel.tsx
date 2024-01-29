@@ -1,14 +1,23 @@
 "use client";
 
 import { useReservationContext } from "@/context/PanelContext";
+import { useMediaQuery } from "react-responsive";
+import { useEffect } from "react";
+
 import { FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
 
 const ReservationPanel = () => {
-  const { isPanelOpen, closePanel } = useReservationContext();
-  const animationKey = isPanelOpen ? "open" : "closed";
+  const { isPanelOpen, closePanel, setIsPanelOpen } = useReservationContext();
+
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+
+  useEffect(() => {
+    if (isMobile) {
+      setIsPanelOpen(false);
+    }
+  }, [isMobile, setIsPanelOpen]);
 
   return (
     <>
