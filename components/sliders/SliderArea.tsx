@@ -28,7 +28,6 @@ function SliderArea() {
               src={slide.image}
               alt="slider"
               fill
-              sizes="auto"
               style={{ objectFit: "cover" }}
               className="rounded-lg brightness-90"
               unoptimized={true}

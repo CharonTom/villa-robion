@@ -82,7 +82,6 @@ const ReservationPanel = () => {
                         alt="airbnb"
                         src="/images/airbnb_image.webp"
                         fill
-                        sizes="auto"
                         style={{ objectFit: "cover" }}
                         className="rounded-xl"
                       />
@@ -109,7 +108,6 @@ const ReservationPanel = () => {
                         alt="airbnb"
                         src="/images/homeExchange_image.webp"
                         fill
-                        sizes="auto"
                         style={{ objectFit: "cover" }}
                         className="rounded-xl"
                       />

@@ -36,7 +36,6 @@ function ReviewCard({
             className="rounded-full bg-red-200"
             fill
             style={{ objectFit: "cover" }}
-            sizes="auto"
           />
         </div>
         <div>

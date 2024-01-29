@@ -33,7 +33,6 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                sizes="auto"
                 className="block object-cover"
               />
             </div>
@@ -59,7 +58,6 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                sizes="auto"
                 className="block object-cover cursor-pointer"
               />
             </div>
