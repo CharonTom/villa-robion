@@ -82,9 +82,8 @@ const ReservationPanel = () => {
                         alt="airbnb"
                         src="/images/airbnb_image.webp"
                         fill
-                        style={{ objectFit: "cover" }}
+                        className="rounded-xl object-cover"
                         sizes="(min-width: 1040px) calc(25vw - 24px), calc(50vw - 40px)"
-                        className="rounded-xl"
                       />
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                     </div>
@@ -106,12 +105,11 @@ const ReservationPanel = () => {
                   >
                     <div className="relative h-60 overflow-hidden">
                       <Image
-                        alt="airbnb"
+                        alt="exchange"
                         src="/images/homeExchange_image.webp"
                         fill
                         style={{ objectFit: "cover" }}
                         className="rounded-xl"
-                        sizes="(min-width: 1040px) calc(25vw - 24px), calc(50vw - 40px)"
                       />
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                     </div>
