@@ -33,9 +33,9 @@ function ReviewCard({
           <Image
             alt="profil"
             src={profil}
-            className="rounded-full bg-red-200"
+            className="rounded-full object-cover"
             fill
-            style={{ objectFit: "cover" }}
+            sizes="48px"
           />
         </div>
         <div>

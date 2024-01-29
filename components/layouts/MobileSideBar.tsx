@@ -60,8 +60,12 @@ function MobileSideBar() {
             </button>
           </div>
           <div className="flex-grow flex flex-col justify-between py-6 px-3  text-3xl">
-            <div className="h-full w-full flex flex-col justify-center gap-y-8 mb-8 text-center">
-              <Link href="/" className="block" onClick={closeSidebar}>
+            <div className="h-full w-full flex flex-col justify-center items-center gap-y-8 mb-8 text-center">
+              <Link
+                href="/"
+                className="block hover:text-primary-pink w-fit"
+                onClick={closeSidebar}
+              >
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -70,7 +74,11 @@ function MobileSideBar() {
                   Accueil
                 </motion.div>
               </Link>
-              <Link href="/visit" className="block" onClick={closeSidebar}>
+              <Link
+                href="/visit"
+                className="block hover:text-primary-pink w-fit"
+                onClick={closeSidebar}
+              >
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -79,7 +87,11 @@ function MobileSideBar() {
                   Visite virtuelle
                 </motion.div>
               </Link>
-              <Link href="/contact" className="block" onClick={closeSidebar}>
+              <Link
+                href="/contact"
+                className="block hover:text-primary-pink w-fit"
+                onClick={closeSidebar}
+              >
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}

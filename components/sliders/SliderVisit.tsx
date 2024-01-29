@@ -31,6 +31,7 @@ function SliderVisit({ images }: { images: string[] }) {
             <div className="flex-center h-full w-full relative">
               <Image
                 alt={`Image ${index + 1}`}
+                placeholder="blur"
                 src={`/images/VisitSlider/${image}`}
                 fill
                 className="block object-cover"
