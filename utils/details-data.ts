@@ -12,7 +12,7 @@ export const galleryData = [
       "garden8.webp",
     ],
     title: "Le jardin et la piscine",
-    text: "Dans notre jardin arboré de 1200m² vous trouverez un cadre propice à la détente avec la paillote indonésienne, le bassin et ses poissons rouges, les salons-de-jardin et la table de ping-pong. La piscine sécurisée avec ses 8 mètres de diamètre et 1,40m de hauteur d’eau est l'espace idéal pour s'amuser et se rafraîchir en famille. Vous pourrez profiter du soleil sur les transats ou vous détendre à l’ombre de la paillote.",
+    text: "Dans notre jardin arboré de 1200m² vous trouverez un cadre propice à la détente avec la paillote indonésienne, le bassin et ses poissons rouges, les salons de jardin et la table de ping-pong. La piscine sécurisée avec ses 8 mètres de diamètre et 1,40m de hauteur d’eau est l'espace idéal pour s'amuser et se rafraîchir en famille. Vous pourrez profiter du soleil sur les transats ou vous détendre à l’ombre de la paillote.",
   },
   {
     id: "kitchen",

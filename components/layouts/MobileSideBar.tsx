@@ -17,7 +17,7 @@ function MobileSideBar() {
       <div className="md:hidden">
         <motion.div
           key={animationKey}
-          className="fixed top-0 right-0 w-full h-full z-50 bg-white overflow-hidden flex flex-col"
+          className={`fixed top-0 right-0 w-full h-full z-50 bg-white overflow-hidden flex flex-col`}
           animate={{ opacity: isSideBarOpen ? 1 : 0 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 0.2, ease: "easeInOut" }}
