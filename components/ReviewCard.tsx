@@ -23,7 +23,7 @@ function ReviewCard({
     <div className="w-full h-[270px] bg-gray-100 rounded-lg p-6 relative">
       <Image
         src={logo}
-        alt="logo"
+        alt="Le logo de notre maison de Robion"
         width={20}
         height={20}
         className="absolute top-6 right-6 rounded-lg"
@@ -31,7 +31,7 @@ function ReviewCard({
       <div className="flex gap-x-4 mb-2">
         <div className="h-12 w-12 relative">
           <Image
-            alt="profil"
+            alt="photo de profil"
             src={profil}
             className="rounded-full object-cover"
             fill

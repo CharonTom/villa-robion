@@ -50,7 +50,7 @@ export default function SliderPresentation() {
           <SwiperSlide key={index}>
             <Image
               src={slide.image}
-              alt="slider"
+              alt="Présentation de l'intérieur et du jardin de notre villa provençale"
               fill
               sizes="calc(88.89vw - 25px)"
               className="rounded-lg brightness-90 object-cover"

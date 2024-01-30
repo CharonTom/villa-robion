@@ -14,7 +14,7 @@ function Presentation() {
         </div>
         <div className="relative w-full h-[280px] sm:w-[500px] sm:h-[400px] bg-primary-pink rounded-xl mx-auto">
           <Image
-            alt="maison"
+            alt="Maison Provençale avec piscine vue du ciel"
             src="/images/dronepic.webp"
             fill
             className="rounded-xl p-[2px] object-cover"

@@ -26,7 +26,7 @@ function SliderArea() {
           <SwiperSlide key={index}>
             <Image
               src={slide.image}
-              alt="slider"
+              alt="Différents endroits du parc Régional du Luberon"
               fill
               style={{ objectFit: "cover" }}
               className="rounded-lg brightness-90"

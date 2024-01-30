@@ -134,7 +134,7 @@ function MobileSideBar() {
                     className="h-16 relative w-[40%]"
                   >
                     <Image
-                      alt="airbnb"
+                      alt="Image lien pour louer notre maison via Airbnb"
                       src="/images/airbnb.webp"
                       fill
                       className="block object-contain"
@@ -147,7 +147,7 @@ function MobileSideBar() {
                     className="h-16 relative w-[40%]"
                   >
                     <Image
-                      alt="homeexchange"
+                      alt="Image lien pour échanger notre maison via HomeExchange"
                       src="/images/home.webp"
                       fill
                       className="block object-contain"

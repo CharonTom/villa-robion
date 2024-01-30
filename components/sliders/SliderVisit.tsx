@@ -30,7 +30,7 @@ function SliderVisit({ images }: { images: string[] }) {
           <SwiperSlide key={index}>
             <div className="flex-center h-full w-full relative">
               <Image
-                alt={`Image ${index + 1}`}
+                alt={`Galerie photo de notre villa ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
                 className="block object-cover"
@@ -54,7 +54,7 @@ function SliderVisit({ images }: { images: string[] }) {
           <SwiperSlide key={index}>
             <div className="flex-center h-full w-full relative">
               <Image
-                alt={`Image ${index + 1}`}
+                alt={`Galerie photo de la maison ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
                 className="block object-cover cursor-pointer"

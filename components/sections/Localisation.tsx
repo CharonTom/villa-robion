@@ -9,11 +9,10 @@ function Localisation() {
             La localisation
           </h2>
           <p className="w-[80%] text-xl md:text-2xl">
-            Notre maison se situe à{" "}
-            <span className="text-primary-pink font-semibold">Robion</span>, un
-            village au pied du Luberon dans le Vaucluse.
-            L&apos;Isle-sur-la-Sorgue et Cavaillon se situent à moins de 10 km.
-            Avignon est à 30 km et Marseille à 1 heure de voiture.
+            Notre maison se situe à <strong>Robion</strong>, un village au pied
+            du Luberon dans le Vaucluse. L&apos;Isle-sur-la-Sorgue et Cavaillon
+            se situent à moins de 10 km. Avignon est à 30 km et Marseille à 1
+            heure de voiture.
           </p>
         </div>
 

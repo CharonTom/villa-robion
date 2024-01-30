@@ -12,9 +12,9 @@ import "@/styles/globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "La maison de Nath et Lio",
+  title: "La maison de Nath et Lio - Louez ou échangez notre villa en Luberon",
   description:
-    "Séjournez dans une charmante maison nichée dans le parc régional du Luberon à Robion. Une résidence lumineuse qui offre une échappée paisible où le style contemporain s'harmonise avec le calme provençal.",
+    "Séjournez dans une charmante maison nichée dans le parc régional du Luberon à Robion. Louez ou échangez une résidence lumineuse qui offre une échappée paisible où le style contemporain s'harmonise avec le calme provençal.",
 };
 
 export default function RootLayout({

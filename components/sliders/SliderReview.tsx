@@ -50,7 +50,7 @@ function SliderReview() {
             Basée sur <span className="font-bold">12 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
-            <Image src="/images/airbnb.webp" alt="logo" fill />
+            <Image src="/images/airbnb.webp" alt="logo airbnb" fill />
           </div>
         </div>
         <div className="slider-review w-3/4 sm:w-[60%] md:w-3/4  sm:p-4 relative">
@@ -117,7 +117,7 @@ function SliderReview() {
             Basée sur <span className="font-bold">8 avis</span>
           </div>
           <div className="mt-3 relative w-32 h-10">
-            <Image src="/images/home.webp" alt="logo" fill />
+            <Image src="/images/home.webp" alt="logo HomeExchange" fill />
           </div>
         </div>
         <div className="slider-review w-3/4 sm:w-[60%] md:w-3/4  sm:p-4 relative">

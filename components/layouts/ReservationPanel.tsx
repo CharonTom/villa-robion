@@ -79,7 +79,7 @@ const ReservationPanel = () => {
                   >
                     <div className="relative h-60 overflow-hidden">
                       <Image
-                        alt="airbnb"
+                        alt="Logo de réservation via Airbnb"
                         src="/images/airbnb_image.webp"
                         fill
                         className="rounded-xl object-cover"
@@ -104,7 +104,7 @@ const ReservationPanel = () => {
                   >
                     <div className="relative h-60 overflow-hidden">
                       <Image
-                        alt="exchange"
+                        alt="Logo d'échange via HomeExchange"
                         src="/images/homeExchange_image.webp"
                         fill
                         style={{ objectFit: "cover" }}

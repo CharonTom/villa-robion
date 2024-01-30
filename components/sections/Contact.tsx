@@ -9,7 +9,7 @@ function Contact() {
 
       <div className="relative w-full h-[280px] w-full sm:h-[400px] rounded-xl mx-auto">
         <Image
-          alt="maison"
+          alt="L'intérieur de notre maison avec vue sur piscine"
           src="/images/contact.webp"
           fill
           className="object-cover brightness-75"
