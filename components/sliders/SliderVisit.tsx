@@ -43,7 +43,6 @@ function SliderVisit({ images }: { images: string[] }) {
       {/* Thumbnail */}
       <Swiper
         onSwiper={setThumbsSwiper}
-        // loop={true}
         spaceBetween={12}
         slidesPerView={4}
         freeMode={true}

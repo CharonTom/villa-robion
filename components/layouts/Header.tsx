@@ -37,7 +37,7 @@ function Header() {
 
   const currentPathname = usePathname();
 
-  // Le Header doit être transparent en fonction de la route.
+  // Le Header est transparent en fonction de la route.
   const isTransparent =
     currentPathname === "/" || currentPathname === "/contact";
 
