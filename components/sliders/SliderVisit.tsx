@@ -33,7 +33,6 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                sizes="(min-width: 780px) calc(50vw - 24px), (min-width: 340px) calc(100vw - 32px), 268px"
                 className="block object-cover"
               />
             </div>
