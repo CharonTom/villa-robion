@@ -33,7 +33,7 @@ function SliderVisit({ images }: { images: string[] }) {
                 alt={`Image ${index + 1}`}
                 src={`/images/VisitSlider/${image}`}
                 fill
-                sizes="(min-width: 780px) calc(50vw - 24px), (min-width: 400px) calc(100vw - 32px), (min-width: 360px) 328px, calc(50vw + 118px)"
+                sizes="(min-width: 780px) calc(50vw - 24px), (min-width: 340px) calc(100vw - 32px), 268px"
                 className="block object-cover"
               />
             </div>
@@ -60,6 +60,7 @@ function SliderVisit({ images }: { images: string[] }) {
                 src={`/images/VisitSlider/${image}`}
                 fill
                 className="block object-cover cursor-pointer"
+                sizes="(min-width: 780px) calc(12.48vw - 14px), (min-width: 500px) calc(25vw - 17px), (min-width: 340px) calc(21.43vw - 5px), 58px"
               />
             </div>
           </SwiperSlide>
