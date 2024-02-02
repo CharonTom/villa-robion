@@ -12,6 +12,8 @@ function Footer() {
   const { openPanel } = useReservationContext();
   const { openSidebar } = useSidebarContext();
 
+  const getYear = new Date().getFullYear();
+
   return (
     <footer className="p-4 md:px-8">
       <div className="my-8 md:my-16 w-full h-[1px] bg-primary-pink"></div>
@@ -99,8 +101,8 @@ function Footer() {
           </nav>
         </div>
       </div>
-      <div className="mt-4 md:mt-14 p- text-center text-gray-500">
-        ©2024 Site fully handcrafted by
+      <div className="mt-4 md:mt-14 text-center text-gray-500 text-base">
+        {getYear}&copy; Site fully handcrafted by
         <a
           href="https://tom-website-six.vercel.app/"
           target="_blank"

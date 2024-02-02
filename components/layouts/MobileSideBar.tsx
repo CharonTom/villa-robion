@@ -104,17 +104,17 @@ function MobileSideBar() {
 
             <div className="my-4">
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.7 }}
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.7, duration: 0.5 }}
               >
                 <div className="my-6 w-full mx-auto h-[1px] bg-primary-pink"></div>
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.8, duration: 0.5 }}
               >
                 <div className="text-2xl mb-8 text-center font-semibold">
                   Réservez votre logement
@@ -122,9 +122,9 @@ function MobileSideBar() {
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.9 }}
+                initial={{ opacity: 0, x: -30 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.9, duration: 0.5 }}
               >
                 <div className="flex-center gap-x-8">
                   <a

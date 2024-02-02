@@ -34,17 +34,9 @@ const ReservationPanel = () => {
           }`}
         >
           <div className="p-8 mt-[105px] relative">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{
-                opacity: isPanelOpen ? 1 : 0,
-                x: isPanelOpen ? 0 : -30,
-              }}
-              transition={{ delay: 0.1, duration: 0.3 }}
-              className="text-3xl mb-2 lg:mb-4"
-            >
+            <div className="text-3xl mb-2 lg:mb-4">
               Faites votre réservation !
-            </motion.div>
+            </div>
 
             <div className="flex flex-col lg:flex-row lg:items-center gap-x-10">
               <motion.div
@@ -56,7 +48,7 @@ const ReservationPanel = () => {
                 transition={{ delay: 0.1, duration: 0.3 }}
                 className="w-full lg:w-1/4 mb-4 lg:mb-0"
               >
-                <p className="text-base lg:text-xl px-2">
+                <p className="text-base lg:text-xl">
                   Vous avez la possibilité de louer ou faire un échange de
                   maison. Réservez dès maintenant pour vivre une expérience
                   authentique et chaleureuse dans notre maison. Bienvenue chez
@@ -87,7 +79,7 @@ const ReservationPanel = () => {
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-70"></div>
                     </div>
                     <div className="text-base mt-2 group-hover:text-primary-pink">
-                      Louer avec Airbnb
+                      Louez avec Airbnb
                     </div>
                   </motion.a>
                   <motion.a
@@ -113,7 +105,7 @@ const ReservationPanel = () => {
                       <div className="rounded-xl absolute inset-0 bg-primary-pink opacity-0 transition-opacity duration-100 group-hover:opacity-60"></div>
                     </div>
                     <div className="text-base mt-2 group-hover:text-primary-pink">
-                      Echanger avec Home Exchange
+                      Echangez avec Home Exchange
                     </div>
                   </motion.a>
                 </div>
