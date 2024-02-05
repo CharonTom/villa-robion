@@ -104,7 +104,7 @@ function Footer() {
       <div className="mt-4 md:mt-14 text-center text-gray-500 text-base">
         {getYear}&copy; Site fully handcrafted by
         <a
-          href="https://tom-website-six.vercel.app/"
+          href="https://www.tomcharon.fr/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary-pink"
