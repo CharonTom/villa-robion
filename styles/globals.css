@@ -52,7 +52,7 @@ ul {
   transform: translateX(100%);
 }
 
-/*------------------ Flex shortcuts ---------------------*/
+/*------------------ Flex shortcuts --------------------*/
 
 .flex-center {
   @apply flex justify-center items-center;
