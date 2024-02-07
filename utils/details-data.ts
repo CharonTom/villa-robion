@@ -23,7 +23,7 @@ export const galleryData = [
       "kitchen4.webp",
     ],
     title: "La cuisine et les coins repas",
-    text: "Dans la cuisine, vous trouverez tout l’équipement et les ustensiles nécessaire : four, micro-onde, plaque induction, lave-vaisselle, cafetière expresso, bouilloire électrique. Dans le cellier attenant se trouve le lave-linge, sèche-linge ainsi qu’un deuxième réfrigérateur avec un grand congélateur. Vous pouvez prendre vos repas à l’intérieur devant la baie vitrée qui donne sur la piscine et la paillote. Ou bien manger à l’extérieur à l’abri de la terrasse et profiter de la plancha.",
+    text: "Dans la cuisine, vous trouverez tout l’équipement et les ustensiles nécessaires : four, micro-onde, plaque induction, lave-vaisselle, cafetière expresso, bouilloire électrique. Dans le cellier attenant se trouve le lave-linge, sèche-linge ainsi qu’un deuxième réfrigérateur avec un grand congélateur. Vous pouvez prendre vos repas à l’intérieur devant la baie vitrée qui donne sur la piscine et la paillote. Ou bien manger à l’extérieur à l’abri de la terrasse et profiter de la plancha.",
   },
   {
     id: "living",
@@ -41,7 +41,7 @@ export const galleryData = [
     id: "bed",
     images: ["bed1.webp", "bed2.webp", "bed3.webp", "bed4.webp"],
     title: "Les chambres",
-    text: "La suite parentale du rez-de-chaussée, avec son accès direct à la piscine, possède une salle d'eau privative avec douche. A l'étage, se trouve deux autres chambres : l'une possède une terrasse de 25m² qui surplombe le jardin, l'autre contient une mezzanine et peut donc accueillir quatre personnes. Les couchages se répartissent ainsi : 3 lits doubles en 140 et un lit double en 160 (dans la chambre avec mezzanine)",
+    text: "La suite parentale du rez-de-chaussée, avec son accès direct à la piscine, possède une salle d'eau privative avec douche. A l'étage se trouvent deux autres chambres : l'une possède une terrasse de 25m² qui surplombe le jardin, l'autre contient une mezzanine et peut donc accueillir quatre personnes. Les couchages se répartissent ainsi : 3 lits doubles en 140 et un lit double en 160 (dans la chambre avec mezzanine)",
   },
   {
     id: "bath",

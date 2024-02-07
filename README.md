@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# <p align="center">La Maison de Nath & Lio</p>
 
-## Getting Started
+La Maison de Nath et Lio est le site web d'une charmante location située dans le sud de la France. Je l'ai entièrement conçu, du design à l'hébergement.
 
-First, run the development server:
+Visiter le site web : https://www.lamaisondenathetlio.fr/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+<img src="https://github.com/CharonTom/tom-website/blob/main/src/assets/img/villa-robion.png" alt="application sur pc et mobile"/>
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ce site web offre une présentation détaillée d'une maison de location en Provence. Il propose une vue approfondie de la propriété, des activités disponibles dans les environs, la possibilité de réserver directement sur des plateformes dédiées, ainsi que de contacter facilement les hôtes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+J'ai utilisé Figma pour élaborer la maquette, NextJS et Tailwind CSS pour le développement, LightHouse pour l'optimisation performance et SEO et l'hébergement a été assuré via Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Technologies utilisées
 
-## Learn More
+- Figma
+- NextJS ( SSR, File-based Routing )
+- React
+- TypeScript
+- TailwindCSS
+- Git / Github
 
-To learn more about Next.js, take a look at the following resources:
+## Librairies utilisées
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Swiper
+- Framer Motion
+- Lenis Scroll
+- React Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Outils Photo / Video
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Photoshop, HandBrake, ClipChamp...
